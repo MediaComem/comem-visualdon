@@ -37,21 +37,34 @@
 
 <Slide>
     <p><span class="heig-red">Explorer</span>: trouver les tendances</p>
-    <img src="src/assets/florence.webp" alt="florence" style="background: transparent;" width="130" height="180">
-    <img src="src/assets/1920px-Nightingale-mortality.jpg" alt="mortality" style="background: transparent;" width="800" height="450">
+    <div class = "row">
+        <div class="col-20">
+    <img src="assets/florence.webp" alt="florence" style="background: transparent;" width="130" height="180">
+        </div>
+        <div class="col-80">
+
+        <img src="assets/1920px-Nightingale-mortality.jpg" alt="mortality" style="background: transparent;" width="800" height="600">
+        </div>
     <code><small>Diagram of the causes of mortality in the army in the East, Florence Nightingale, 1858</small> </code>
+    </div>
     <aside class="notes">
-        Quand Florence essayait de convaincre qu'on pourrait prévenir!
+        Quand Florence essayait de convaincre qu'on pouvait prévenir!
     </aside>
 </Slide>
 
 <Slide>
     <p><span class="heig-red">Analyser</span>: tester une hypothèse</p>
+    <div class = "row">
 
-    <img src="src/assets/John_Snow.jpg" alt="cholera-john" style="background: transparent;" width="130" height="180">
-    <img src="src/assets/cholera_map.jpg" alt="cholera" style="background: transparent;" width="520" height="520">
-
+    <div class="col-10">
+    <img src="assets/John_Snow.jpg" alt="cholera-john" style="background: transparent;" width="130" height="180">
+    </div>
+        <div class="col-90">
+    <img src="assets/cholera_map.jpg" alt="cholera" style="background: transparent;" width="520" height="520">
+        </div>
+    </div>
     <code><small>L'épidémie choléra de Broad Street, John Snow, 1854</small> </code>
+
     <aside class="notes">
         Quand John snow essayait de convaincre que c'était dû à l'eau contaminée!
     </aside>
@@ -59,8 +72,16 @@
 
 <Slide>
     <p><span class="heig-red">Présenter</span>: raconter une histoire</p>
-    <img src="src/assets/Charles_Joseph_Minard.png" alt="charles" style="background: transparent;" width="140" height="170">
-    <img src="src/assets/minards_map.png" alt="minards" style="background: transparent;" width="800" height="450">
+    <div class="row">
+
+    <div class="col-10">
+    <img src="assets/Charles_Joseph_Minard.png" alt="charles" style="background: transparent;" width="140" height="170">
+    </div>
+
+    <div class="col-90">
+    <img src="assets/minards_map.png" alt="minards" style="background: transparent;" width="800" height="450">
+    </div>
+    </div>
     <code><small>
         La Carte figurative des pertes successives en hommes de l’Armée française dans la campagne de Russie en 1812-1813, Charles Joseph Minard, 1869 </small> </code>
     <aside class="notes">
@@ -91,36 +112,67 @@
 
 
 <Slide>
-    <img src="src/assets/form_and_function_1.svg" width="700" height="700" />
+    <img src="assets/form_and_function_1.svg" width="700" height="700" alt="form_and_function1"/>
 </Slide>
 
 <Slide>
-    <img data-id="box" src="src/assets/form_and_function_2.svg" width="350" height="200" />
-    <a href="https://www.scmp.com/infographics/article/1248804/allure-climbing-mount-everest"><img src="src/assets/everest-summit-hillary.jpg" alt="everest" style="background: transparent;" width="350"></a>
+    <div class="row">
+
+    <div class="col-30">
+    <img data-id="box" src="assets/form_and_function_2.svg" width="350" height="200" alt="form_and_function2"/>
+    </div>
+        <div class="col-70">
+    <a href="https://www.scmp.com/infographics/article/1248804/allure-climbing-mount-everest"><img src="assets/everest-summit-hillary.jpg" alt="everest" style="background: transparent;" width="350"></a>
     <code><small>Mount Everest, South China Morning Post</small></code>
+
+        </div>
+    </div>
 </Slide>
 
 <Slide>
-    <img src="src/assets/form_and_function_3.svg" width="300" height="200" />
-    <a href="https://www.behance.net/gallery/14283209/European-banks-and-government-debt"><img src="src/assets/giorgia_lupi.jpg" width="600" /></a>
-    <code><small>Banques éuropéennes et dette, Giorgia Lupi </small></code>
+    <div class="row">
+        <div class="col-20">
+    <img src="assets/form_and_function_3.svg" width="300" height="200" alt="form_and_function3"/>
+        </div>
+
+                <div class="col-80">
+    <a href="https://www.behance.net/gallery/14283209/European-banks-and-government-debt"><img src="assets/giorgia_lupi.jpg" width="600" alt="giorgia-lupi"/></a>
+                    <code><small>Banques éuropéennes et dette, Giorgia Lupi </small></code>
+                </div>
+
+        </div>
+
 </Slide>
 
 <Slide>
-    <img src="src/assets/form_and_function_4.svg" width="300" height="200" />
-    <a href="https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html"><img src="src/assets/ny_times.gif" alt="" width="600" /></a>
+    <div class="row">
+    <div class="col-30">
+    <img src="assets/form_and_function_4.svg" width="300" height="200" alt="form_and_function4"/>
+    </div>
+
+        <div class="col-70">
+    <a href="https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html"><img src="assets/ny_times.gif" alt="gif_ny" width="600"/></a>
     <code><small>How the virus got out, New York Times </small></code>
+        </div>
+    </div>
 </Slide>
 
 
 <Slide>
-    <img src="src/assets/form_and_function_5.svg" width="300" height="200" />
-    <a href="https://www.rts.ch/info/suisse/12849342-les-cartes-des-resultats-des-votations-federales-commune-par-commune.html"><img src="../07-cartography-intro/src/assets/rts_cartes.gif" alt="" width="600" /></a>
+    <div class="row">
+    <div class="col-30">
+    <img src="assets/form_and_function_5.svg" width="300" height="200" alt="form_and_function5"/>
+    </div>
+
+        <div class="col-70">
+    <a href="https://www.rts.ch/info/suisse/12849342-les-cartes-des-resultats-des-votations-federales-commune-par-commune.html"><img src="assets/rts_cartes.gif" alt="gif_rts" width="600" /></a>
     <code><small>Votations fédérales, RTS </small></code>
+        </div>
+    </div>
 </Slide>
 
 <Slide>
-    <img src="src/assets/form_and_function_objectif.svg" width="700" height="700" />
+    <img src="assets/form_and_function_objectif.svg" width="700" height="700" alt="form_and_function_objectif"/>
 </Slide>
 
 <Slide>
@@ -128,13 +180,13 @@
 </Slide>
 
 <Slide>
-    <img src="src/assets/data-viz-libraries.svg">
+    <img src="assets/data-viz-libraries.svg" alt="img-svg-libraries"/>
 </Slide>
 
 
 
 <Slide>
-    <iframe src="https://d3js.org/" width="800" height="550"></iframe>
+    <iframe src="https://d3js.org/" width="800" height="550" title="d3"></iframe>
 </Slide>
 
 
@@ -152,7 +204,7 @@
 
 <Slide>
     <h2>Evaluation</h2>
-    <img src="src/assets/evaluation.svg">
+    <img src="assets/evaluation.svg" alt="img-svg-evaluation"/>
     <br>
     <br>
     <br>
@@ -162,7 +214,7 @@
 
 <Slide>
     <h2>Projet</h2>
-    <img src="src/assets/project.svg" height="500">
+    <img src="assets/project.svg" height="500" alt="project-svg">
 </Slide>
 
 
@@ -170,10 +222,10 @@
 <Slide>
     <h2>Supports</h2>
     <ul>
-        <b>COURS</b> <br> <a href="https://cyberlearn.hes-so.ch/course/view.php?id=21037"> Cyberlearn</a> (clef d'inscription <code><b>VisualDon22</b></code> )
+        <b>COURS</b>   <br> <span class="heig-red">↳</span> Lien <a href="https://github.com/romanoe/visualdon-cours#programme-de-cours" class="heig-red">GitHub</a>
         <br>
         <br>
-        <b>EXERCICES</b> <br> Repo <a href="https://github.com/romanoe/visualdon-22/blob/main/README.md"> <code>GitHub</code> <i class="fa-brands fa-github"></i></a>
+        <b>EXERCICES</b> <br> <span class="heig-red">↳</span> Lien <a href="https://github.com/romanoe/visualdon-exercices" class="heig-red"> <code> GitHub</code> <i class="fa-brands fa-github"></i></a>
     </ul>
 </Slide>
 
