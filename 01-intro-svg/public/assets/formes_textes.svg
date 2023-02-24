@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="510.36093mm"
-   height="228.44698mm"
-   viewBox="0 0 510.36093 228.44698"
+   width="513.45441mm"
+   height="256.24295mm"
+   viewBox="0 0 513.45441 256.24296"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -29,11 +29,11 @@
      fit-margin-bottom="0"
      showguides="true"
      inkscape:zoom="0.32224088"
-     inkscape:cx="1165.2774"
-     inkscape:cy="440.66414"
+     inkscape:cx="1177.6904"
+     inkscape:cy="490.31644"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
-     inkscape:window-x="1990"
+     inkscape:window-x="70"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
@@ -50,7 +50,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-29.942225,-22.226637)">
+     transform="translate(-26.848766,-9.0382566)">
     <rect
        style="fill:#4682b4;fill-opacity:1;stroke-width:0.426009"
        id="rect846"
@@ -140,7 +140,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
          x="26.848766"
          y="164.64427"
-         id="tspan76083"></tspan><tspan
+         id="tspan76083" /><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
          x="26.848766"
@@ -187,5 +187,27 @@
        transform="matrix(0.26458333,0,0,0.26458333,29.942225,22.226637)"
        id="text170951"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect170953);fill:#000000;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#990000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="56.127289"
+       y="14.520406"
+       id="text4979"><tspan
+         sodipodi:role="line"
+         id="tspan4977"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#990000;fill-opacity:1;stroke-width:0.264583"
+         x="56.127289"
+         y="14.520406">&lt;svg&gt;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#990000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="56.127289"
+       y="263.31271"
+       id="text11331"><tspan
+         sodipodi:role="line"
+         id="tspan11329"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#990000;fill-opacity:1;stroke-width:0.264583"
+         x="56.127289"
+         y="263.31271">&lt;/svg&gt;</tspan></text>
   </g>
 </svg>
