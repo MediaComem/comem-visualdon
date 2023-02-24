@@ -18,11 +18,20 @@
     (<em>graphique vectoriel adaptable</em>)
 </Slide>
 
+
+
 <Slide>
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Bitmap_VS_SVG_Fr.svg" alt="bitmap_svg">
 </Slide>
 
 
+<Slide>
+
+    <h2>Syntaxe</h2>
+    <img src="assets/svg-syntax.svg" alt="svg-syntax">
+
+
+</Slide>
 
 <Slide>
     <h2>Système de coordonnées</h2>

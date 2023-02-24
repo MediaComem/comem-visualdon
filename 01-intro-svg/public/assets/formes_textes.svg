@@ -3,8 +3,8 @@
 
 <svg
    width="513.45441mm"
-   height="256.24295mm"
-   viewBox="0 0 513.45441 256.24296"
+   height="257.83044mm"
+   viewBox="0 0 513.45441 257.83045"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -30,7 +30,7 @@
      showguides="true"
      inkscape:zoom="0.32224088"
      inkscape:cx="1177.6904"
-     inkscape:cy="490.31644"
+     inkscape:cy="496.52297"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
      inkscape:window-x="70"
@@ -50,7 +50,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-26.848766,-9.0382566)">
+     transform="translate(-26.848766,-7.4507616)">
     <rect
        style="fill:#4682b4;fill-opacity:1;stroke-width:0.426009"
        id="rect846"
@@ -194,10 +194,10 @@
        y="14.520406"
        id="text4979"><tspan
          sodipodi:role="line"
-         id="tspan4977"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#990000;fill-opacity:1;stroke-width:0.264583"
          x="56.127289"
-         y="14.520406">&lt;svg&gt;</tspan></text>
+         y="14.520406"
+         id="tspan14379">&lt;svg  width=&quot;500&quot; height=&quot;500&quot;&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#990000;fill-opacity:1;stroke:none;stroke-width:0.264583"
