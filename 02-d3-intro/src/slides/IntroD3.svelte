@@ -1,0 +1,372 @@
+<script>
+    import Slide from '../lib/Slide.svelte';
+    import Code from "../lib/Code.svelte";
+    import {select} from 'd3-selection';
+    import {onMount} from "svelte";
+    import Fa from 'svelte-fa'
+    import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+
+    const width = 500
+    const height = 300
+
+    let x = 0;
+    let y = 0;
+
+    onMount(() => {
+        // Select
+        const svg = select("#mon-svg");
+        const cercle = svg.select("circle");
+        cercle.attr("fill", "#E92528");
+
+        // Append
+        select("#mon-svg2")
+            .attr("width", width)
+            .attr("height", height)
+            .append("circle")
+            .attr("cx", "30%")
+            .attr("cy", "40%")
+            .attr("r", "100");
+
+        // Events
+        select("#mon-svg3")
+            .attr("width", width)
+            .attr("height", height)
+            .select("circle")
+            .on('click', function () {
+                select(this).attr("fill", 'green');
+            })
+            .on('mousemove', function(e) {
+                x = e.clientX;
+                y = e.clientY
+            })
+
+    });
+
+</script>
+
+<Slide>
+    <h2>Semaine passée</h2>
+    <p class="fragment"><span class="heig-red">Fonction</span> Explicative ou exploratoire <br></p>
+    <p class="fragment"><span class="heig-red">Formes</span> Statique ou interactive <br> </p>
+    <p class="fragment"><span class="heig-red">SVG</span> Formes, dessins et transformation </p>
+</Slide>
+
+
+<Slide>
+    <iframe src="https://d3js.org/" width="800" height="550" title="d3-iframe"></iframe>
+</Slide>
+
+<Slide>
+    <h2>Documentation</h2>
+    <a href="https://github.com/d3/d3/blob/main/API.md"><code>Github: API reference</code></a>
+</Slide>
+
+<Slide>
+    <h2>DOM</h2>
+    <p><span class="heig-red">D</span>ocument <span class="heig-red">O</span>bject <span class="heig-red">M</span>odel</p>
+    <small><blockquote>
+        Le Document Object Model (DOM) est une interface de programmation normalisée par le W3C, qui permet à des scripts d'examiner et de modifier le contenu du navigateur web
+    </blockquote></small>
+    <p class="fragment">(en bref : structure hiérarchique de <code>HTML</code>)</p>
+</Slide>
+
+
+<Slide>
+    <h2>Syntaxe</h2>
+    <p>Chaînage de méthodes (fonctions)</p>
+
+    <code>
+        <span class="heig-red">objet</span>.methode1() <br>
+        .methode2() <br>
+        .methode3()
+    </code>
+    <Code trim>
+					d3.select("body")
+					  .append("p")
+					  .text("Nouveau paragraphe")
+				</Code>
+</Slide>
+
+
+<Slide>
+    <a href="https://github.com/d3/d3-selection/tree/v3.0.0"><h2> <code class="heig-red"> d3-selection</code> </h2></a>
+    <p><span class="heig-red">Installation</span> <br> <small><code>npm install d3-selection</code></small></p>
+</Slide>
+
+
+<Slide>
+    <h2>Sélectionner</h2>
+
+    <code>.select(<em>sélecteur</em>)</code> <br>
+    <code>.selectAll(<em>sélecteur</em>)</code>
+
+    <br>
+    <br>
+    <small>
+        <table>
+            <table>
+                <tr>
+                    <th></th>
+                    <th >CSS</th>
+                    <th >Exemple</th>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td><code>element </code></td>
+                    <td><code>.select('h1')</code></td>
+                </tr>
+                <tr>
+                    <td >class</td>
+                    <td><code>.class</code></td>
+                    <td><code>.select('.class')</code></td>
+                </tr>
+                <tr>
+                <td>identifiant</td>
+                <td><code>#id</code></td>
+                <td><code>.select('#id')</code></td>
+                </tr>
+            </table>
+        </table>
+    </small>
+    <br>
+    <br>
+    <br>
+    <small><a href="https://github.com/d3/d3-selection/tree/v3.0.0"><p> <code class="heig-red"> ↳ d3-selection</code></p></a></small>
+
+
+</Slide>
+
+<section data-auto-animate>
+
+
+    <h2>Modifier</h2>
+
+    <br>
+    <code>attr('nom_attribut','valeur')</code>
+    <div  class="row no-margin-top">
+        <div class="col-60">
+
+ <pre><Code trim>
+      <script type="text/template">
+<!--index.html-->
+
+<svg id = 'mon-svg'>
+    <circle cx="50%" cy="50%" r="50"></circle>
+</svg>
+</script>
+            </Code></pre>
+
+            <br>
+            <pre> <Code trim>
+// index.js
+
+import {'{'} select {'}'} from 'd3-selection';
+
+const svg = select("#mon-svg");
+const cercle = svg.select("circle");
+cercle.attr("fill", "#E92528");
+ </Code></pre>
+
+
+        </div>
+
+        <div class="col-40 fig-container no-margin-top">
+
+            <svg id="mon-svg">
+                <circle cx="50%" cy="50%" r="50"></circle>
+            </svg>
+
+        </div>
+    </div>
+    <small><a href="https://github.com/d3/d3-selection/tree/v3.0.0"><p> <code class="heig-red"> ↳ d3-selection</code></p></a></small>
+
+</section>
+
+
+
+<Slide>
+    <h2>Ajouter</h2>
+    <br>
+    <code>.append("element-html")</code>
+    <div class="row no-margin-top">
+        <div class="col-60">
+
+<pre>
+    <Code trim>
+const WIDTH = 500
+const HEIGHT = 800
+
+const div = select("#mon-svg")
+              .append("svg")
+              .attr("width", WIDTH)
+              .attr("height", HEIGHT)
+              .append("circle")
+              .attr("cx", "30%")
+              .attr("cy", "40%")
+              .attr("r", "100")
+    </Code>
+</pre>
+
+    </div>
+        <div class="col-40">
+        <svg id="mon-svg2">
+        </svg>
+        </div>
+    </div>
+    <small><a href="https://github.com/d3/d3-selection/tree/v3.0.0"><p> <code class="heig-red"> ↳ d3-selection</code></p></a></small>
+
+</Slide>
+
+
+<Slide>
+    <h2>Ecouter les événements</h2>
+
+    <code>.on("événmentent", fonctions)</code>
+    <div class="row no-margin-top">
+        <div class="col-60">
+				<pre><Code trim>
+<script type="text/template">
+<!--index.html-->
+
+<svg id = 'mon-svg'>
+    <circle cx="50%" cy="50%" r="50"></circle>
+
+</svg>
+
+</script>
+</Code></pre>
+
+<pre><Code trim>
+// index.js
+
+import {'{'} select {'}'} from 'd3-selection';
+
+select("#mon-svg")
+    .select("circle")
+    .on('click', function () {'{'}
+                   select(this).attr("fill", 'green')
+    {'}'})
+    .on('mousemove', function(e) {'{'}
+                    console.log("x: " + e.clientX + ", y:" + e.clientY )
+    {'}'});
+
+</Code>
+</pre>
+
+
+
+        </div>
+        <div class="col-40 fig-container no-margin-top" >
+
+        <svg id="mon-svg3">
+            <circle cx="50%" cy="50%" r="100"></circle>
+        </svg>
+
+
+            <p>x: {x}, y: {y}</p>
+
+        </div>
+
+
+    </div>
+
+</Slide>
+
+<Slide>
+    <h2>Joindre les données</h2>
+    <code>.data(<em>[tableau de données]</em>)</code>
+
+    <h2>Dessiner</h2>
+    <code>data(<em>[tableau de données]</em>)
+            .join(enter => enter.</code>
+
+
+</Slide>
+
+
+
+
+<Slide>
+    <h2></h2>
+    <code>.data(<em>[tableau de données]</em>)</code>
+
+    <h2>Dessiner</h2>
+    <code>data(<em>[tableau de données]</em>)
+        .join(enter => enter.</code>
+
+
+</Slide>
+
+
+<!--<Slide>-->
+<!--    <h2>Joindre les données</h2>-->
+<!--    <p>Doc: <a href="https://github.com/d3/d3-selection/blob/v3.0.0/README.md#joining-data">Joining data</a></p>-->
+<!--    <code>.data(données).enter().do_something()</code>-->
+
+<!--    <p>Mieux expliquer ces concepts</p>-->
+<!--    <code>selection.data</code>-->
+<!--    <code>selection.enter</code>-->
+<!--    <code>selection.join</code>-->
+<!--    <code>selection.exit</code>-->
+
+
+<!--    <div class="row no-margin-top">-->
+<!--        <div class="col-60">-->
+<!--<pre><code data-trim >-->
+
+
+<!--<div class = "my-div"></div>-->
+
+<!--<script>-->
+
+<!--  const data = [4, 6, 2, 8, 1]-->
+
+<!--  const myDiv = d3.select(".my-div");-->
+<!--  const ul = myDiv.append("ul");-->
+
+<!--  ul.selectAll("li")-->
+<!--      .data(data)-->
+<!--      .enter()-->
+<!--      .append("li")-->
+<!--      .text((d,i) => 'Valeur: ' + d + ', Index: ' + i)-->
+
+<!--</script>-->
+<!--</code>-->
+<!--</pre>-->
+<!--        </div>-->
+
+<!--&lt;!&ndash;        <div class="col-40 fig-container no-margin-top" data-file="d3-exemples/bind.html"></div>&ndash;&gt;-->
+
+<!--    </div>-->
+<!--</Slide>-->
+
+
+
+<Slide>
+    <h2>Projet</h2>
+    <div class="row">
+        <div class="col-60">
+            <h4 ><span class="heig-red">Thématique (10 mars)</span></h4>
+            <ul>
+                <li>Trouver un jeu de données </li>
+                <li>Créer un dossier github pour le projet</li>
+                <li>Suivre directives <a href="https://github.com/romanoe/visualdon-exercices/tree/main/projet">ici</a> </li>
+            </ul>
+        </div>
+
+        <div class="col-40">
+            <img src="assets/data.gif" alt="data-gif"> <br>
+        </div>
+    </div>
+</Slide>
+
+
+
+
+<Slide>
+    <h2>Exercices</h2>
+    <p><span class="heig-red">Rajouter dossier du cours en upstream</span> <br> <small><code>git remote add upstream git@github.com:romanoe/visualdon-exercices.git</code></small></p>
+    <p><span class="heig-red">Mettre à jour</span> <br> <small><code>git fetch upstream</code></small></p>
+</Slide>
+

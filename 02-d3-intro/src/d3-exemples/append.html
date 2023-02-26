@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/d3.v3.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div >
+    <div class = "my-div"></div>
+</div>
+
+<script>
+    const WIDTH = 300
+    const HEIGHT = 100
+
+    const div = d3.select(".my-div")
+                    .append("svg")
+                    .attr("width", WIDTH)
+                    .attr("height", HEIGHT)
+                    .append("circle")
+                        .attr("cx", "30%")
+                        .attr("cy", "40%")
+                        .attr("r", "30")
+</script>
+</body>
+</html>
