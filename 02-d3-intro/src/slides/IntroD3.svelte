@@ -1,7 +1,7 @@
 <script>
     import Slide from '../lib/Slide.svelte';
     import Code from "../lib/Code.svelte";
-    import {select} from 'd3-selection';
+    import {select, selectAll} from 'd3-selection';
     import {onMount} from "svelte";
     import Fa from 'svelte-fa'
     import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -12,6 +12,8 @@
 
     let x = 0;
     let y = 0;
+
+    const data = ['Pierre', 'Charlotte', 'Jacques'];
 
     onMount(() => {
         // Select
@@ -38,9 +40,16 @@
             })
             .on('mousemove', function(e) {
                 x = e.clientX;
-                y = e.clientY
-            })
+                y = e.clientY;
+            });
 
+        // Joining data
+        select("#mon-div")
+            .append("ul")
+            .selectAll("li")
+            .data(data)
+            .join(enter => enter.append("li").text((d, i) => 'Valeur: ' + d + ', Index: ' + i))
+            .style("color", 'green');
     });
 
 </script>
@@ -270,76 +279,84 @@ select("#mon-svg")
 
 
     </div>
+    <small><a href="https://github.com/d3/d3-selection/tree/v3.0.0"><p> <code class="heig-red"> ↳ d3-selection</code></p></a></small>
 
 </Slide>
 
 <Slide>
+
     <h2>Joindre les données</h2>
-    <code>.data(<em>[tableau de données]</em>)</code>
+    <p class="heig-red"><em>Joindre les données aux éléments <b>sélectionnés</b></em></p>
 
-    <h2>Dessiner</h2>
-    <code>data(<em>[tableau de données]</em>)
-            .join(enter => enter.</code>
 
+    <code>
+        selection.data([data[, key]])
+    </code>
+
+    <code>
+        selection.join(enter[, update][, exit])
+    </code>
+    <br>
+    <div class="row">
+
+
+
+    <div class="col-60">
+
+
+<pre><Code trim>
+<script type="text/template">
+<!--index.html-->
+
+<div id="my-div"></div>
+
+</script>
+</Code></pre>
+
+
+
+<pre><Code trim>
+// index.js
+
+import {'{'} select, selectAll {'}'} from 'd3-selection';
+
+const data = ['Pierre', 'Charlotte', 'Jacques'];
+
+select("#ma-div")
+    .append("ul")
+    .selectAll("li")
+    .data(data)
+    .join(enter => enter
+                    .append("li")
+                    .text((d, i) => 'Valeur: ' + d + ', Index: ' + i))
+    .style("color", 'green');
+
+
+
+</Code></pre>
+
+
+    </div>
+
+
+    <div class="col-40">
+
+
+    <div id="mon-div"></div>
+
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+    <small><a href="https://github.com/d3/d3-selection/tree/v3.0.0"><p> <code class="heig-red"> ↳ d3-selection</code></p></a></small>
 
 </Slide>
-
-
-
-
-<Slide>
-    <h2></h2>
-    <code>.data(<em>[tableau de données]</em>)</code>
-
-    <h2>Dessiner</h2>
-    <code>data(<em>[tableau de données]</em>)
-        .join(enter => enter.</code>
-
-
-</Slide>
-
-
-<!--<Slide>-->
-<!--    <h2>Joindre les données</h2>-->
-<!--    <p>Doc: <a href="https://github.com/d3/d3-selection/blob/v3.0.0/README.md#joining-data">Joining data</a></p>-->
-<!--    <code>.data(données).enter().do_something()</code>-->
-
-<!--    <p>Mieux expliquer ces concepts</p>-->
-<!--    <code>selection.data</code>-->
-<!--    <code>selection.enter</code>-->
-<!--    <code>selection.join</code>-->
-<!--    <code>selection.exit</code>-->
-
-
-<!--    <div class="row no-margin-top">-->
-<!--        <div class="col-60">-->
-<!--<pre><code data-trim >-->
-
-
-<!--<div class = "my-div"></div>-->
-
-<!--<script>-->
-
-<!--  const data = [4, 6, 2, 8, 1]-->
-
-<!--  const myDiv = d3.select(".my-div");-->
-<!--  const ul = myDiv.append("ul");-->
-
-<!--  ul.selectAll("li")-->
-<!--      .data(data)-->
-<!--      .enter()-->
-<!--      .append("li")-->
-<!--      .text((d,i) => 'Valeur: ' + d + ', Index: ' + i)-->
-
-<!--</script>-->
-<!--</code>-->
-<!--</pre>-->
-<!--        </div>-->
-
-<!--&lt;!&ndash;        <div class="col-40 fig-container no-margin-top" data-file="d3-exemples/bind.html"></div>&ndash;&gt;-->
-
-<!--    </div>-->
-<!--</Slide>-->
 
 
 
