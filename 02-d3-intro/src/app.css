@@ -40,7 +40,11 @@ a {
   color: #E92528 !important;
 }
 
-
+.center {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
 
 .col-05 { width: 0.5%; }

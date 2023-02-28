@@ -22,6 +22,9 @@
     "@fontsource/open-sans": "^4.5.14",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "d3-array": "^3.2.2",
+    "d3-ease": "^3.0.1",
+    "d3-transition": "^3.0.1",
     "reveal.js": "^4.3.1"
   }
 }
