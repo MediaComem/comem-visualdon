@@ -389,7 +389,6 @@ select("#mon-svg")
 
         <svg id="mon-svg3">
             <circle cx="50%" cy="50%" r="100"></circle>
-            <circle cx="50%" cy="50%" r="100"></circle>
         </svg>
 
 

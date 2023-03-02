@@ -1,4 +1,4 @@
-# Reveal.js + Svelte + Vite + TailwindCSS
+ # Reveal.js + Svelte + Vite + TailwindCSS
 
 ![Svelte Slides logo](public/svelte-slides.jpg)
 

@@ -122,6 +122,56 @@ json("url/ou/chemin/du/fichier.json")
     </div>
 </Slide>
 
+
+<Slide>
+    <h2>Statistiques</h2>
+
+</Slide>
+
+<Slide>
+    <a href="https://github.com/d3/d3-array"><h2><code class="heig-red">d3-array</code></h2></a>
+    <p><span class="heig-red">Installation</span> <br> <small><code>npm install d3-array</code></small></p>
+</Slide>
+
+
+
+<Slide>
+    <h2>Statistiques</h2>
+    <br>
+    <code><b class="heig-red">max</b>(iterable[, accessor])</code><br>
+    <code><b class="heig-red">min</b>(iterable[, accessor])</code><br>
+    <code><b class="heig-red">sum</b>(iterable[, accessor])</code><br>
+    <code><b class="heig-red">extent</b>(iterable[, accessor])</code><br>
+    <code><b class="heig-red">mean</b>(iterable[, accessor])</code>
+
+
+<pre>
+    <Code trim>
+import {"{"} max, min, sum, extent, mean {"}"} from "d3-array";
+
+const data = [5, 10, 4, 25];
+
+const maxValue = max(data); // Expected output: 25
+const minValue = min(data); // Expected output: 5
+const sumValues = sum(data); // Expected output : 44
+const extentValues = extent(data); // Expected output : [4, 25]
+const meanValues = mean(data); // Expected output : 11
+
+    </Code>
+</pre>
+
+
+    <small><a href="https://github.com/d3/d3-array"><p> <code class="heig-red"> ↳ d3-array -  Statistics</code></p></a></small>
+
+</Slide>
+
+
+
+
+
+
+
+
 <Slide>
     <h2>Manipuler les données avec <span class="heig-red"> JavaScript </span> (ES7)</h2>
 </Slide>
@@ -130,16 +180,14 @@ json("url/ou/chemin/du/fichier.json")
 <Slide>
 
     <h3><code>Array.prototype.<span class="heig-red">map()</span></code></h3>
-    <p>crée un nouveau tableau avec les résultats de l"appel d"une fonction qui s"applique à l"ensemble des données</p>
+    <p>crée un nouveau tableau avec les résultats de l'appel d'une fonction qui s"applique à l'ensemble des données</p>
 
     <pre><Code trim>
 const data = [1, 4, 9, 16];
 
 // Pass a function to map
-const dataMapped = data.map(x => x * 2);
+const dataMapped = data.map(x => x * 2); // Expected output: Array [2, 8, 18, 32]
 
-console.log(dataMapped);
-// Expected output: Array [2, 8, 18, 32]
     </Code></pre>
 
     <small><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map"><p><code
@@ -154,11 +202,10 @@ console.log(dataMapped);
     <pre ><Code trim>
 const words = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
 
-// Pass a function to filter
-const result = words.filter(word => word.length > 6);
 
-console.log(result);
-// Expected output: Array ["exuberant", "destruction", "present"]
+const result = words.filter(word => word.length > 6); // Expected output: Array ["exuberant", "destruction", "present"]
+
+
     </Code></pre>
 
 
@@ -177,16 +224,16 @@ console.log(result);
     <pre><Code trim>
 const array1 = [1, 2, 3];
 
-console.log(array1.includes(2));
-// Expected output: true
+console.log(array1.includes(2)); // Expected output: true
+
 
 const pets = ["cat", "dog", "bat"];
 
-console.log(pets.includes("cat"));
-// Expected output: true
+console.log(pets.includes("cat")); // Expected output: true
 
-console.log(pets.includes("at"));
-// Expected output: false
+
+console.log(pets.includes("at")); // Expected output: false
+
 
     </Code></pre>
 
@@ -206,16 +253,14 @@ console.log(pets.includes("at"));
     <pre><Code trim>
 const plants = ["broccoli", "cauliflower", "cabbage", "kale", "tomato"];
 
-console.log(plants.pop());
-// Expected output: "tomato"
+console.log(plants.pop()); // Expected output: "tomato"
 
-console.log(plants);
-// Expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
+console.log(plants); // Expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
+
 
 plants.pop();
 
-console.log(plants);
-// Expected output: Array ["broccoli", "cauliflower", "cabbage"]
+console.log(plants); // Expected output: Array ["broccoli", "cauliflower", "cabbage"]
 
     </Code></pre>
 
@@ -235,14 +280,11 @@ console.log(plants);
 const animals = ["pigs", "goats", "sheep"];
 
 const count = animals.push("cows");
-console.log(count);
-// Expected output: 4
-console.log(animals);
-// Expected output: Array ["pigs", "goats", "sheep", "cows"]
+console.log(animals); // Expected output: Array ["pigs", "goats", "sheep", "cows"]
+
 
 animals.push("chickens", "cats", "dogs");
-console.log(animals);
-// Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+console.log(animals);// Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
 
     </Code></pre>
 
@@ -267,8 +309,7 @@ const sumWithInitial = array1.reduce(
   initialValue
 );
 
-console.log(sumWithInitial);
-// Expected output: 10
+console.log(sumWithInitial); // Expected output: 10
 
     </Code></pre>
 
@@ -287,7 +328,6 @@ console.log(sumWithInitial);
 const array1 = ["a", "b", "c"];
 
 array1.forEach(element => console.log(element));
-
 // Expected output: "a"
 // Expected output: "b"
 // Expected output: "c"
@@ -295,39 +335,39 @@ array1.forEach(element => console.log(element));
     </Code></pre>
 
     <small><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"><p>
-        <code class="heig-red"> ↳ Doc MDN: Array.prototype.forEach()</code></p></a></small>
+    <code class="heig-red"> ↳ Doc MDN: Array.prototype.forEach()</code></p></a></small>
 
 </Slide>
 
-<Slide>
-    <h2>Projet</h2>
-    <h4><span class="heig-red">Wireframe (17 mars)</span></h4>
+<!--<Slide>-->
+<!--    <h2>Projet</h2>-->
+<!--    <h4><span class="heig-red">Wireframe (17 mars)</span></h4>-->
 
-    <div class="row">
-
-
-        <div class="col-60">
-
-            <img src="assets/sketch1.jpg" alt="">
+<!--    <div class="row">-->
 
 
-        </div>
+<!--        <div class="col-60">-->
 
-        <div class="col-40">
-            <img src="assets/figma.png" alt="">
-            <img src="assets/invision-logo-square.png" alt="">
-        </div>
-    </div>
+<!--            <img src="assets/sketch1.jpg" alt="">-->
 
-</Slide>
+
+<!--        </div>-->
+
+<!--        <div class="col-40">-->
+<!--            <img src="assets/figma.png" alt="">-->
+<!--            <img src="assets/invision-logo-square.png" alt="">-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</Slide>-->
 
 
 
 
 <Slide>
     <h2>Exercices</h2>
-    <p><span class="heig-red">Rajouter dossier du cours en upstream</span> <br> <small><code>git remote add upstream
-        git@github.com:romanoe/visualdon-exercices.git</code></small></p>
+<!--    <p><span class="heig-red">Rajouter dossier du cours en upstream</span> <br> <small><code>git remote add upstream-->
+<!--        git@github.com:romanoe/visualdon-exercices.git</code></small></p>-->
     <p><span class="heig-red">Télécharger changements</span> <br> <small><code>git fetch upstream</code></small></p>
     <p>
     <p><span class="heig-red">Mettre à jour</span> <br> <small><code>git merge upstream/main</code></small></p>
