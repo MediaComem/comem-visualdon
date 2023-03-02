@@ -6,14 +6,14 @@
 </script>
 
 <Slide class="fragment">
-    <h2>Semaine passée</h2>
+    <h2>Cours précédent</h2>
     <p class="fragment"><span class="heig-red">Syntaxe</span> Chaînage de méthodes (fonctions) </p>
     <p class="fragment"><span class="heig-red">Manipulation du DOM</span> <code>select()</code>,
         <code>.attr()</code>,<code>.append()</code>,<code>.on("event")</code><br></p>
     <p class="fragment"><span class="heig-red">Données</span> <code>data(<em>données</em>).join(enter, update, exit)
     </code></p>
 </Slide>
-
+s
 
 <Slide>
 
