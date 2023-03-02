@@ -580,12 +580,27 @@ select("#ma-div")
     </div>
 </Slide>
 
+<Slide>
+    <h2>Exemples</h2>
+    <ul>
+        <li>
+            <a href="http://www.bmdata.co.uk/titanic/">Titanic</a>
+        </li>
+        <li><a href="https://projects.two-n.com/world-gender/">Global gender gap</a></li>
+        <li><a href="http://rhythm-of-food.net/">The Rythm of food</a></li>
+        <li><a href="https://qz.com/296941/interactive-graphic-every-active-satellite-orbiting-earth/">Satellites</a>
+        </li>
+    </ul>
 
+</Slide>
 
 
 <Slide>
     <h2>Exercices</h2>
-    <p><span class="heig-red">Rajouter dossier du cours en upstream</span> <br> <small><code>git remote add upstream git@github.com:romanoe/visualdon-exercices.git</code></small></p>
-    <p><span class="heig-red">Mettre à jour</span> <br> <small><code>git fetch upstream</code></small></p>
+    <p><span class="heig-red">Rajouter dossier du cours en upstream</span> <br> <small><code>git remote add upstream
+        git@github.com:romanoe/visualdon-exercices.git</code></small></p>
+    <p><span class="heig-red">Télécharger changements</span> <br> <small><code>git fetch upstream</code></small></p>
+    <p>
+    <p><span class="heig-red">Mettre à jour</span> <br> <small><code>git merge upstream/main</code></small></p>
 </Slide>
 
