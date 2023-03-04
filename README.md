@@ -21,7 +21,7 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 * [COURS 1](https://01-intro.surge.sh/ ) - Introduction + SVG
 * [COURS 2](https://02-intro-d3.surge.sh/) - Introduction à d3
 * [COURS 3](https://03-d3-data.surge.sh/) - Données
-* [COURS 4](https://03-d3-data.surge.sh/) - Échelles & axes
+* [COURS 4](https://04-scales-axis.surge.sh/) - Échelles & axes
 * [COURS 5](https://05-interaction-animation-1.surge.sh) - Interaction et animation 1
 * [COURS 6]( https://06-interaction-animation-2.surge.sh) - Interaction et animation 2
 * [COURS 7](https://07-cartography-intro.surge.sh) - Introduction à la cartographie
