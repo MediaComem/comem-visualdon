@@ -19,7 +19,7 @@ import "@fontsource/open-sans";
 export default {
     // App Config
     app: {
-        name: '03-axis-scales',
+        name: '04-axis-scales',
     },
     // Reveal Config
     reveal: {

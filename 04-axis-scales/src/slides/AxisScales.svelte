@@ -153,31 +153,10 @@
     <code><small>Données discrètes</small></code>
     <img src="assets/scaleBand.png" alt="scale-band" >
 
-    <pre>
-        <Code trim>
-const myData = [
-            {"{"}day : 'Mon', value: 10{"}"},
-            {"{"}day : 'Tue', value: 40{"}"},
-            {"{"}day : 'Wed', value: 30{"}"},
-            {"{"}day : 'Thu', value: 60{"}"},
-            {"{"}day : 'Fri', value: 3{"}"}
-            ];
 
-const bandScale = d3.scaleBand()
-	.domain(['Mon', 'Tue', 'Wed', 'Thu', 'Fri'])
-	.range([0, 200])
-	.paddingInner(0.05);
-
-const monBarChart = monSvg.
-	                .selectAll('rect')
-	                .data(myData)
-                    .join(enter => enter.append('rect')
-                        .attr('y', bandScale(d.day))
-                        .attr('width', bandscale.bandwidth())
-                        .attr('height', d => d.value));
-        </Code>
-    </pre>
 </Slide>
+
+
 
 <Slide>
     <a href="https://github.com/d3/d3-axis"><h2><code class="heig-red">d3-axis</code></h2></a>
@@ -187,7 +166,7 @@ const monBarChart = monSvg.
 <Slide>
     <h2>Axes</h2>
 
-    <img src="assets/axis.svg" alt="" >
+    <img src="assets/axis.svg" alt="axis" class="center" >
 
 </Slide>
 
@@ -197,39 +176,14 @@ const monBarChart = monSvg.
     <div class="row">
         <div class="col-50">
             <h5 class="heig-red">Création</h5>
-            <code>const axe = <br>d3.<span class="heig-red">axisBottom(</span>echelle<span class="heig-red">)</span></code>
+            <code>const axe = <br><span class="heig-red">axisBottom</span>(echelle)</code>
         </div>
 
         <div class="col-50">
             <h5 class="heig-red">Dessin</h5>
-            <code>selecteur <br>.append('g')<br><span class="heig-red">.call(</span>axe<span class="heig-red">)</span></code>
+            <code>selecteur <br>.append('g')<br>.<span class="heig-red">call</span>(axe)</code>
         </div>
 
-    </div>
-</Slide>
-
-<Slide><h2>Exemple</h2>
-    <div class = "row">
-        <div class="col-50">
-
-
-							<pre><code data-line-numbers="6">
-const x = d3.scaleLinear()
-			.domain([0, 100])
-			.range([0, 400]);
-
-svg.call(d3.axisBottom(x));
-
-svg.append("circle")
-		.attr("cx", x(10))
-		.attr("cy", x(100))
-		.attr("r", 40)
-		.style("fill", "blue");
-						</code></pre>
-        </div>
-        <div class="col-50">
-            <div class = "fig-container no-margin-top" data-file="d3-exemples/axes.html"></div>
-        </div>
     </div>
 </Slide>
 
@@ -237,53 +191,14 @@ svg.append("circle")
 
 <Slide>
     <h3>Marges & Translations</h3>
-    <img src="assets/margin_convention.svg" alt="" >
-</Slide>
-
-<Slide data-auto-animate>
-    <h3>Marges & Translations</h3>
-    <pre>
-					<code class="hljs" data-trim data-line-numbers="1-3|5-8|10-12|14-16|18-20|22-23|26-31">
-const margin = {"{"} top : 10, right: 40, bottom: 10, left: 40{"}"},
-		   width = 450 - margin.left - margin.right,
-		   height = 400 - margin.top - margin.bottom;
-
-svg.attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  	.append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-const x = d3.scaleLinear()
-		.domain([0,100])
-		.range([0,width])
-
-svg.append('g')
-  .attr("transform", "translate(0," + height + ")")
-  .call(d3.axisBottom(x));
-
-const y = d3.scaleLinear()
-		.domain([0,100])
-		.range([height,0])
-
-svg.append('g')
-  .call(d3.axisLeft(y));
-
-
-svg.append("circle")
-   .attr("cx", x(10)).attr("cy", y(60)).attr("r", 40).style("fill", "blue");
-svg.append("circle")
-   .attr("cx", x(50)).attr("cy", y(60)).attr("r", 40).style("fill", "red");
-svg.append("circle")
-    .attr("cx", x(100)).attr("cy", y(60)).attr("r", 40).style("fill", "green");
-
-					</code>
-				</pre>
+    <img src="assets/margin_convention.svg" alt="marges" class="center" >
 </Slide>
 
 <Slide>
-    <h3>Marges & Translations</h3>
 
-    <div class = "fig-container no-margin-top" data-file="d3-exemples/margin_translation.html"></div>
+    <h2>Diagramme en bâtons</h2>
+
+    <a   href="https://codepen.io/romanoe/pen/oNPGzyY" target="_blank" rel="noopener noreferrer"><code>Codepen</code></a>
 
 </Slide>
 
@@ -292,7 +207,6 @@ svg.append("circle")
 <Slide>
     <h2>Projet</h2>
     <h4 ><span class="heig-red">Thématique (ce soir)</span></h4>
-    <br>
 
     <h4 ><span class="heig-red">Wireframe (17 mars)</span></h4>
 
@@ -301,7 +215,7 @@ svg.append("circle")
 
         <div class="col-60">
 
-            <img src="assets/sketch1.jpg" alt="">
+            <img src="assets/sketch1.jpg" alt="sketch-wireframe">
 
 
         </div>
