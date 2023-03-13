@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<p>Etat 1: r = 10, Etat 2: r = 50 </p>
+<div id="viz_area" height=250 width=500></div>
+
+
+
+
+
+
+<script>
+    const margin = {top : 50, right: 40, bottom: 50, left: 100},
+        width = window.innerWidth - margin.left - margin.right,
+        height = 0.5*window.innerHeight - margin.top - margin.bottom;
+
+    const t = d3.transition()
+        .duration(2000)
+        .ease(d3.easeLinear);
+
+    const svg = d3.select('#viz_area')
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height )
+        // translate this svg element to leave some margin.
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+    function circleTransition() {
+
+
+
+        let circle = svg.append("circle")
+            .attr("r", 10);
+
+
+
+
+
+        repeat();
+
+        function repeat() {
+
+
+
+            circle// position the circle at 40 on the x axis
+                .attr('r',40)     // position the circle at 250 on the y axis
+                .transition()        // apply a transition
+                .duration(2000)      // apply it over 2000 milliseconds
+                .attr('r', 10)
+                .transition()        // apply a transition
+                .duration(2000)      // apply it over 2000 milliseconds
+                .attr('r', 40)  // move the circle to 920 on the x axis
+                .on("end", repeat);  // when the transition finishes start again
+
+
+
+        };
+
+    };
+
+
+    circleTransition();
+</script>
+</body>
+</html>

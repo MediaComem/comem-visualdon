@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<p>Etat 1: width = 0, Etat 2: width = 200 </p>
+<div id="viz_area2" height=200 width=500></div>
+
+
+
+<script>
+    const margin = {top : 50, right: 40, bottom: 50, left: 100},
+        width = 0.5*window.innerWidth - margin.left - margin.right,
+        height = 0.8*window.innerHeight - margin.top - margin.bottom;
+
+    const t = d3.transition()
+        .duration(2000)
+        .ease(d3.easeLinear);
+
+    const svg2 = d3.select('#viz_area2')
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        // translate this svg element to leave some margin.
+        .append("g")
+        .attr("transform", "translate(0 ," + margin.top + ")");
+
+
+    function rectTransition() {
+
+        let rectangle = svg2.append("rect")
+                            .attr("x", 20)
+                            .attr("y", 0)
+                            .attr("width", 0)
+                            .attr("height", 20)
+                            // .attr('fill','#69b3a2');
+
+        repeat();
+
+        function repeat() {
+           rectangle// position the circle at 40 on the x axis
+                .transition()        // apply a transition
+                .duration(2000)      // apply it over 2000 milliseconds
+                .attr('width', 200)
+                .transition()        // apply a transition
+                .duration(2000)      // apply it over 2000 milliseconds
+                .attr("width", 0)
+                .on("end", repeat);  // when the transition finishes start again
+
+        };
+
+    };
+    
+
+    rectTransition();
+</script>
+</body>
+</html>

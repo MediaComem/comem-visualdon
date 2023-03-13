@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.98142808"
-     inkscape:cx="436.60866"
-     inkscape:cy="181.36836"
+     inkscape:zoom="15.702849"
+     inkscape:cx="764.73383"
+     inkscape:cy="109.91636"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -144,7 +144,7 @@
          id="tspan15852-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          x="93.511353"
-         y="66.480972">['categorie1' , 'cateogorie2' , 'categorie3']]</tspan></text>
+         y="66.480972">['categorie1' , 'cateogorie2' , 'categorie3']</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -408,6 +408,6 @@
          id="tspan117769"
          style="stroke-width:0.264583"
          x="-8.1945782"
-         y="25.941435"></tspan></text>
+         y="25.941435" /></text>
   </g>
 </svg>

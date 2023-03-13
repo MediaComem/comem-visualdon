@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<div id="viz_area" height=200 width=700></div>
+
+
+<script>
+    const margin = {top : 50, right: 40, bottom: 50, left: 40},
+        width = 0.6*window.innerWidth - margin.left - margin.right,
+        height = 0.6*window.innerHeight - margin.top - margin.bottom;
+
+    const svg = d3.select('#viz_area')
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        // translate this svg element to leave some margin.
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+    const tableauLettresAleatoires = () => {
+        return d3.shuffle("abcdefghijklmnopqrstuvwxyz".split(""))
+            .slice(0, Math.floor(6 + Math.random() * 20))
+            .sort();
+    }
+
+
+
+    setInterval(() => {
+        svg.selectAll("text")
+            .data(tableauLettresAleatoires(), d => d)
+            .join(
+                enter => enter.append("text")
+                    .attr('fill', 'green')
+                .text(d => d)
+
+            )
+            .attr("x", (d, i) => i * 15) // Mettre à jour à chaque fois la position
+
+    }, 1000);
+
+
+</script>
+</body>
+</html>
