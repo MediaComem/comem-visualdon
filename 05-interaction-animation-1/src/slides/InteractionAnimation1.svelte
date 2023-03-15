@@ -6,7 +6,6 @@
    import {easeLinear} from "d3-ease";
     import {shuffle} from "d3-array";
     import {onMount} from "svelte";
-    import {zoom} from "d3-zoom";
 
     const margin = {top : 50, right: 40, bottom: 50, left: 100},
         width = window.innerWidth - margin.left - margin.right,
@@ -190,55 +189,6 @@
 
 
 
-// Zoom
-        const svgZoom =select('#viz_area_zoom')
-            .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            // translate this svg element to leave some margin.
-            .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-        let data = [], numPoints = 100;
-
-        let zoomHandler = zoom()
-            .on('zoom', handleZoom);
-
-        function handleZoom(e) {
-            svgZoom.attr('transform', e.transform);
-        }
-
-
-            svgZoom
-                .call(zoomHandler);
-
-
-        function updateData() {
-            data = [];
-            for(let i=0; i<numPoints; i++) {
-                data.push({
-                    id: i,
-                    x: Math.random() * width,
-                    y: Math.random() * height
-                });
-            }
-        }
-
-        function update() {
-
-            svgZoom.selectAll('circle')
-                .data(data)
-                .join('circle')
-                .attr('cx', function(d) { return d.x; })
-                .attr('cy', function(d) { return d.y; })
-                .attr('r', 3);
-        }
-
-
-
-        updateData();
-        update();
-
 
 
     });
@@ -391,40 +341,6 @@
 
 </Slide>
 
-<Slide>
-    <h2>Zoom & Pan</h2>
-    <h5><span class="heig-red">Exemple</span></h5>
-
-    <div class="row">
-        <div class="col-50">
-						<pre>
-<Code lineNumbers="1-2|4-7|9-10|12-17" trim>
-let zoomSvg = zoom()
-        .on('zoom', handleZoom);
-
-function handleZoom(e) {"{"}
-        monSvg
-            .attr('transform', e.transform);
-    {"}"}
-
-monSvg
-   .call(zoom);
-
-svg.selectAll('circle')
-	.data(data)
-    .join( enter => enter.append('circle')
-                .attr('cx', d => d.x;)
-                .attr('cy', d => d.y;)
-                .attr('r', 3);
-</Code>
-	</pre>
-        </div>
-        <div class="col-50">
-
-            <div id="viz_area_zoom" height=200 width=700></div>
-        </div>
-    </div>
-</Slide>
 
 <Slide>
     <h2>Zoom & Pan</h2>
@@ -485,6 +401,16 @@ svg.selectAll('circle')
         </div>
     </div>
 </Slide>
+
+<Slide>
+    <h2>Zoom & Pan</h2>
+
+    <a   href="https://codepen.io/romanoe/pen/OJoZwro" target="_blank" rel="noopener noreferrer"><code>Codepen</code></a>
+
+
+</Slide>
+
+
 
 <Slide>
     <h2>Projet</h2>
