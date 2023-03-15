@@ -250,9 +250,20 @@
 
 
 </div>
-
-    Pour les fonctions <em>Easing</em>: <a href="https://observablehq.com/@d3/easing-animations" target="_blank">ici</a>
 </Slide>
+
+<Slide>
+    <h2>Transitions</h2>
+
+    <code>transition().<span class="heig-red">ease(fonction_easing)</span></code><br>
+    <p>Applique une type de fonction d'accélération à la transition (défaut linéaire). Pour les fonctions <em>Easing</em>: <a href="https://observablehq.com/@d3/easing-animations" target="_blank">ici</a></p><br><br>
+
+    <code>transition().<span class="heig-red">delay((d,i) => i*<em>tempsEnMillisecondes</em>)</span></code><br>
+    <p>Applique un retard à chaque élément sélectionné</p>
+
+</Slide>
+
+
 
 
 <Slide>
