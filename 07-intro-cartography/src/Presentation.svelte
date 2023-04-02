@@ -1,8 +1,9 @@
 <script>
 import Title from "./slides/Title.svelte";
-import InteractionAnimation2 from "./slides/InteractionAnimation2.svelte";
+import IntroCartography from "./slides/IntroCartography.svelte";
+
 </script>
 
 
-<Title title="6. Interaction et animation 2"></Title>
-<InteractionAnimation2></InteractionAnimation2>
+<Title title="7. Introduction à la cartographie"></Title>
+<IntroCartography></IntroCartography>

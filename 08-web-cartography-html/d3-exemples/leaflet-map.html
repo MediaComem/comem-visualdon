@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+<!-- Add a svg area, empty -->
+<div id="mapid" style="width: 600px; height: 400px;"></div>
+
+<script>
+
+
+    // index.js
+    let map = L.map('mapid').setView([46.7809, 6.6376], 14);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    //
+    // L.marker([46.7809, 6.6376]).addTo(map)
+    //     .bindPopup('HEIG-VD')
+    //     .openPopup();
+
+    // Ajouter des données au format GeoJSON
+    L.geoJSON(
+        // un objet GeoJSON
+        {
+            type: 'Feature',
+            properties: { name: 'Yverdon' },
+            geometry: { type: 'Point', coordinates: [6.6412, 46.7785] }
+        },
+        // options
+        // ici nous ajoutons un "popup" à chaque "feature" affichant la propriété "name"
+        {
+            onEachFeature: (feature, layer) => layer.bindPopup(feature.properties.name),
+        }
+    ).addTo(map)
+
+
+</script>
+</body>
+</html>
