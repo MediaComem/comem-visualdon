@@ -24,7 +24,7 @@
 
 <Slide>
     <h2>OpenStreetMap (OSM)</h2>
-    <iframe width="700" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=6.604886054992677%2C46.77111478612739%2C6.67346477508545%2C46.79709223320696&amp;layer=mapnik" style="border: 1px solid black" title="openstreetmap" class="center"></iframe><br/><small>OpenStreetMap<a href="https://www.openstreetmap.org/#map=15/46.7841/6.6392"></a></small>
+    <iframe width="700" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=6.604886054992677%2C46.77111478612739%2C6.67346477508545%2C46.79709223320696&amp;layer=mapnik" style="border: 1px solid black" title="openstreetmap" class="center"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=15/46.7841/6.6392">OpenStreetMap</a></small>
 </Slide>
 
 <Slide>
@@ -48,8 +48,8 @@
 </Slide>
 
 <Slide>
-    <h2>Exemple</h2>
-    <h5><a href="https://overpass-turbo.osm.ch/"><span class="heig-red">Overpass API</span></a></h5>
+    <h2>Overpass API</h2>
+    <h5><a href="https://overpass-turbo.osm.ch/"><span class="heig-red">Exemple</span></a></h5>
     <ul>
         <li>Cherchez la ville, village, région qui vous intéresse</li>
         <li>Cliquez sur le bouton <b>Wizard</b></li>
@@ -79,21 +79,29 @@
 <Slide>
     <h2>Projections</h2>
 
-
+    <div class="row">
+        <div class="col-30">
     <img src="assets/img/projection.gif" alt="projection" class="center"/>
+        </div>
 
-    <a href="https://github.com/d3/d3-geo-projection#projections">Listes de projection (d3)</a>
-
+        <div class="col-70">
+            <br>
+            <br>
+            <small><code>let projection = <span class="heig-red"><em>nom_projection</em></span>()</code></small><br><br>
+               <a href="https://github.com/d3/d3-geo-projection#projections"><code> d3-geo-projection</code></a>
+            <br>
+        </div>
+    </div>
 
 </Slide>
 
 
 <Slide>
     <h2>Projections</h2>
+    <code>Transformations</code> <br>
+    <small><code>projection.<span class="heig-red">fonction</span>(arguments)</code></small>
+
     <div class="row">
-        <code>Transformations</code>
-        <br>
-        <br>
         <div class="col-50">
             <code><span class="heig-red">Manuelles</span></code>
             <br>
@@ -135,16 +143,17 @@
 
     <div class="row">
         <div class="col-50">
-            <img src="assets/img/d3-carte-syntaxe.svg" alt="d3-carte-syntaxe" height="300" class="center"/>
-        </div>
-        <div class="col-50">
             <br>
-            <ul>
+            <ol>
                 <small><li>Définition de la projection</li></small>
                 <small><li>Générateur de <em><code>path</code></em></li></small>
                 <small><li>Dessiner <em><code>path</code></em> selon les données</li></small>
-            </ul>
+            </ol>
         </div>
+        <div class="col-50">
+            <img src="assets/img/d3-carte-syntaxe.svg" alt="d3-carte-syntaxe" height="300" class="center"/>
+        </div>
+
     </div>
 </Slide>
 
@@ -187,57 +196,19 @@
 
 <Slide>
     <h2>Carte Leaflet</h2>
-    <h5><a href="https://leafletjs.com/reference.html#map-event"><span class="heig-red"><code>Codepen</code></span></a></h5>
-
-
+    <h5><a href="https://codepen.io/romanoe/pen/qBMeEpr"><span class="heig-red"><code>Codepen</code></span></a></h5>
 
 </Slide>
 
 <Slide>
 <h2>Autres ressources</h2>
     <ul>
-        <li>Cartes de chaleurs</li>
-        <li>Globe</li>
-        <li>Cartes choroplètes avec Leaflet</li>
-        <li>Groupement de marqueurs</li>
+        <li>Cartes de chaleurs: <a href="https://www.patrick-wied.at/static/heatmapjs/"><code>heatmap.js</code></a>, <a
+                href="https://deck.gl/examples"><code>Deck.gl</code></a></li>
+        <li>Globe: <a href="https://observablehq.com/@michael-keith/draggable-globe-in-d3"><code>d3.js</code></a>, <a href="https://experiments.withgoogle.com/chrome/globe"><code>three.js</code></a></li>
+        <li>Cartes choroplètes: <a href="https://www.datavis.fr/d3js/map-population"><code>d3.js</code></a>, <a href="https://www.datavis.fr/maps/leaflet-choroplethe"><code> Leaflet</code></a></li>
     </ul>
 
-</Slide>
-
-
-<Slide>
-    <h2>EXEMPLE codepen</h2>
-    <h5><a href="https://github.com/d3/d3-geo"><span class="heig-red">Leaflet</span></a></h5>
-
-    <div class="row">
-        <div class="col-60">
-            <small>				<pre>
-<code data-trim>let map = L.map('container').setView([46.7809, 6.6376], 14);
-
-L.tileLayer('https://{"{"}s{"}"}.tile.openstreetmap.org/{"{"}z{"}"}/{"{"}x{"}"}/{"{"}y{"}"}.png', {"{"}
-        attribution:
-        '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    {"}"}).addTo(map);
-
-
-L.geoJSON(
-    {"{"}
-        type: 'Feature',
-        properties:  {"{"} name: 'Yverdon'  {"}"},
-        geometry:  {"{"} type: 'Point', coordinates: [6.6412, 46.7785]  {"}"}
-    {"}"},
-    {"{"}
-        onEachFeature: (feature, layer) => layer.bindPopup(feature.properties.name),
-    {"}"}
-    ).addTo(map)
-</code>
-	</pre>
-            </small>
-        </div>
-        <div class="col-40">
-            <div class = "fig-container no-margin-top" data-file="d3-exemples/leaflet-map.html"></div>
-        </div>
-    </div>
 </Slide>
 
 <Slide>

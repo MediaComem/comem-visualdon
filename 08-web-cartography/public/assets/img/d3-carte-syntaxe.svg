@@ -56,9 +56,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.27609875"
-     inkscape:cx="-360.37831"
-     inkscape:cy="-43.462711"
+     inkscape:zoom="0.82621334"
+     inkscape:cx="573.09653"
+     inkscape:cy="297.74392"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -104,14 +104,16 @@
          x="46.225441"
          y="139.70288"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.466352;stroke-width:0.264583"
-         id="tspan16458">// Définition projection</tspan><tspan
+         id="tspan16458">// Définition projection (p. ex. geoMercator, geoOrtographic etc.)</tspan><tspan
          sodipodi:role="line"
          x="46.225441"
          y="152.93201"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke-width:0.264583"
          id="tspan16465">let projection = <tspan
-   style="font-style:italic;fill:#e92528;fill-opacity:1"
-   id="tspan26385">type_projection</tspan>.fitSize([width, height], geojson);</tspan><tspan
+   style="fill:#e92528;fill-opacity:1"
+   id="tspan5587">geoMercator</tspan>().<tspan
+   style="fill:#e92528;fill-opacity:1"
+   id="tspan4493">fitSize</tspan>([width, height], geojson);</tspan><tspan
          sodipodi:role="line"
          x="46.225441"
          y="166.16113"
