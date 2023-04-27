@@ -1,6 +1,5 @@
 <script>
     import Slide from "../lib/Slide.svelte";
-    import Code from "../lib/Code.svelte"
 </script>
 
 <Slide>
