@@ -7,7 +7,7 @@ import "@fontsource/poppins/400.css";
 
 
 // Import theme
-import 'reveal.js/css/theme/source/simple.scss';
+import './simple-heigvd.css';
 
 
 

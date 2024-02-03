@@ -11,7 +11,7 @@
 
   onMount(async () => {
     await tick();
-    const deck = new Reveal(reveal);
+    const deck = Reveal(reveal);
     deck.initialize({ slideNumber: "c/t" });
   });
 </script>

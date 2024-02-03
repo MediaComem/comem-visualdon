@@ -17,11 +17,12 @@
     isNavbarOpen = !isNavbarOpen;
   };
 
+  $: visible = isNavbarOpen ? "" : "hidden";
+
   onMount(() => {
     // Close navbar when clicking outside of it
     document.addEventListener("click", (event) => {
       const navbar = document.getElementById("navbar-hamburger");
-      console.log(navbar, isNavbarOpen);
       if (navbar && isNavbarOpen) {
         isNavbarOpen = false;
       }
@@ -67,7 +68,7 @@
     </button>
 
     <!-- Navbar links -->
-    <div class:visible={isNavbarOpen} class="w-full" id="navbar-hamburger">
+    <div class="{visible} w-full" id="navbar-hamburger">
       <ul class="flex flex-col font-medium mt-4 rounded-lg dark:bg-white">
         {#each lectures as lecture}
           <li>

@@ -1,6 +1,7 @@
 <script>
   import Slide from "../lib/Slide.svelte";
   import Title from "../lib/Title.svelte";
+  import Code from "../lib/Code.svelte";
 </script>
 
 <Title title="1. SVG"></Title>
@@ -28,25 +29,73 @@
 </Slide>
 
 <Slide>
-  <h3>Syntaxe</h3>
-  <img src="assets/01-intro-svg/svg-syntax.svg" alt="svg-syntax" />
-</Slide>
+  <div class="row no-margin-top">
+    <div class="col-70">
+      <img src="assets/01-intro-svg/svg-syntax.png" alt="svg-syntax" />
+
+      <ul>Les éléments et les attributs SVG sont des éléments HTML</ul>
+    </div>
+    <div class="col-30">
+      <h3 class="red">Syntaxe SVG</h3>
+      <p class="left">SVG est un langage de balisage</p>
+    </div>
+  </div></Slide
+>
 
 <Slide>
   <h3>Système de coordonnées</h3>
-  <svg width="500" viewBox="0 0 100 100">
-    <line x1="10" y1="10" x2="10" y2="90" stroke="black" stroke-width="0.5" />
-    <line x1="10" y1="10" x2="90" y2="10" stroke="black" stroke-width="0.5" />
-    <line x1="50" y1="8" x2="50" y2="10" stroke="black" stroke-width="0.5" />
-    <line x1="8" y1="50" x2="10" y2="50" stroke="black" stroke-width="0.5" />
-    <circle cx="10" cy="10" r="2" fill="red" />
-    <text x="8" y="5" font-size="3">Origine</text>
-    <text x="49" y="5" font-size="3">5</text>
-    <text x="5" y="51" font-size="3">5</text>
-    <circle cx="42" cy="50" r="2" fill="red" />
-    <text x="46" y="50" font-size="3">x: 4 y: 5</text>
-  </svg>
-</Slide>
+  <div class="row">
+    <div class="col-30">
+      <svg width="500" viewBox="0 0 100 100">
+        <line
+          x1="10"
+          y1="10"
+          x2="10"
+          y2="90"
+          stroke="black"
+          stroke-width="0.5"
+        />
+        <line
+          x1="10"
+          y1="10"
+          x2="90"
+          y2="10"
+          stroke="black"
+          stroke-width="0.5"
+        />
+        <line
+          x1="50"
+          y1="8"
+          x2="50"
+          y2="10"
+          stroke="black"
+          stroke-width="0.5"
+        />
+        <line
+          x1="8"
+          y1="50"
+          x2="10"
+          y2="50"
+          stroke="black"
+          stroke-width="0.5"
+        />
+        <circle cx="10" cy="10" r="2" fill="red" />
+        <text x="8" y="5" font-size="3">Origine</text>
+        <text x="49" y="5" font-size="3">5</text>
+        <text x="5" y="51" font-size="3">5</text>
+        <circle cx="42" cy="50" r="2" fill="red" />
+        <text x="46" y="50" font-size="3">x: 4 y: 5</text>
+      </svg>
+    </div>
+    <div class="col-70">
+      <img
+        src="assets/01-intro-svg/coordinate_system.png"
+        alt="coord"
+        width="100%"
+      />
+    </div>
+  </div></Slide
+>
 
 <Slide>
   <h3>Formes et textes</h3>
