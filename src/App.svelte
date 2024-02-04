@@ -12,7 +12,7 @@
   onMount(async () => {
     await tick();
     const deck = Reveal(reveal);
-    deck.initialize({ slideNumber: "c/t" });
+    deck.initialize({ slideNumber: "c/t", width: "90%", height: "100%" });
   });
 </script>
 
@@ -20,7 +20,7 @@
   <title>{app.name}</title>
 </svelte:head>
 
-<NavBar />
+<!-- <NavBar /> -->
 <div class="reveal">
   <div class="slides">
     <Presentation />

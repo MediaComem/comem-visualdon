@@ -32,8 +32,8 @@
 </Slide>
 
 <Slide>
-  <p><span class="red">Explorer</span>: trouver les tendances</p>
-  <div class="row">
+  <h3><span class="red">Explorer</span>: trouver les tendances</h3>
+  <div class="row center">
     <div class="col-20">
       <img
         src="assets/01-intro-svg/florence.webp"
@@ -42,31 +42,34 @@
         width="130"
         height="180"
       />
+      <p>
+        <code
+          ><small
+            >Diagram of the causes of mortality in the army in the East,
+            Florence Nightingale, 1858</small
+          >
+        </code>
+      </p>
     </div>
     <div class="col-80">
       <img
         src="assets/01-intro-svg/1920px-Nightingale-mortality.jpg"
         alt="mortality"
         style="background: transparent;"
-        width="800"
+        width="1000"
         height="600"
       />
     </div>
-    <code
-      ><small
-        >Diagram of the causes of mortality in the army in the East, Florence
-        Nightingale, 1858</small
-      >
-    </code>
   </div>
+
   <aside class="notes">
     Quand Florence essayait de convaincre qu'on pouvait prévenir!
   </aside>
 </Slide>
 
 <Slide>
-  <p><span class="red">Analyser</span>: tester une hypothèse</p>
-  <div class="row">
+  <h3><span class="red">Analyser</span>: tester une hypothèse</h3>
+  <div class="row center">
     <div class="col-10">
       <img
         src="assets/01-intro-svg/John_Snow.jpg"
@@ -75,20 +78,22 @@
         width="130"
         height="180"
       />
+      <p>
+        <code
+          ><small>L'épidémie choléra de Broad Street, John Snow, 1854</small>
+        </code>
+      </p>
     </div>
     <div class="col-90">
       <img
         src="assets/01-intro-svg/cholera_map.jpg"
         alt="cholera"
         style="background: transparent;"
-        width="520"
-        height="520"
+        width="600"
+        height="600"
       />
     </div>
   </div>
-  <code
-    ><small>L'épidémie choléra de Broad Street, John Snow, 1854</small>
-  </code>
 
   <aside class="notes">
     Quand John snow essayait de convaincre que c'était dû à l'eau contaminée!
@@ -96,9 +101,9 @@
 </Slide>
 
 <Slide>
-  <p><span class="red">Présenter</span>: raconter une histoire</p>
-  <div class="row">
-    <div class="col-10">
+  <h3><span class="red">Présenter</span>: raconter une histoire</h3>
+  <div class="row center">
+    <div class="col-20">
       <img
         src="assets/01-intro-svg/Charles_Joseph_Minard.png"
         alt="charles"
@@ -106,24 +111,28 @@
         width="140"
         height="170"
       />
+      <p>
+        <code
+          ><small>
+            La Carte figurative des pertes successives en hommes de l’Armée
+            française dans la campagne de Russie en 1812-1813, Charles Joseph
+            Minard, 1869
+          </small>
+        </code>
+      </p>
     </div>
 
-    <div class="col-90">
+    <div class="col-80">
       <img
         src="assets/01-intro-svg/minards_map.png"
         alt="minards"
         style="background: transparent;"
-        width="800"
+        width="1200"
         height="450"
       />
     </div>
   </div>
-  <code
-    ><small>
-      La Carte figurative des pertes successives en hommes de l’Armée française
-      dans la campagne de Russie en 1812-1813, Charles Joseph Minard, 1869
-    </small>
-  </code>
+
   <aside class="notes">
     Emblématique depuis sa popularisation par Edward Tufte 1 , la « Carte
     figurative des pertes successives en hommes de l’armée française dans la
@@ -145,28 +154,37 @@
 </Slide>
 
 <Slide>
-  <h3>
-    <span class="red">Fonctions</span> et
-    <span class="red">formes</span> de visualisation
-  </h3>
-</Slide>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Fonctions et formes de visualisation</h3>
+    </div>
+    <div class="col-50">
+      <img
+        src="assets/01-intro-svg/form_and_function_1.svg"
+        width="1000"
+        height="1000"
+        alt="form_and_function1"
+      />
 
-<Slide>
-  <img
-    src="assets/01-intro-svg/form_and_function_1.svg"
-    width="700"
-    height="700"
-    alt="form_and_function1"
-  />
+      <code
+        ><small
+          ><a
+            href="https://urban-institute.medium.com/form-and-function-let-your-audiences-needs-drive-your-data-visualization-choices-3c0603745822"
+            >↳ Form and Function: Let Your Audience’s Needs Drive Your Data
+            Visualization Choices</a
+          >
+        </small></code
+      >
+    </div>
+  </div>
 </Slide>
-
 <Slide>
-  <div class="row">
+  <div class="row center">
     <div class="col-30">
       <img
         data-id="box"
         src="assets/01-intro-svg/form_and_function_2.svg"
-        width="350"
+        width="550"
         height="200"
         alt="form_and_function2"
       />
@@ -178,45 +196,61 @@
           src="assets/01-intro-svg/everest-summit-hillary.jpg"
           alt="everest"
           style="background: transparent;"
-          width="350"
+          width="450"
         /></a
       >
-      <code><small>Mount Everest, South China Morning Post</small></code>
+      <code
+        ><small>
+          <a
+            href="https://www.scmp.com/infographics/article/1248804/allure-climbing-mount-everest"
+          >
+            ↳ Mount Everest, South China Morning Post
+          </a></small
+        ></code
+      >
     </div>
   </div>
 </Slide>
 
 <Slide>
-  <div class="row">
-    <div class="col-20">
+  <div class="row center">
+    <div class="col-30">
       <img
         src="assets/01-intro-svg/form_and_function_3.svg"
-        width="300"
+        width="550"
         height="200"
         alt="form_and_function3"
       />
     </div>
 
-    <div class="col-80">
+    <div class="col-70">
       <a
         href="https://www.behance.net/gallery/14283209/European-banks-and-government-debt"
         ><img
           src="assets/01-intro-svg/giorgia_lupi.jpg"
-          width="600"
+          width="100%"
           alt="giorgia-lupi"
         /></a
       >
-      <code><small>Banques éuropéennes et dette, Giorgia Lupi </small></code>
+      <code
+        ><small>
+          <a
+            href="https://www.behance.net/gallery/14283209/European-banks-and-government-debt?locale=de_DE"
+          >
+            ↳ European banks and government debt, Giorgia Lupi
+          </a></small
+        ></code
+      >
     </div>
   </div>
 </Slide>
 
 <Slide>
-  <div class="row">
+  <div class="row center">
     <div class="col-30">
       <img
         src="assets/01-intro-svg/form_and_function_4.svg"
-        width="300"
+        width="550"
         height="200"
         alt="form_and_function4"
       />
@@ -228,20 +262,28 @@
         ><img
           src="assets/01-intro-svg/ny_times.gif"
           alt="gif_ny"
-          width="600"
+          width="100%"
         /></a
       >
-      <code><small>How the virus got out, New York Times </small></code>
+      <code
+        ><small>
+          <a
+            href="https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html"
+          >
+            ↳ How the Virus Got Out, The New York Times
+          </a></small
+        ></code
+      >
     </div>
   </div>
 </Slide>
 
 <Slide>
-  <div class="row">
+  <div class="row center">
     <div class="col-30">
       <img
         src="assets/01-intro-svg/form_and_function_5.svg"
-        width="300"
+        width="550"
         height="200"
         alt="form_and_function5"
       />
@@ -253,21 +295,20 @@
         ><img
           src="assets/01-intro-svg/rts_cartes.gif"
           alt="gif_rts"
-          width="600"
+          width="80%"
         /></a
       >
-      <code><small>Votations fédérales, RTS </small></code>
+      <code
+        ><small>
+          <a
+            href="https://www.rts.ch/info/suisse/12849342-les-cartes-des-resultats-des-votations-federales-commune-par-commune.html"
+          >
+            ↳ Les cartes des résultats des votations fédérales, RTS
+          </a></small
+        ></code
+      >
     </div>
   </div>
-</Slide>
-
-<Slide>
-  <img
-    src="assets/01-intro-svg/form_and_function_objectif.svg"
-    width="700"
-    height="700"
-    alt="form_and_function_objectif"
-  />
 </Slide>
 
 <Slide>
@@ -285,33 +326,42 @@
 </Slide>
 
 <Slide>
-  <iframe src="https://d3js.org/" width="800" height="550" title="d3"></iframe>
-</Slide>
-
-<Slide>
-  <h3>Objectifs</h3>
-  <ul>
-    <li>
-      Connaître différentes technologies de visualisation de données dans un
-      navigateur Web
-    </li>
-    <li>Maîtriser la librairie d3.js</li>
-    <li>Connaître une librairie de cartographie web</li>
-    <li>Maîtriser la manipulation des donneés avec JS</li>
-  </ul>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Objectifs</h3>
+      <ul>
+        <li>
+          Connaître différentes technologies de visualisation de données dans un
+          navigateur Web
+        </li>
+        <li>Maîtriser la librairie d3.js</li>
+        <li>Connaître une librairie de cartographie web</li>
+        <li>Maîtriser la manipulation des donneés avec JS</li>
+      </ul>
+    </div>
+    <div class="col-50">
+      <img
+        src="assets/01-intro-svg/form_and_function_objectif.svg"
+        width="700"
+        height="700"
+        alt="form_and_function_objectif"
+      />
+    </div>
+  </div>
 </Slide>
 
 <Slide>
   <h3>Evaluation</h3>
-  <img src="assets/01-intro-svg/evaluation.svg" alt="img-svg-evaluation" />
-  <br />
-  <br />
-  <br />
+  <img
+    src="assets/01-intro-svg/evaluation.svg"
+    width="100%"
+    alt="img-svg-evaluation"
+  />
 </Slide>
 
 <Slide>
   <h3>Projet</h3>
-  <img src="assets/01-intro-svg/project.svg" height="500" alt="project-svg" />
+  <img src="assets/01-intro-svg/project.svg" width="100%" alt="project-svg" />
 </Slide>
 
 <Slide>

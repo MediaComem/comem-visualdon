@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="431.58524mm"
+   width="165.31258mm"
    height="167.43459mm"
-   viewBox="0 0 431.58524 167.43458"
+   viewBox="0 0 165.31258 167.43458"
    version="1.1"
    id="svg319580"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -28,12 +28,12 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.33184273"
-     inkscape:cx="1267.1665"
-     inkscape:cy="482.15611"
+     inkscape:cx="260.66565"
+     inkscape:cy="480.64937"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
-     inkscape:window-x="1990"
-     inkscape:window-y="27"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -321,7 +321,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(221.77937,-162.52752)">
+     transform="translate(-44.493296,-162.52752)">
     <circle
        style="fill:#015700;fill-opacity:1;stroke-width:1.36467"
        id="path319663-8"
@@ -368,37 +368,6 @@
    id="tspan348192-8">Groupe</tspan> <tspan
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e92528;fill-opacity:1"
    id="tspan330370-2">&lt;g&gt;&lt;/g&gt;</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="-222.90074"
-       y="199.74065"
-       id="text354454-3"><tspan
-         sodipodi:role="line"
-         id="tspan354452-0"
-         style="fill:#e92528;fill-opacity:1;stroke-width:0.264583"
-         x="-222.90074"
-         y="199.74065">&lt;g transform=&quot;rotate(20, 100, 50)&quot; fill=&quot;green&quot;&gt;</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
-         x="-222.90074"
-         y="212.96977"
-         id="tspan374002-7">&lt;circle cx=&quot;150&quot; cy=&quot;50&quot; r=&quot;30&quot; /&gt;</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
-         x="-222.90074"
-         y="226.1989"
-         id="tspan374004-7">&lt;rect x=&quot;100&quot; y=&quot;60&quot; width=&quot;50&quot; height=&quot;50&quot; /&gt;</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
-         x="-222.90074"
-         y="239.42802"
-         id="tspan375296-7">&lt;circle cx=&quot;160&quot; cy=&quot;55&quot; r=&quot;10&quot; /&gt;</tspan><tspan
-         sodipodi:role="line"
-         style="fill:#e92528;fill-opacity:1;stroke-width:0.264583"
-         x="-222.90074"
-         y="252.65715"
-         id="tspan354460-6">&lt;/g&gt;</tspan></text>
     <g
        id="text327152-0"
        style="font-size:10.5833px;line-height:1.25;fill:#e92528;stroke-width:0.264583" />

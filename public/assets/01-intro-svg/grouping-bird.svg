@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="417.48462mm"
+   width="131.821mm"
    height="121.43157mm"
-   viewBox="0 0 417.48462 121.43157"
+   viewBox="0 0 131.821 121.43157"
    version="1.1"
    id="svg319580"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -28,12 +28,12 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.46929649"
-     inkscape:cx="819.31147"
-     inkscape:cy="308.97312"
+     inkscape:cx="-261.02901"
+     inkscape:cy="307.90769"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
-     inkscape:window-x="1990"
-     inkscape:window-y="27"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -42,7 +42,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(217.93968,0.35375462)">
+     transform="translate(-67.723954,0.35375462)">
     <circle
        style="fill:#000000;fill-opacity:1;stroke-width:1.36467"
        id="path319663"
@@ -80,40 +80,7 @@
          style="fill:#e92528;fill-opacity:1;stroke-width:0.264583"
          x="67.129677"
          y="7.5010381"><tspan
-   style="fill:#e92528;fill-opacity:1"
-   id="tspan348192">Groupe</tspan> <tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e92528;fill-opacity:1"
-   id="tspan330370">&lt;g&gt;&lt;/g&gt;</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="-219.06105"
-       y="41.375465"
-       id="text354454"><tspan
-         sodipodi:role="line"
-         id="tspan354452"
-         style="fill:#e92528;fill-opacity:1;stroke-width:0.264583"
-         x="-219.06105"
-         y="41.375465">&lt;g&gt;</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
-         x="-219.06105"
-         y="54.604591"
-         id="tspan374002">&lt;circle cx=&quot;150&quot; cy=&quot;50&quot; r=&quot;30&quot; /&gt;</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
-         x="-219.06105"
-         y="67.833717"
-         id="tspan374004">&lt;rect x=&quot;100&quot; y=&quot;60&quot; width=&quot;50&quot; height=&quot;50&quot; /&gt;</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
-         x="-219.06105"
-         y="81.062836"
-         id="tspan375296">&lt;circle cx=&quot;160&quot; cy=&quot;55&quot; r=&quot;10&quot; /&gt;</tspan><tspan
-         sodipodi:role="line"
-         style="fill:#e92528;fill-opacity:1;stroke-width:0.264583"
-         x="-219.06105"
-         y="94.291962"
-         id="tspan354460">&lt;/g&gt;</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e92528;fill-opacity:1"
+           id="tspan330370">&lt;g&gt;&lt;/g&gt;</tspan></tspan></text>
   </g>
 </svg>

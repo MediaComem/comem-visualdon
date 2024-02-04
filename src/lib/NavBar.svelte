@@ -34,7 +34,7 @@
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
   >
-    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+    <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="assets/logo.png" class="h-8" alt="heigvd-logo" />
       <span class="red self-center text-2xl font-semibold whitespace-nowrap"
         >COMEM+</span

@@ -22,7 +22,7 @@ section.has-dark-background h6 {
 :root {
   --r-background-color: #fff;
   --r-main-font: Poppins, sans-serif;
-  --r-main-font-size: 2rem;
+  --r-main-font-size: 3.5rem;
   --r-main-color: #000;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
@@ -58,6 +58,7 @@ section.has-dark-background h6 {
   font-size: var(--r-main-font-size);
   font-weight: normal;
   color: var(--r-main-color);
+  width: 100%;
 }
 
 .reveal ::selection {
@@ -100,6 +101,7 @@ section.has-dark-background h6 {
 
 .reveal h1 {
   font-size: var(--r-heading1-size);
+  color: var(--r-heading-color);
 }
 
 .reveal h2 {
@@ -196,7 +198,7 @@ section.has-dark-background h6 {
 .reveal blockquote {
   display: block;
   position: relative;
-  width: 70%;
+  width: 80%;
   margin: var(--r-block-margin) auto;
   padding: 5px;
   font-style: italic;
