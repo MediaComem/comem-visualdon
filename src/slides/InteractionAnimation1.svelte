@@ -444,6 +444,7 @@
         src="https://www.gapminder.org/tools/#$chart-type=bubbles&url=v1"
         width="800"
         height="550"
+        title="Gapminder Bubbles Chart"
       ></iframe>
     </div>
   </div>
