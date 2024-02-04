@@ -62,7 +62,6 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
   - Visualisation statique
   - Cartographie
   - Animation
-- [Exercice 5](https://github.com/romanoe/visualdon-exercices/tree/main/05-web-scraping) : Web scraping
 
 ## Ressources
 
