@@ -1,6 +1,6 @@
 <script>
   import Slide from "../lib/Slide.svelte";
-  import Title from "src/lib/Title.svelte";
+  import Title from "../lib/Title.svelte";
   import Code from "../lib/Code.svelte";
   import { select, selectAll } from "d3-selection";
   import { shuffle } from "d3-array";
@@ -9,7 +9,7 @@
   import { easeLinear } from "d3-ease";
 
   const width = 500;
-  const height = 300;
+  const height = 400;
   const margin = { top: 50, right: 40, bottom: 50, left: 40 };
 
   let x = 0;
@@ -30,7 +30,8 @@
       .append("circle")
       .attr("cx", "30%")
       .attr("cy", "40%")
-      .attr("r", "100");
+      .attr("r", "100")
+      .attr("fill", "green");
 
     // Events
     select("#mon-svg3")
@@ -146,53 +147,98 @@
   });
 </script>
 
+<Title title="2. Introduction à d3.js"></Title>
 <Slide>
-  <Title title="2. Introduction à d3.js"></Title>
-
-  <h2>Semaine passée</h2>
+  <h3>Semaine passée</h3>
   <p class="fragment">
-    <span class="red">Fonction</span> Explicative ou exploratoire <br />
+    <span class="red">Fonction</span> Explicative ou explorsatoire <br />
   </p>
   <p class="fragment">
     <span class="red">Formes</span> Statique ou interactive <br />
   </p>
   <p class="fragment">
-    <span class="red">SVG</span> Formes, dessins et transformation
+    <span class="red">SVG</span> Formes, dessins, transformation et animations
   </p>
 </Slide>
 
 <Slide>
-  <iframe src="https://d3js.org/" width="800" height="550" title="d3-iframe"
-  ></iframe>
+  <div class="row no-margin-top center">
+    <div class="col-40">
+      <h3 class="red">D3</h3>
+      <ul>
+        <li class="small">
+          <b class="red">Data-Driven Approach</b> : vous liez vos données directement
+          aux éléments du DOM
+        </li>
+        <li class="small">
+          <b class="red">Manipulation du DOM</b> : vous associez des données à des
+          éléments HTML existants (ou d'en créer de nouveaux)
+        </li>
+        <li class="small">
+          <b class="red">Construction de Graphiques</b> : vous créez des éléments
+          graphiques en langage SVG à partir de données
+        </li>
+      </ul>
+    </div>
+    <div class="col-50">
+      <iframe
+        src="https://d3js.org/"
+        width="100%"
+        height="550"
+        title="d3-iframe"
+      ></iframe>
+    </div>
+  </div>
+  <br />
+  <a href="https://d3js.org/"><code> ↳ D3</code></a>
 </Slide>
 
 <Slide>
-  <h2>Documentation</h2>
+  <h3>Documentation</h3>
   <br />
+
+  <div class="center">
+    <img src="assets/02-intro-d3/doc_annotation.svg" alt="js-doc" width="60%" />
+  </div>
+  <br />
+
   <a href="https://github.com/d3/d3/blob/main/API.md"
-    ><code>Github: API reference</code></a
+    ><code> ↳ Github: API reference</code></a
   >
-
-  <br />
-  <br />
-  <img src="assets/doc_annotation.svg" alt="js-doc" class="center" /> <br />
 </Slide>
 
 <Slide>
-  <h2>Syntaxe</h2>
-  <p>Chaînage de méthodes (fonctions)</p>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Syntaxe</h3>
+      <ul>
+        <b class="black">Chaînage de méthodes</b>
+        <li>Enchaîner plusieurs méthodes sur une sélection ou un objet D3</li>
+        <li>
+          Chaque méthode renvoie un objet qui peut être manipulé par d'autres
+          méthodes
+        </li>
+      </ul>
+      <code>
+        <span class="red">objet</span>.methode1() <br />
+        .methode2() <br />
+        .methode3()
+      </code>
+    </div>
+    <div class="col-50">
+      <img
+        src="assets/02-intro-d3/code_chaining_methods.png"
+        alt="chaining-methods"
+      />
 
-  <code>
-    <span class="red">objet</span>.methode1() <br />
-    .methode2() <br />
-    .methode3()
-  </code>
-  <Code trim>d3.select("body") .append("p") .text("Nouveau paragraphe")</Code>
+      <p>Tout de bon !</p>
+    </div>
+  </div>
 </Slide>
 
 <Slide>
   <a href="https://github.com/d3/d3-selection/tree/v3.0.0"
-    ><h2><code class="red"> d3-selection</code></h2></a
+    ><h3><code class="red"> d3-selection</code></h3></a
   >
   <p>
     <span class="red">Installation</span> <br />
@@ -201,41 +247,47 @@
 </Slide>
 
 <Slide>
-  <h2>Sélectionner</h2>
-
-  <code><b class="red">select</b>(<em>selector</em>)</code> <br />
-  <code><b class="red">selectAll</b>(<em>selector</em>)</code>
-
-  <br />
-  <br />
-  <small>
-    <table>
-      <table>
-        <tr>
-          <th></th>
-          <th>CSS</th>
-          <th>Exemple</th>
-        </tr>
-        <tr>
-          <td>type</td>
-          <td><code>element </code></td>
-          <td><code>.select('h1')</code></td>
-        </tr>
-        <tr>
-          <td>class</td>
-          <td><code>.class</code></td>
-          <td><code>.select('.class')</code></td>
-        </tr>
-        <tr>
-          <td>identifiant</td>
-          <td><code>#id</code></td>
-          <td><code>.select('#id')</code></td>
-        </tr>
-      </table>
-    </table>
-  </small>
-  <br />
-  <br />
+  <div class="row center">
+    <div class="col-50">
+      <h3>Sélectionner</h3>
+      <p>
+        Sélectionner des éléments du DOM pour ensuite les manipuler et modifier
+      </p>
+      <code class="small">d3.<b class="red">select</b>(<em>selector</em>)</code>
+      <br />
+      <code class="small"
+        >d3.<b class="red">selectAll</b>(<em>selector</em>)</code
+      >
+    </div>
+    <div class="col-50">
+      <small>
+        <table>
+          <table>
+            <tr>
+              <th></th>
+              <th>CSS</th>
+              <th>Exemple</th>
+            </tr>
+            <tr>
+              <td>type</td>
+              <td><code>element </code></td>
+              <td><code>.select('h1')</code></td>
+            </tr>
+            <tr>
+              <td>class</td>
+              <td><code>.class</code></td>
+              <td><code>.select('.class')</code></td>
+            </tr>
+            <tr>
+              <td>identifiant</td>
+              <td><code>#id</code></td>
+              <td><code>.select('#id')</code></td>
+            </tr>
+          </table>
+        </table>
+      </small>
+    </div>
+  </div>
   <br />
   <small
     ><a href="https://github.com/d3/d3-selection/tree/v3.0.0#selecting-elements"
@@ -246,76 +298,38 @@
   >
 </Slide>
 
-<section data-auto-animate>
-  <h2>Modifier</h2>
-
-  <br />
-  <code>selection.<b class="red">attr</b>(name[, value])</code>
-  <div class="row no-margin-top">
-    <div class="col-60">
-      <pre><Code trim>
-      <script type="text/template">
-<!--index.html-->
-
-<svg id = 'mon-svg'>
-    <circle cx="50%" cy="50%" r="50"></circle>
-</svg>
-          </script>
-            </Code></pre>
-
-      <br />
-      <pre> <Code trim>
-// index.js
-
-import {"{"} select {"}"} from 'd3-selection';
-
-const svg = select("#mon-svg");
-const cercle = svg.select("circle");
-cercle.attr("fill", "#E92528");
- </Code></pre>
+<Slide>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Modifier</h3>
+      <p>Modifier les attributs des éléments sélectionnés</p>
+      <code class="small">selection.<b class="red">attr</b>(name[, value])</code
+      >
     </div>
+    <div class="col-50">
+      <div class="row center">
+        <div class="col-50">
+          <img
+            src="assets/02-intro-d3/code_modifier_html.png"
+            alt="code-modifier-html"
+          />
+        </div>
+        <div class="col-50">
+          <img
+            src="assets/02-intro-d3/code_modifier_js.png"
+            alt="code-modifier-js"
+          />
+        </div>
+      </div>
 
-    <div class="col-40 fig-container no-margin-top">
       <svg id="mon-svg">
-        <circle cx="50%" cy="50%" r="50"></circle>
+        <circle cx="50%" cy="50%" r="50" fill="red"></circle>
       </svg>
     </div>
   </div>
-  <small
-    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0#modifying-elements"
-      ><p>
-        <code class="red"> ↳ d3-selection - Modifying elements</code>
-      </p></a
-    ></small
-  >
-</section>
 
-<Slide>
-  <h2>Ajouter</h2>
   <br />
-  <code>selection.<b class="red">append</b>(type)</code>
-  <div class="row no-margin-top">
-    <div class="col-60">
-      <pre>
-    <Code trim>
-const WIDTH = 500
-const HEIGHT = 800
 
-const div = select("#mon-svg")
-              .append("svg")
-              .attr("width", WIDTH)
-              .attr("height", HEIGHT)
-              .append("circle")
-              .attr("cx", "30%")
-              .attr("cy", "40%")
-              .attr("r", "100")
-    </Code>
-</pre>
-    </div>
-    <div class="col-40">
-      <svg id="mon-svg2"> </svg>
-    </div>
-  </div>
   <small
     ><a href="https://github.com/d3/d3-selection/tree/v3.0.0"
       ><p>
@@ -326,48 +340,48 @@ const div = select("#mon-svg")
 </Slide>
 
 <Slide>
-  <h2>Ecouter les événements</h2>
-
-  <code>selection.<b class="red">on</b>(typenames[, listener[, options]])</code>
-  <div class="row no-margin-top">
-    <div class="col-60">
-      <pre><Code trim>
-<script type="text/template">
-<!--index.html-->
-
-<svg id = 'mon-svg'>
-    <circle cx="50%" cy="50%" r="50"></circle>
-
-</svg>
-
-          </script>
-</Code></pre>
-
-      <pre><Code trim>
-// index.js
-
-import {"{"} select {"}"} from 'd3-selection';
-
-select("#mon-svg")
-    .select("circle")
-    .on('click', function () {"{"}
-                   select(this).attr("fill", 'green')
-    {"}"})
-    .on('mousemove', function(e) {"{"}
-                    console.log("x: " + e.clientX + ", y:" + e.clientY )
-    {"}"});
-
-</Code>
-</pre>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Créer</h3>
+      <p>Ajouter de nouveaux éléments DOM à la sélection existante</p>
+      <code class="small">selection.<b class="red">append</b>(element)</code>
     </div>
-    <div class="col-40 fig-container no-margin-top">
-      <svg id="mon-svg3">
-        <circle cx="50%" cy="50%" r="100"></circle>
-      </svg>
+    <div class="col-50">
+      <img src="assets/02-intro-d3/code_creer_js.png" alt="code-creer-js" />
+    </div>
 
+    <svg id="mon-svg2"> </svg>
+  </div>
+
+  <br />
+
+  <small
+    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0"
+      ><p>
+        <code class="red"> ↳ d3-selection - Modifying elements</code>
+      </p></a
+    ></small
+  >
+</Slide>
+
+<Slide>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Événements</h3>
+      <p>Attache un gestionnaire d'événements à la sélection</p>
+      <code class="small"
+        >selection.<b class="red">on</b>(eventType, callback)</code
+      >
+    </div>
+    <div class="col-50">
+      <img src="assets/02-intro-d3/code_events.png" alt="code-events" />
       <p>x: {x}, y: {y}</p>
+      <svg id="mon-svg3"> </svg>
     </div>
   </div>
+
+  <br />
+
   <small
     ><a href="https://github.com/d3/d3-selection/tree/v3.0.0#handling-events"
       ><p><code class="red"> ↳ d3-selection - Handling events</code></p></a
@@ -376,138 +390,12 @@ select("#mon-svg")
 </Slide>
 
 <Slide>
-  <h2>Joindre les données</h2>
-  <p class="red">
-    <em>Joindre les données aux éléments <b>sélectionnés</b></em>
-  </p>
-  <br />
-
-  <code>
-    selection.<b class="red">data</b>([data[, key]])
-  </code>
-
-  <br />
-  <br />
-  <br />
-
-  <code>
-    selection.<b class="red">data</b>(<em>tableau</em>).<b class="red">join</b
-    >(enter[, update][, exit])
-  </code>
-
-  <br />
-</Slide>
-
-<Slide>
-  <h2>Joindre les données</h2>
-  <h5><span class="red">Entering data</span></h5>
-
-  <div class="row">
-    <img src="assets/data-enter-2.svg" alt="" height="300" />
-  </div>
-</Slide>
-
-<Slide>
-  <h2>Joindre les données</h2>
-  <h5><span class="red">Mise à jour des données</span></h5>
-  <code>enter, update, exit</code>
-  <div class="row">
-    <img src="assets/data-enter-update-exit.svg" alt="" height="300" />
-  </div>
-</Slide>
-
-<Slide>
-  <h2>Joindre les données</h2>
-  <h5><span class="red">EXEMPLE</span></h5>
-  <div class="row">
-    <div class="col-50">
-      <img src="assets/data-join-example-1.svg" alt="" height="300" />
-    </div>
-    <div class="col-50">
-      <div id="viz_area"></div>
-    </div>
-  </div>
-</Slide>
-
-<Slide>
-  <h2>Joindre les données</h2>
-  <h5><span class="red">EXEMPLE</span></h5>
-  <div class="row">
-    <div class="col-50">
-      <img src="assets/data-join-example-2.svg" alt="" height="300" />
-    </div>
-    <div class="col-50">
-      <div id="viz_area2"></div>
-    </div>
-  </div>
-</Slide>
-
-<Slide>
-  <h2>Joindre les données</h2>
-  <h5><span class="red">EXEMPLE</span></h5>
-  <div class="row">
-    <div class="col-50">
-      <img src="assets/data-join-example-3.svg" alt="" height="300" />
-    </div>
-    <div class="col-50">
-      <div id="viz_area3"></div>
-    </div>
-  </div>
-</Slide>
-
-<Slide>
-  <h2>Joindre les données</h2>
-
   <div class="row">
     <div class="col-60">
-      <pre><Code trim>
-<script type="text/template">
-<!--index.html-->
-
-<div id="my-div"></div>
-
-          </script>
-</Code></pre>
-
-      <pre><Code trim>
-// index.js
-
-import {"{"} select, selectAll {"}"} from 'd3-selection';
-
-const data = ['Pierre', 'Charlotte', 'Jacques'];
-
-select("#ma-div")
-    .append("ul")
-    .selectAll("li")
-    .data(data)
-    .join(enter => enter
-                    .append("li")
-                    .text((d, i) => 'Valeur: ' + d + ', Index: ' + i))
-    .style("color", 'green');
-
-
-
-</Code></pre>
-    </div>
-
-    <div class="col-40">
-      <div id="mon-div"></div>
-    </div>
-  </div>
-
-  <small
-    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0#joining-data"
-      ><p><code class="red"> ↳ d3-selection - Joining data</code></p></a
-    ></small
-  >
-</Slide>
-
-<Slide>
-  <h2>Projet</h2>
-  <div class="row">
-    <div class="col-60">
-      <h4><span class="red">Thématique (10 mars)</span></h4>
+      <h3>Projet</h3>
+      <h4><span class="red">Thématique (8 mars)</span></h4>
       <ul>
+        <li>Former les groupes (2-3 personnes par groupe)</li>
         <li>Trouver un jeu de données</li>
         <li>Créer un dossier github pour le projet</li>
         <li>
@@ -520,13 +408,13 @@ select("#ma-div")
     </div>
 
     <div class="col-40">
-      <img src="assets/data.gif" alt="data-gif" /> <br />
+      <img src="assets/02-intro-d3/data.gif" alt="data-gif" /> <br />
     </div>
   </div>
 </Slide>
 
 <Slide>
-  <h2>Exemples</h2>
+  <h3>Exemples</h3>
   <ul>
     <li>
       <a href="http://www.bmdata.co.uk/titanic/">Titanic</a>
@@ -545,7 +433,7 @@ select("#ma-div")
 </Slide>
 
 <Slide>
-  <h2>Exercices</h2>
+  <h3>Exercices</h3>
   <p>
     <span class="red">Rajouter dossier du cours en upstream</span> <br />
     <small
