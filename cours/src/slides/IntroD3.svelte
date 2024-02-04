@@ -1,0 +1,454 @@
+<script>
+  import Slide from "../lib/Slide.svelte";
+  import Title from "../lib/Title.svelte";
+  import Code from "../lib/Code.svelte";
+  import { select, selectAll } from "d3-selection";
+  import { shuffle } from "d3-array";
+  import { onMount } from "svelte";
+  import { transition } from "d3-transition";
+  import { easeLinear } from "d3-ease";
+
+  const width = 500;
+  const height = 400;
+  const margin = { top: 50, right: 40, bottom: 50, left: 40 };
+
+  let x = 0;
+  let y = 0;
+
+  const data = ["Pierre", "Charlotte", "Jacques"];
+
+  onMount(() => {
+    // Select
+    const svg = select("#mon-svg");
+    const cercle = svg.select("circle");
+    cercle.attr("fill", "#E92528");
+
+    // Append
+    select("#mon-svg2")
+      .attr("width", width)
+      .attr("height", height)
+      .append("circle")
+      .attr("cx", "30%")
+      .attr("cy", "40%")
+      .attr("r", "100")
+      .attr("fill", "green");
+
+    // Events
+    select("#mon-svg3")
+      .attr("width", width)
+      .attr("height", height)
+      .select("circle")
+      .on("click", function () {
+        select(this).attr("fill", "green");
+      })
+      .on("mousemove", function (e) {
+        x = e.clientX;
+        y = e.clientY;
+      });
+
+    // Joining data
+    select("#mon-div")
+      .append("ul")
+      .selectAll("li")
+      .data(data)
+      .join((enter) =>
+        enter.append("li").text((d, i) => "Valeur: " + d + ", Index: " + i)
+      )
+      .style("color", "green");
+
+    const svgJoin = select("#viz_area")
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      // translate this svg element to leave some margin.
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    const svgJoin2 = select("#viz_area2")
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      // translate this svg element to leave some margin.
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    const svgJoin3 = select("#viz_area3")
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      // translate this svg element to leave some margin.
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // Enter
+    const tableauLettresAleatoires = () => {
+      return shuffle("abcdefghijklmnopqrstuvwxyz".split(""))
+        .slice(0, Math.floor(6 + Math.random() * 20))
+        .sort();
+    };
+
+    setInterval(() => {
+      svgJoin
+        .selectAll("text")
+        .data(tableauLettresAleatoires(), (d) => d)
+        .join((enter) =>
+          enter
+            .append("text")
+            .attr("fill", "green")
+            .text((d) => d)
+        )
+        .attr("x", (d, i) => i * 30); // Mettre à jour à chaque fois la position
+    }, 1000);
+
+    setInterval(() => {
+      svgJoin2
+        .selectAll("text")
+        .data(tableauLettresAleatoires(), (d) => d)
+        .join(
+          (enter) =>
+            enter
+              .append("text")
+              .attr("fill", "green")
+              .attr("x", (d, i) => i * 30) // Mettre à jour à chaque fois la position
+              .text((d) => d),
+          (update) => update.attr("fill", "grey").attr("x", (d, i) => i * 30) // Mettre à jour à chaque fois la position
+        );
+    }, 1000);
+
+    function getTransition() {
+      return transition().duration(500).ease(easeLinear);
+    }
+
+    setInterval(() => {
+      svgJoin3
+        .selectAll("text")
+        .data(tableauLettresAleatoires, (d) => d)
+        .join(
+          (enter) =>
+            enter
+              .append("text")
+              .attr("fill", "green")
+              .attr("x", (d, i) => i * 30)
+              .attr("y", 0)
+              .text((d) => d),
+          (update) =>
+            update
+              .attr("fill", "grey")
+              .attr("y", 0)
+              .attr("x", (d, i) => i * 30),
+          (exit) =>
+            exit
+              .attr("fill", "brown")
+              .transition(getTransition())
+              .attr("y", 30)
+              .remove()
+        );
+    }, 2000);
+  });
+</script>
+
+<Title title="2. Introduction à d3.js"></Title>
+<Slide>
+  <h3>Semaine passée</h3>
+  <p class="fragment">
+    <span class="red">Fonction</span> Explicative ou explorsatoire <br />
+  </p>
+  <p class="fragment">
+    <span class="red">Formes</span> Statique ou interactive <br />
+  </p>
+  <p class="fragment">
+    <span class="red">SVG</span> Formes, dessins, transformation et animations
+  </p>
+</Slide>
+
+<Slide>
+  <div class="row no-margin-top center">
+    <div class="col-40">
+      <h3 class="red">D3</h3>
+      <ul>
+        <li class="small">
+          <b class="red">Data-Driven Approach</b> : vous liez vos données directement
+          aux éléments du DOM
+        </li>
+        <li class="small">
+          <b class="red">Manipulation du DOM</b> : vous associez des données à des
+          éléments HTML existants (ou d'en créer de nouveaux)
+        </li>
+        <li class="small">
+          <b class="red">Construction de Graphiques</b> : vous créez des éléments
+          graphiques en langage SVG à partir de données
+        </li>
+      </ul>
+    </div>
+    <div class="col-50">
+      <iframe
+        src="https://d3js.org/"
+        width="100%"
+        height="550"
+        title="d3-iframe"
+      ></iframe>
+    </div>
+  </div>
+  <br />
+  <a href="https://d3js.org/"><code> ↳ D3</code></a>
+</Slide>
+
+<Slide>
+  <h3>Documentation</h3>
+  <br />
+
+  <div class="center">
+    <img src="assets/02-intro-d3/doc_annotation.svg" alt="js-doc" width="60%" />
+  </div>
+  <br />
+
+  <a href="https://github.com/d3/d3/blob/main/API.md"
+    ><code> ↳ Github: API reference</code></a
+  >
+</Slide>
+
+<Slide>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Syntaxe</h3>
+      <ul>
+        <b class="black">Chaînage de méthodes</b>
+        <li>Enchaîner plusieurs méthodes sur une sélection ou un objet D3</li>
+        <li>
+          Chaque méthode renvoie un objet qui peut être manipulé par d'autres
+          méthodes
+        </li>
+      </ul>
+      <code>
+        <span class="red">objet</span>.methode1() <br />
+        .methode2() <br />
+        .methode3()
+      </code>
+    </div>
+    <div class="col-50">
+      <img
+        src="assets/02-intro-d3/code_chaining_methods.png"
+        alt="chaining-methods"
+      />
+
+      <p>Tout de bon !</p>
+    </div>
+  </div>
+</Slide>
+
+<Slide>
+  <a href="https://github.com/d3/d3-selection/tree/v3.0.0"
+    ><h3><code class="red"> d3-selection</code></h3></a
+  >
+  <p>
+    <span class="red">Installation</span> <br />
+    <small><code>npm install d3-selection</code></small>
+  </p>
+</Slide>
+
+<Slide>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Sélectionner</h3>
+      <p>
+        Sélectionner des éléments du DOM pour ensuite les manipuler et modifier
+      </p>
+      <code class="small">d3.<b class="red">select</b>(<em>selector</em>)</code>
+      <br />
+      <code class="small"
+        >d3.<b class="red">selectAll</b>(<em>selector</em>)</code
+      >
+    </div>
+    <div class="col-50">
+      <small>
+        <table>
+          <table>
+            <tr>
+              <th></th>
+              <th>CSS</th>
+              <th>Exemple</th>
+            </tr>
+            <tr>
+              <td>type</td>
+              <td><code>element </code></td>
+              <td><code>.select('h1')</code></td>
+            </tr>
+            <tr>
+              <td>class</td>
+              <td><code>.class</code></td>
+              <td><code>.select('.class')</code></td>
+            </tr>
+            <tr>
+              <td>identifiant</td>
+              <td><code>#id</code></td>
+              <td><code>.select('#id')</code></td>
+            </tr>
+          </table>
+        </table>
+      </small>
+    </div>
+  </div>
+  <br />
+  <small
+    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0#selecting-elements"
+      ><p>
+        <code class="red"> ↳ d3-selection - Selecting elements</code>
+      </p></a
+    ></small
+  >
+</Slide>
+
+<Slide>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Modifier</h3>
+      <p>Modifier les attributs des éléments sélectionnés</p>
+      <code class="small">selection.<b class="red">attr</b>(name[, value])</code
+      >
+    </div>
+    <div class="col-50">
+      <div class="row center">
+        <div class="col-50">
+          <img
+            src="assets/02-intro-d3/code_modifier_html.png"
+            alt="code-modifier-html"
+          />
+        </div>
+        <div class="col-50">
+          <img
+            src="assets/02-intro-d3/code_modifier_js.png"
+            alt="code-modifier-js"
+          />
+        </div>
+      </div>
+
+      <svg id="mon-svg">
+        <circle cx="50%" cy="50%" r="50" fill="red"></circle>
+      </svg>
+    </div>
+  </div>
+
+  <br />
+
+  <small
+    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0"
+      ><p>
+        <code class="red"> ↳ d3-selection - Modifying elements</code>
+      </p></a
+    ></small
+  >
+</Slide>
+
+<Slide>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Créer</h3>
+      <p>Ajouter de nouveaux éléments DOM à la sélection existante</p>
+      <code class="small">selection.<b class="red">append</b>(element)</code>
+    </div>
+    <div class="col-50">
+      <img src="assets/02-intro-d3/code_creer_js.png" alt="code-creer-js" />
+    </div>
+
+    <svg id="mon-svg2"> </svg>
+  </div>
+
+  <br />
+
+  <small
+    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0"
+      ><p>
+        <code class="red"> ↳ d3-selection - Modifying elements</code>
+      </p></a
+    ></small
+  >
+</Slide>
+
+<Slide>
+  <div class="row center">
+    <div class="col-50">
+      <h3>Événements</h3>
+      <p>Attache un gestionnaire d'événements à la sélection</p>
+      <code class="small"
+        >selection.<b class="red">on</b>(eventType, callback)</code
+      >
+    </div>
+    <div class="col-50">
+      <img src="assets/02-intro-d3/code_events.png" alt="code-events" />
+      <p>x: {x}, y: {y}</p>
+      <svg id="mon-svg3"> </svg>
+    </div>
+  </div>
+
+  <br />
+
+  <small
+    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0#handling-events"
+      ><p><code class="red"> ↳ d3-selection - Handling events</code></p></a
+    ></small
+  >
+</Slide>
+
+<Slide>
+  <div class="row">
+    <div class="col-60">
+      <h3>Projet</h3>
+      <h4><span class="red">Thématique (8 mars)</span></h4>
+      <ul>
+        <li>Former les groupes (2-3 personnes par groupe)</li>
+        <li>Trouver un jeu de données</li>
+        <li>Créer un dossier github pour le projet</li>
+        <li>
+          Suivre directives <a
+            href="https://github.com/romanoe/visualdon-exercices/tree/main/projet"
+            >ici</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-40">
+      <img src="assets/02-intro-d3/data.gif" alt="data-gif" /> <br />
+    </div>
+  </div>
+</Slide>
+
+<Slide>
+  <h3>Exemples</h3>
+  <ul>
+    <li>
+      <a href="http://www.bmdata.co.uk/titanic/">Titanic</a>
+    </li>
+    <li>
+      <a href="https://projects.two-n.com/world-gender/">Global gender gap</a>
+    </li>
+    <li><a href="http://rhythm-of-food.net/">The Rythm of food</a></li>
+    <li>
+      <a
+        href="https://qz.com/296941/interactive-graphic-every-active-satellite-orbiting-earth/"
+        >Satellites</a
+      >
+    </li>
+  </ul>
+</Slide>
+
+<Slide>
+  <h3>Exercices</h3>
+  <p>
+    <span class="red">Rajouter dossier du cours en upstream</span> <br />
+    <small
+      ><code
+        >git remote add upstream git@github.com:romanoe/visualdon-exercices.git</code
+      ></small
+    >
+  </p>
+  <p>
+    <span class="red">Télécharger changements</span> <br />
+    <small><code>git fetch upstream</code></small>
+  </p>
+  <p></p>
+  <p>
+    <span class="red">Mettre à jour</span> <br />
+    <small><code>git merge upstream/main</code></small>
+  </p>
+</Slide>

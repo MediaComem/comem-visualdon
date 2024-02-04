@@ -1,0 +1,25 @@
+{
+  "name": "04-gapminder",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@rollup/plugin-dsv": "^3.0.4",
+    "vite": "^5.0.12"
+  },
+  "dependencies": {
+    "d3-array": "^3.2.4",
+    "d3-axis": "^3.0.0",
+    "d3-ease": "^3.0.1",
+    "d3-fetch": "^3.0.1",
+    "d3-geo": "^3.1.0",
+    "d3-scale": "^4.0.2",
+    "d3-selection": "^3.0.0",
+    "d3-transition": "^3.0.1"
+  }
+}
