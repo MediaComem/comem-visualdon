@@ -20,7 +20,7 @@
   <title>{app.name}</title>
 </svelte:head>
 
-<!-- <NavBar /> -->
+<NavBar />
 <div class="reveal">
   <div class="slides">
     <Presentation />

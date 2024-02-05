@@ -83,3 +83,12 @@
     </div>
   </div>
 </nav>
+
+<style>
+  nav {
+    position: relative;
+    z-index: 2;
+    /* Use a negative margin to move the navbar up */
+    margin-bottom: -80px; /* Adjust the value based on your needs */
+  }
+</style>

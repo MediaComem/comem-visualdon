@@ -347,7 +347,7 @@ section .row:after {
 }
 
 section .row {
-  margin: 0.15em 0em;
+  margin: 0em 0em;
 }
 
 section .row *[class*="col-"] {
