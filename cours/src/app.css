@@ -35,6 +35,10 @@ li {
   align-items: center;
 }
 
+.left {
+  text-align: left;
+}
+
 .col-05 {
   width: 0.5%;
 }
@@ -363,4 +367,14 @@ section .row.center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+small > a > p {
+  text-decoration: underline;
+  font-size: 2.3rem;
+  line-height: 2rem;
+}
+
+code.small {
+  font-weight: 900;
 }

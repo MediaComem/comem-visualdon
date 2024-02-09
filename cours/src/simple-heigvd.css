@@ -82,8 +82,7 @@ section.has-dark-background h6 {
 /*********************************************
   * HEADERS
   *********************************************/
-.reveal h1,
-.reveal h2,
+
 .reveal h3,
 .reveal h4,
 .reveal h5,
@@ -101,7 +100,7 @@ section.has-dark-background h6 {
 
 .reveal h1 {
   font-size: var(--r-heading1-size);
-  color: var(--r-heading-color);
+  color: var(black);
 }
 
 .reveal h2 {
