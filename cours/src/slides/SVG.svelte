@@ -313,7 +313,7 @@
 <Slide>
   <h3>Exercices</h3>
   Rendez-vous sur
-  <a href="https://github.com/romanoe/visualdon-exercices">
+  <a href="https://github.com/MediaComem/comem-visualdon/tree/main/exercices">
     <code class="red">GitHub</code> <i class="fa-brands fa-github"></i></a
   >
 </Slide>

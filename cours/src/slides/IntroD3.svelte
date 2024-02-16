@@ -16,8 +16,6 @@
   let x = 0;
   let y = 0;
 
-  const data = ["Pierre", "Charlotte", "Jacques"];
-
   onMount(() => {
     // Select
     const svg = select("#mon-svg");
@@ -33,118 +31,6 @@
       .attr("cy", "40%")
       .attr("r", "100")
       .attr("fill", "green");
-
-    // Events
-    select("#mon-svg3")
-      .attr("width", width)
-      .attr("height", height)
-      .select("circle")
-      .on("click", function () {
-        select(this).attr("fill", "green");
-      })
-      .on("mousemove", function (e) {
-        x = e.clientX;
-        y = e.clientY;
-      });
-
-    // Joining data
-    select("#mon-div")
-      .append("ul")
-      .selectAll("li")
-      .data(data)
-      .join((enter) =>
-        enter.append("li").text((d, i) => "Valeur: " + d + ", Index: " + i)
-      )
-      .style("color", "green");
-
-    const svgJoin = select("#viz_area")
-      .append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      // translate this svg element to leave some margin.
-      .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    const svgJoin2 = select("#viz_area2")
-      .append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      // translate this svg element to leave some margin.
-      .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    const svgJoin3 = select("#viz_area3")
-      .append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      // translate this svg element to leave some margin.
-      .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    // Enter
-    const tableauLettresAleatoires = () => {
-      return shuffle("abcdefghijklmnopqrstuvwxyz".split(""))
-        .slice(0, Math.floor(6 + Math.random() * 20))
-        .sort();
-    };
-
-    setInterval(() => {
-      svgJoin
-        .selectAll("text")
-        .data(tableauLettresAleatoires(), (d) => d)
-        .join((enter) =>
-          enter
-            .append("text")
-            .attr("fill", "green")
-            .text((d) => d)
-        )
-        .attr("x", (d, i) => i * 40); // Mettre à jour à chaque fois la position
-    }, 1000);
-
-    setInterval(() => {
-      svgJoin2
-        .selectAll("text")
-        .data(tableauLettresAleatoires(), (d) => d)
-        .join(
-          (enter) =>
-            enter
-              .append("text")
-              .attr("fill", "green")
-              .attr("x", (d, i) => i * 40) // Mettre à jour à chaque fois la position
-              .text((d) => d),
-          (update) => update.attr("fill", "grey").attr("x", (d, i) => i * 30) // Mettre à jour à chaque fois la position
-        );
-    }, 1000);
-
-    function getTransition() {
-      return transition().duration(500).ease(easeLinear);
-    }
-
-    setInterval(() => {
-      svgJoin3
-        .selectAll("text")
-        .data(tableauLettresAleatoires, (d) => d)
-        .join(
-          (enter) =>
-            enter
-              .append("text")
-              .attr("fill", "green")
-              .attr("x", (d, i) => i * 40)
-              .attr("y", 0)
-              .text((d) => d),
-          (update) =>
-            update
-              .attr("fill", "grey")
-              .attr("y", 0)
-              .attr("x", (d, i) => i * 40),
-          (exit) =>
-            exit
-              .attr("fill", "brown")
-              .transition(getTransition())
-              .attr("y", 30)
-              .remove()
-        );
-    }, 2000);
   });
 </script>
 
@@ -191,7 +77,13 @@
     </div>
   </div>
   <br />
-  <a href="https://d3js.org/"><code> ↳ D3</code></a>
+  <small
+    ><a href="https://d3js.org/"
+      ><p>
+        <code class="red"> ↳ d3</code>
+      </p></a
+    ></small
+  >
 </Slide>
 
 <Slide>
@@ -207,8 +99,12 @@
   </div>
   <br />
 
-  <a href="https://github.com/d3/d3/blob/main/API.md"
-    ><code> ↳ Github: API reference</code></a
+  <small
+    ><a href="https://github.com/d3/d3/blob/main/API.md"
+      ><p>
+        <code class="red"> ↳ Github: API reference</code>
+      </p></a
+    ></small
   >
 </Slide>
 
@@ -528,8 +424,14 @@
 >
 
 <Slide>
-  <h3>Joindre les données</h3>
-  <h5><span class="heig-red">EXEMPLE</span></h5>
+  <h3>Exemples</h3>
+  <small
+    ><a href="https://observablehq.com/d/fdf49f03eec10be6"
+      ><p>
+        <code class="red"> ↳ Observable: d3-selection</code>
+      </p></a
+    ></small
+  >
 </Slide>
 
 <Slide>
@@ -543,14 +445,15 @@
         <li>Créer un dossier github pour le projet</li>
         <li>
           Suivre directives <a
-            href="https://github.com/romanoe/comem-visualdon/projet">ici</a
+            href="https://github.com/MediaComem/comem-visualdon/tree/main/projet"
+            >ici</a
           >
         </li>
       </ul>
     </div>
 
     <div class="col-40">
-      <img src="assets/02-intro-d3//data.gif" alt="data-gif" />
+      <img src="assets/02-intro-d3/data.gif" alt="data-gif" />
       <br />
     </div>
   </div>
@@ -577,21 +480,11 @@
 
 <Slide>
   <h3>Exercices</h3>
-  <p>
-    <span class="red">Rajouter dossier du cours en upstream</span> <br />
-    <small
-      ><code
-        >git remote add upstream git@github.com:romanoe/comem-visualdon.git</code
-      ></small
-    >
-  </p>
-  <p>
-    <span class="red">Télécharger changements</span> <br />
-    <small><code>git fetch upstream</code></small>
-  </p>
-  <p></p>
-  <p>
-    <span class="red">Mettre à jour</span> <br />
-    <small><code>git merge upstream/main</code></small>
-  </p>
+  <small
+    ><a href="https://github.com/MediaComem/comem-visualdon/tree/main/exercices"
+      ><p>
+        <code class="red"> ↳ GitHub</code>
+      </p></a
+    ></small
+  >
 </Slide>

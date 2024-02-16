@@ -369,13 +369,16 @@
   <ul>
     <b>COURS</b> <br /> <span class="red">↳</span> Lien
     <a
-      href="https://github.com/romanoe/visualdon-cours#programme-de-cours"
+      href="https://github.com/MediaComem/comem-visualdon/blob/main/cours/README.md"
       class="red">GitHub</a
     >
     <br />
     <br />
     <b>EXERCICES</b> <br /> <span class="red">↳</span> Lien
-    <a href="https://github.com/romanoe/visualdon-exercices" class="red">
+    <a
+      href="https://github.com/MediaComem/comem-visualdon/tree/main/exercices"
+      class="red"
+    >
       <code> GitHub</code> <i class="fa-brands fa-github"></i></a
     >
   </ul>
