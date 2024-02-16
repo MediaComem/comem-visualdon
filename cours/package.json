@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.8",
+    "d3-selection": "^3.0.0",
     "reveal.js": "^5.0.4"
   }
 }

@@ -1,16 +1,7 @@
 <script>
+  import Reference from "../lib/Reference.svelte";
   import Slide from "../lib/Slide.svelte";
   import Title from "../lib/Title.svelte";
-
-  const date = new Date();
-  const year = date.getFullYear();
-  const month = date.getMonth() + 1;
-  const day = date.getDate();
-  const options = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
 </script>
 
 <Title title="1. Introduction"></Title>
@@ -166,15 +157,11 @@
         alt="form_and_function1"
       />
 
-      <code
-        ><small
-          ><a
-            href="https://urban-institute.medium.com/form-and-function-let-your-audiences-needs-drive-your-data-visualization-choices-3c0603745822"
-            >↳ Form and Function: Let Your Audience’s Needs Drive Your Data
-            Visualization Choices</a
-          >
-        </small></code
-      >
+      <Reference
+        referenceLink="https://urban-institute.medium.com/form-and-function-let-your-audiences-needs-drive-your-data-visualization-choices-3c0603745822"
+        referenceText="Form and Function: Let Your Audience’s Needs Drive Your Data
+      Visualization Choices"
+      ></Reference>
     </div>
   </div>
 </Slide>
@@ -199,15 +186,11 @@
           width="450"
         /></a
       >
-      <code
-        ><small>
-          <a
-            href="https://www.scmp.com/infographics/article/1248804/allure-climbing-mount-everest"
-          >
-            ↳ Mount Everest, South China Morning Post
-          </a></small
-        ></code
-      >
+
+      <Reference
+        referenceLink="https://www.scmp.com/infographics/article/1248804/allure-climbing-mount-everest"
+        referenceText="Mount Everest, South China Morning Post"
+      ></Reference>
     </div>
   </div>
 </Slide>
@@ -232,15 +215,10 @@
           alt="giorgia-lupi"
         /></a
       >
-      <code
-        ><small>
-          <a
-            href="https://www.behance.net/gallery/14283209/European-banks-and-government-debt?locale=de_DE"
-          >
-            ↳ European banks and government debt, Giorgia Lupi
-          </a></small
-        ></code
-      >
+      <Reference
+        referenceLink="https://www.behance.net/gallery/14283209/European-banks-and-government-debt?locale=de_DE"
+        referenceText="European banks and government debt, Giorgia Lupi"
+      ></Reference>
     </div>
   </div>
 </Slide>
@@ -265,15 +243,11 @@
           width="100%"
         /></a
       >
-      <code
-        ><small>
-          <a
-            href="https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html"
-          >
-            ↳ How the Virus Got Out, The New York Times
-          </a></small
-        ></code
-      >
+
+      <Reference
+        referenceLink="https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html"
+        referenceText="How the Virus Got Out, The New York Times"
+      ></Reference>
     </div>
   </div>
 </Slide>

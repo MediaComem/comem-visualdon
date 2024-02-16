@@ -1,13 +1,9 @@
 <script>
   import Slide from "../lib/Slide.svelte";
   import Title from "../lib/Title.svelte";
-  import Code from "../lib/Code.svelte";
-  import { select, selectAll } from "d3-selection";
-  import { shuffle } from "d3-array";
+  import Reference from "../lib/Reference.svelte";
+  import { select } from "d3-selection";
   import { onMount } from "svelte";
-  import { transition } from "d3-transition";
-  import { easeLinear } from "d3-ease";
-  import Presentation from "../Presentation.svelte";
 
   const width = 500;
   const height = 400;
@@ -77,13 +73,8 @@
     </div>
   </div>
   <br />
-  <small
-    ><a href="https://d3js.org/"
-      ><p>
-        <code class="red"> ↳ d3</code>
-      </p></a
-    ></small
-  >
+
+  <Reference referenceLink="https://d3js.org/" referenceText="d3"></Reference>
 </Slide>
 
 <Slide>
@@ -99,13 +90,10 @@
   </div>
   <br />
 
-  <small
-    ><a href="https://github.com/d3/d3/blob/main/API.md"
-      ><p>
-        <code class="red"> ↳ Github: API reference</code>
-      </p></a
-    ></small
-  >
+  <Reference
+    referenceLink="https://github.com/d3/d3/blob/main/API.md"
+    referenceText="Github: API reference"
+  ></Reference>
 </Slide>
 
 <Slide>
@@ -200,13 +188,11 @@
     </div>
   </div>
   <br />
-  <small
-    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0#selecting-elements"
-      ><p>
-        <code class="red"> ↳ d3-selection - Selecting elements</code>
-      </p></a
-    ></small
-  >
+
+  <Reference
+    referenceLink="https://github.com/d3/d3-selection/tree/v3.0.0#selecting-elements"
+    referenceText="d3-selection - Selecting elements"
+  ></Reference>
 </Slide>
 
 <Slide>
@@ -252,13 +238,10 @@
 
   <br />
 
-  <small
-    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0"
-      ><p>
-        <code class="red"> ↳ d3-selection - Modifying elements</code>
-      </p></a
-    ></small
-  >
+  <Reference
+    referenceLink="https://github.com/d3/d3-selection/tree/v3.0.0"
+    referenceText="d3-selection - Modifying elements"
+  ></Reference>
 </Slide>
 
 <Slide>
@@ -285,13 +268,10 @@
 
   <br />
 
-  <small
-    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0"
-      ><p>
-        <code class="red"> ↳ d3-selection - Modifying elements</code>
-      </p></a
-    ></small
-  >
+  <Reference
+    referenceLink="https://github.com/d3/d3-selection/tree/v3.0.0"
+    referenceText="d3-selection - Modifying elements"
+  ></Reference>
 </Slide>
 
 <Slide>
@@ -324,11 +304,10 @@
     </div>
   </div>
 
-  <small
-    ><a href="https://github.com/d3/d3-selection/tree/v3.0.0#handling-events"
-      ><p><code class="red"> ↳ d3-selection - Handling events</code></p></a
-    ></small
-  >
+  <Reference
+    referenceLink="https://github.com/d3/d3-selection/tree/v3.0.0#handling-events"
+    referenceText="d3-selection - Handling events"
+  ></Reference>
 </Slide>
 
 <Slide>
@@ -363,14 +342,12 @@
       />
     </div>
   </div>
-  <small
-    ><a href="https://d3js.org/d3-selection/joining"
-      ><p>
-        <code class="red"> ↳ d3-selection | Joining data</code>
-      </p></a
-    ></small
-  ></Slide
->
+
+  <Reference
+    referenceLink="https://d3js.org/d3-selection/joining"
+    referenceText="d3-selection - Joining data"
+  ></Reference>
+</Slide>
 
 <Slide>
   <div class="row center">
@@ -414,24 +391,19 @@
       />
     </div>
   </div>
-  <small
-    ><a href="https://d3js.org/d3-selection/joining"
-      ><p>
-        <code class="red"> ↳ d3-selection | Joining data</code>
-      </p></a
-    ></small
-  ></Slide
->
+
+  <Reference
+    referenceLink="https://d3js.org/d3-selection/joining"
+    referenceText="d3-selection - Joining data"
+  ></Reference>
+</Slide>
 
 <Slide>
   <h3>Exemples</h3>
-  <small
-    ><a href="https://observablehq.com/d/fdf49f03eec10be6"
-      ><p>
-        <code class="red"> ↳ Observable: d3-selection</code>
-      </p></a
-    ></small
-  >
+  <Reference
+    referenceLink="https://observablehq.com/d/fdf49f03eec10be6"
+    referenceText="Observable: d3-selection"
+  ></Reference>
 </Slide>
 
 <Slide>
@@ -480,11 +452,8 @@
 
 <Slide>
   <h3>Exercices</h3>
-  <small
-    ><a href="https://github.com/MediaComem/comem-visualdon/tree/main/exercices"
-      ><p>
-        <code class="red"> ↳ GitHub</code>
-      </p></a
-    ></small
-  >
+  <Reference
+    referenceLink="https://github.com/MediaComem/comem-visualdon/tree/main/exercices"
+    referenceText="Github - comem-visualdon/exercices"
+  ></Reference>
 </Slide>

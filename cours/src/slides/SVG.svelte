@@ -1,7 +1,7 @@
 <script>
   import Slide from "../lib/Slide.svelte";
   import Title from "../lib/Title.svelte";
-  import Code from "../lib/Code.svelte";
+  import Reference from "../lib/Reference.svelte";
 </script>
 
 <Title title="1. SVG"></Title>
@@ -29,13 +29,11 @@
       />
     </div>
   </div>
-  <small
-    ><a href="https://developer.mozilla.org/en-US/docs/Web/SVG"
-      ><p>
-        <code class="red"> ↳ MDN: Scalable Vector Graphics (SVG)</code>
-      </p></a
-    ></small
-  >
+
+  <Reference
+    referenceLink="https://developer.mozilla.org/en-US/docs/Web/SVG"
+    referenceText=" MDN: Scalable Vector Graphics (SVG)"
+  ></Reference>
 </Slide>
 
 <Slide>
