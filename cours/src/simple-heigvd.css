@@ -59,6 +59,7 @@ section.has-dark-background h6 {
   font-weight: normal;
   color: var(--r-main-color);
   width: 100%;
+  padding-top: 10%;
 }
 
 .reveal ::selection {

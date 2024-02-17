@@ -1,15 +1,7 @@
 <script>
+  export let items;
   import { onMount } from "svelte";
-  const lectures = [
-    {
-      name: "01 - Introduction",
-      code: "COMEM+",
-      year: 2024,
-      semester: 2,
-      teacher: "Noemi Romano",
-      email: "noemi.romano@heig-vd.ch",
-    },
-  ];
+  import HeigVDLogo from "$lib/assets/logo.png";
 
   let isNavbarOpen = false;
 
@@ -20,12 +12,10 @@
   $: visible = isNavbarOpen ? "" : "hidden";
 
   onMount(() => {
-    // Close navbar when clicking outside of it
-    document.addEventListener("click", (event) => {
-      const navbar = document.getElementById("navbar-hamburger");
-      if (navbar && isNavbarOpen) {
-        isNavbarOpen = false;
-      }
+    const navbar = document.getElementById("navbar-hamburger");
+
+    navbar.addEventListener("click", (event) => {
+      isNavbarOpen = !isNavbarOpen;
     });
   });
 </script>
@@ -34,9 +24,11 @@
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
   >
-    <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="assets/logo.png" class="h-8" alt="heigvd-logo" />
-      <span class="red self-center text-2xl font-semibold whitespace-nowrap"
+    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src={HeigVDLogo} class="h-8" alt="heigvd-logo" />
+      <span
+        id="logo-text"
+        class="red self-center text-2xl font-semibold whitespace-nowrap"
         >COMEM+</span
       >
     </a>
@@ -70,12 +62,13 @@
     <!-- Navbar links -->
     <div class="{visible} w-full" id="navbar-hamburger">
       <ul class="flex flex-col font-medium mt-4 rounded-lg dark:bg-white">
-        {#each lectures as lecture}
+        {#each items.lectures as item}
           <li>
             <a
-              href="hi"
+              data-sveltekit-reload
+              href="/{item.path}"
               class="block py-2 px-3 text-black rounded red dark:hover:text-white dark:hover:bg-black"
-              >{lecture.name}</a
+              >{item.title}</a
             >
           </li>
         {/each}

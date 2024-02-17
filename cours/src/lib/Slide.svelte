@@ -1,22 +1,25 @@
 <script>
   // Color Backgrounds
-  export let bgColor;
+  export let bgColor = undefined;
 
   // Gradient Backgrounds
-  export let bgGradient;
+  export let bgGradient = undefined;
+
   // Image Backgrounds
-  export let bgImage;
-  export let bgSize;
-  export let bgPosition;
-  export let bgRepeat;
-  export let bgOpacity;
+  export let bgImage = undefined;
+  export let bgSize = undefined;
+  export let bgPosition = undefined;
+  export let bgRepeat = undefined;
+  export let bgOpacity = undefined;
+
   // Video Backgrounds
-  export let bgVideo;
-  export let bgVideoLoop;
-  export let bgVideoMuted;
+  export let bgVideo = undefined;
+  export let bgVideoLoop = undefined;
+  export let bgVideoMuted = undefined;
+
   // Iframe Backgrounds
-  export let bgIframe;
-  export let bgInteractive;
+  export let bgIframe = undefined;
+  export let bgInteractive = undefined;
 </script>
 
 <section
