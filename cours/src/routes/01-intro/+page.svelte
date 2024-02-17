@@ -1,6 +1,4 @@
 <script>
-  export let data;
-
   import Reference from "$lib/Reference.svelte";
   import Slide from "$lib/Slide.svelte";
   import Title from "$lib/Title.svelte";
