@@ -41,7 +41,7 @@
   });
 </script>
 
-<Title title={data.lecture.title}></Title>
+<Title title="03 - Introduction à D3.js"></Title>
 
 <Slide>
   <h3>Semaine passée</h3>

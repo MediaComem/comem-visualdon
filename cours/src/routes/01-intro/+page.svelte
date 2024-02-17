@@ -26,7 +26,7 @@
   import Project from "$lib/assets/01-intro-svg/project.svg";
 </script>
 
-<Title title={data.lecture.title}></Title>
+<Title title="01 - Introduction"></Title>
 
 <Slide>
   <h3>

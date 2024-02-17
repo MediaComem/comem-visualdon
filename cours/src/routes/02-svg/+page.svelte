@@ -16,7 +16,7 @@
   import SVGAnimationsCode from "$lib/assets/01-intro-svg/code_animations.png";
 </script>
 
-<Title title={data.lecture.title}></Title>
+<Title title="02 - Scalable Vector Graphics (SVG)"></Title>
 
 <Slide>
   <h3>D3 & SVG</h3>
