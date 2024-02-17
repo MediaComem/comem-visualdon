@@ -21,17 +21,11 @@ Ce document sera mis à jour au fur et à mesure du semestre avec les informatio
 
 Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen (50%).
 
-## Programme de cours
+## Cours
 
-- [COURS 1](https://01-intro.surge.sh/) - Introduction + SVG
-- [COURS 2](https://02-intro-d3.surge.sh/) - Introduction à d3
-- [COURS 3](https://03-d3-data.surge.sh/) - Données
-- [COURS 4](https://04-scales-axis.surge.sh/) - Échelles & axes
-- [COURS 5](https://05-interaction-animation-1.surge.sh) - Interaction et animation 1
-- [COURS 6](https://06-interaction-animation-2.surge.sh) - Interaction et animation 2
-- [COURS 7](https://07-cartography-intro.surge.sh) - Introduction à la cartographie
-- [COURS 8](https://08-web-cartography.surge.sh) - Cartographie web
-- [COURS 10]() - Dos and don'ts en visualisation de données
+- [COURS 1](https://comem-visualdon.onrender.com/01-intro) - Introduction
+- [COURS 2](https://comem-visualdon.onrender.com/02-svg) - Scalable Vector Graphics (SVG)
+- [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3) - Introduction à D3.js
 
 ## Projet
 
@@ -55,10 +49,10 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 ## Exercices
 
-- [Exercice 1](https://github.com/romanoe/visualdon-exercices/tree/main/01-SVG): Dessiner et animer des formes SVG
-- [Exercice 2](https://github.com/romanoe/visualdon-exercices/tree/main/02-intro-d3) : Introduction à D3
-- [Exercice 3](https://github.com/romanoe/visualdon-exercices/tree/main/03-d3-data) : Données
-- [Exercice 4](https://github.com/romanoe/visualdon-exercices/tree/main/04-gapminder)
+- [Exercice 1](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/01-SVG): Dessiner et animer des formes SVG
+- [Exercice 2](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/02-intro-d3) : Introduction à D3
+- [Exercice 3](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/03-d3-data) : Données
+- [Exercice 4](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/04-gapminder)
   - Visualisation statique
   - Cartographie
   - Animation
