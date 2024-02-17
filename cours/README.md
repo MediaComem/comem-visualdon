@@ -20,20 +20,13 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 ## Programme de cours
 
-- [COURS 1](https://01-intro.surge.sh/) - Introduction + SVG
-- [COURS 2](https://02-intro-d3.surge.sh/) - Introduction à d3
-- [COURS 3](https://03-d3-data.surge.sh/) - Données
-- [COURS 4](https://04-scales-axis.surge.sh/) - Échelles & axes
-- [COURS 5](https://05-interaction-animation-1.surge.sh) - Interaction et animation 1
-- [COURS 6](https://06-interaction-animation-2.surge.sh) - Interaction et animation 2
-- [COURS 7](https://07-cartography-intro.surge.sh) - Introduction à la cartographie
-- [COURS 8](https://08-web-cartography.surge.sh) - Cartographie web
-- [COURS 9](https://09-web-scraping.surge.sh) - Web scraping
-- [COURS 10]() - Dos and don'ts en visualisation de données
+- [COURS 1](https://comem-visualdon.onrender.com/01-intro) - Introduction
+- [COURS 2](https://comem-visualdon.onrender.com/02-svg) - Scalable Vector Graphics (SVG)
+- [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3) - Introduction à D3.js
 
 ## Projet
 
-Les détails du projet sont décrits [ici](https://github.com/romanoe/visualdon-exercices/tree/main/projet).
+Les détails du projet sont décrits [ici](https://github.com/MediaComem/comem-visualdon/tree/main/projet).
 
 ### But
 
@@ -50,4 +43,4 @@ Les détails du projet sont décrits [ici](https://github.com/romanoe/visualdon-
 
 ## Exercices
 
-- Disponibles sur https://github.com/romanoe/visualdon-exercices
+- Disponibles sur https://github.com/MediaComem/comem-visualdon/tree/main/exercices
