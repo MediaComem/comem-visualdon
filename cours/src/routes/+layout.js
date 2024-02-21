@@ -17,6 +17,10 @@ export function load({ params }) {
         title: "03 - Introduction à D3.js",
         path: "03-intro-d3",
       },
+      {
+        title: "04 - Donnnées",
+        path: "04-data",
+      },
     ],
   };
 }

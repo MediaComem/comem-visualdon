@@ -36,10 +36,10 @@ Les détails du projet sont décrits [ici](https://github.com/MediaComem/comem-v
 
 ### Délais
 
-- Vendredi 10 mars 23h59: Thématique (10%)
-- Vendredi 17 mars 23h59: Wireframe (10%)
-- Mercredi 10 mai, vendredi 12 mai: Présentation (20%)
-- Lundi 15 mai 23h59: Site web (60%)
+- Vendredi 8 mars 23h59: Thématique (10%)
+- Vendredi 15 mars 23h59: Wireframe (10%)
+- Vendredi 17 mai: Présentation (20%)
+- Lundi 20 mai 23h59: Site web (60%)
 
 ## Exercices
 
