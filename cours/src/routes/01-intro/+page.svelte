@@ -81,7 +81,7 @@
 <Slide>
   <h3><span class="red">Analyser</span>: tester une hypothèse</h3>
   <div class="row center">
-    <div class="col-10">
+    <div class="col-30">
       <img
         src={JohnSnow}
         alt="cholera-john"
@@ -95,7 +95,7 @@
         </code>
       </p>
     </div>
-    <div class="col-90">
+    <div class="col-70">
       <img
         src={CholeraMap}
         alt="cholera"

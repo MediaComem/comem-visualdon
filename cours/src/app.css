@@ -110,6 +110,12 @@ section .row.center {
   align-items: center;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the child elements horizontally */
+}
+
 small > a > p {
   text-decoration: underline;
   font-size: 2.3rem;
