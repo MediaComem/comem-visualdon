@@ -1,10 +1,30 @@
 <script>
-  import Reference from "../lib/Reference.svelte";
-  import Slide from "../lib/Slide.svelte";
-  import Title from "../lib/Title.svelte";
+  import Reference from "$lib/Reference.svelte";
+  import Slide from "$lib/Slide.svelte";
+  import Title from "$lib/Title.svelte";
+
+  import Florence from "$lib/assets/01-intro-svg/florence.webp";
+  import JohnSnow from "$lib/assets/01-intro-svg/John_Snow.jpg";
+  import Minard from "$lib/assets/01-intro-svg/Charles_Joseph_Minard.png";
+  import NightingaleMortality from "$lib/assets/01-intro-svg/1920px-Nightingale-mortality.jpg";
+  import CholeraMap from "$lib/assets/01-intro-svg/cholera_map.jpg";
+  import MinardsMap from "$lib/assets/01-intro-svg/minards_map.png";
+  import Everest from "$lib/assets/01-intro-svg/everest-summit-hillary.jpg";
+  import GiorgiaLupi from "$lib/assets/01-intro-svg/giorgia_lupi.jpg";
+  import NYTimes from "$lib/assets/01-intro-svg/ny_times.gif";
+  import RTSCartes from "$lib/assets/01-intro-svg/rts_cartes.gif";
+  import FormFunction1 from "$lib/assets/01-intro-svg/form_and_function_1.svg";
+  import FormFunction2 from "$lib/assets/01-intro-svg/form_and_function_2.svg";
+  import FormFunction3 from "$lib/assets/01-intro-svg/form_and_function_3.svg";
+  import FormFunction4 from "$lib/assets/01-intro-svg/form_and_function_4.svg";
+  import FormFunction5 from "$lib/assets/01-intro-svg/form_and_function_5.svg";
+  import DataVizLibraries from "$lib/assets/01-intro-svg/data-viz-libraries.svg";
+  import FormFunctionObjectif from "$lib/assets/01-intro-svg/form_and_function_objectif.svg";
+  import Evaluation from "$lib/assets/01-intro-svg/evaluation.svg";
+  import Project from "$lib/assets/01-intro-svg/project.svg";
 </script>
 
-<Title title="1. Introduction"></Title>
+<Title title="01 - Introduction"></Title>
 
 <Slide>
   <h3>
@@ -27,7 +47,7 @@
   <div class="row center">
     <div class="col-20">
       <img
-        src="assets/01-intro-svg/florence.webp"
+        src={Florence}
         alt="florence"
         style="background: transparent;"
         width="130"
@@ -44,7 +64,7 @@
     </div>
     <div class="col-80">
       <img
-        src="assets/01-intro-svg/1920px-Nightingale-mortality.jpg"
+        src={NightingaleMortality}
         alt="mortality"
         style="background: transparent;"
         width="1000"
@@ -63,7 +83,7 @@
   <div class="row center">
     <div class="col-10">
       <img
-        src="assets/01-intro-svg/John_Snow.jpg"
+        src={JohnSnow}
         alt="cholera-john"
         style="background: transparent;"
         width="130"
@@ -77,7 +97,7 @@
     </div>
     <div class="col-90">
       <img
-        src="assets/01-intro-svg/cholera_map.jpg"
+        src={CholeraMap}
         alt="cholera"
         style="background: transparent;"
         width="600"
@@ -96,7 +116,7 @@
   <div class="row center">
     <div class="col-20">
       <img
-        src="assets/01-intro-svg/Charles_Joseph_Minard.png"
+        src={Minard}
         alt="charles"
         style="background: transparent;"
         width="140"
@@ -115,7 +135,7 @@
 
     <div class="col-80">
       <img
-        src="assets/01-intro-svg/minards_map.png"
+        src={MinardsMap}
         alt="minards"
         style="background: transparent;"
         width="1200"
@@ -151,7 +171,7 @@
     </div>
     <div class="col-50">
       <img
-        src="assets/01-intro-svg/form_and_function_1.svg"
+        src={FormFunction1}
         width="1000"
         height="1000"
         alt="form_and_function1"
@@ -170,7 +190,7 @@
     <div class="col-30">
       <img
         data-id="box"
-        src="assets/01-intro-svg/form_and_function_2.svg"
+        src={FormFunction2}
         width="550"
         height="200"
         alt="form_and_function2"
@@ -180,7 +200,7 @@
       <a
         href="https://www.scmp.com/infographics/article/1248804/allure-climbing-mount-everest"
         ><img
-          src="assets/01-intro-svg/everest-summit-hillary.jpg"
+          src={Everest}
           alt="everest"
           style="background: transparent;"
           width="450"
@@ -199,7 +219,7 @@
   <div class="row center">
     <div class="col-30">
       <img
-        src="assets/01-intro-svg/form_and_function_3.svg"
+        src={FormFunction3}
         width="550"
         height="200"
         alt="form_and_function3"
@@ -209,11 +229,7 @@
     <div class="col-70">
       <a
         href="https://www.behance.net/gallery/14283209/European-banks-and-government-debt"
-        ><img
-          src="assets/01-intro-svg/giorgia_lupi.jpg"
-          width="100%"
-          alt="giorgia-lupi"
-        /></a
+        ><img src={GiorgiaLupi} width="100%" alt="giorgia-lupi" /></a
       >
       <Reference
         referenceLink="https://www.behance.net/gallery/14283209/European-banks-and-government-debt?locale=de_DE"
@@ -227,7 +243,7 @@
   <div class="row center">
     <div class="col-30">
       <img
-        src="assets/01-intro-svg/form_and_function_4.svg"
+        src={FormFunction4}
         width="550"
         height="200"
         alt="form_and_function4"
@@ -237,11 +253,7 @@
     <div class="col-70">
       <a
         href="https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html"
-        ><img
-          src="assets/01-intro-svg/ny_times.gif"
-          alt="gif_ny"
-          width="100%"
-        /></a
+        ><img src={NYTimes} alt="gif_ny" width="100%" /></a
       >
 
       <Reference
@@ -256,7 +268,7 @@
   <div class="row center">
     <div class="col-30">
       <img
-        src="assets/01-intro-svg/form_and_function_5.svg"
+        src={FormFunction5}
         width="550"
         height="200"
         alt="form_and_function5"
@@ -266,11 +278,7 @@
     <div class="col-70">
       <a
         href="https://www.rts.ch/info/suisse/12849342-les-cartes-des-resultats-des-votations-federales-commune-par-commune.html"
-        ><img
-          src="assets/01-intro-svg/rts_cartes.gif"
-          alt="gif_rts"
-          width="80%"
-        /></a
+        ><img src={RTSCartes} alt="gif_rts" width="80%" /></a
       >
       <code
         ><small>
@@ -293,10 +301,7 @@
 </Slide>
 
 <Slide>
-  <img
-    src="assets/01-intro-svg/data-viz-libraries.svg"
-    alt="img-svg-libraries"
-  />
+  <img src={DataVizLibraries} alt="img-svg-libraries" />
 </Slide>
 
 <Slide>
@@ -315,7 +320,7 @@
     </div>
     <div class="col-50">
       <img
-        src="assets/01-intro-svg/form_and_function_objectif.svg"
+        src={FormFunctionObjectif}
         width="700"
         height="700"
         alt="form_and_function_objectif"
@@ -326,16 +331,12 @@
 
 <Slide>
   <h3>Evaluation</h3>
-  <img
-    src="assets/01-intro-svg/evaluation.svg"
-    width="100%"
-    alt="img-svg-evaluation"
-  />
+  <img src={Evaluation} width="100%" alt="img-svg-evaluation" />
 </Slide>
 
 <Slide>
   <h3>Projet</h3>
-  <img src="assets/01-intro-svg/project.svg" width="100%" alt="project-svg" />
+  <img src={Project} width="100%" alt="project-svg" />
 </Slide>
 
 <Slide>

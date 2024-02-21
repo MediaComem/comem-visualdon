@@ -1,10 +1,20 @@
 <script>
-  import Slide from "../lib/Slide.svelte";
-  import Title from "../lib/Title.svelte";
-  import Reference from "../lib/Reference.svelte";
+  import Slide from "$lib/Slide.svelte";
+  import Title from "$lib/Title.svelte";
+  import Reference from "$lib/Reference.svelte";
+
+  import SVGSyntaxImage from "$lib/assets/01-intro-svg/svg_syntax.png";
+  import SVGCodeFormesTextes from "$lib/assets/01-intro-svg/code_formes_textes.png";
+  import SVGPathCode from "$lib/assets/01-intro-svg/code_path.png";
+  import SVGPathSVG from "$lib/assets/01-intro-svg/path.svg";
+  import SVGGroupCode from "$lib/assets/01-intro-svg/groupe.png";
+  import SVGGroupPNG from "$lib/assets/01-intro-svg/grouping-bird.svg";
+  import SVGGroupTranslateCode from "$lib/assets/01-intro-svg/code_groupe_translate.png";
+  import SVGGroupTranslatePNG from "$lib/assets/01-intro-svg/groupe_translate.png";
+  import SVGAnimationsCode from "$lib/assets/01-intro-svg/code_animations.png";
 </script>
 
-<Title title="1. SVG"></Title>
+<Title title="02 - Scalable Vector Graphics (SVG)"></Title>
 
 <Slide>
   <h3>D3 & SVG</h3>
@@ -59,7 +69,7 @@
       </ul>
     </div>
     <div class="col-50">
-      <img src="assets/01-intro-svg/svg_syntax.png" alt="svg-syntax" />
+      <img src={SVGSyntaxImage} alt="svg-syntax" />
     </div>
   </div>
 </Slide>
@@ -165,7 +175,7 @@
       </ul>
     </div>
     <div class="col-50">
-      <img src="assets/01-intro-svg/code_formes_textes.png" alt="gif" />
+      <img src={SVGCodeFormesTextes} alt="gif" />
       <svg width="1000" height="100">
         <rect x="0" y="0" width="100" height="100" fill="steelblue" />
         <circle cx="150" cy="50" r="40" fill="indianred" />
@@ -199,8 +209,8 @@
       <p><span class="red">V</span>ertical line (<code>V y</code>)</p>
     </div>
     <div class="col-50">
-      <img src="assets/01-intro-svg/code_path.png" alt="path_png" />
-      <img src="assets/01-intro-svg/path.svg" alt="path_svg" />
+      <img src={SVGPathCode} alt="path_png" />
+      <img src={SVGPathSVG} alt="path_svg" />
     </div>
   </div>
 </Slide>
@@ -222,11 +232,11 @@
     </div>
 
     <div class="col-50">
-      <img src="assets/01-intro-svg/groupe.png" alt="code-groupe" />
-      <img src="assets/01-intro-svg/grouping-bird.svg" alt="groupe" />
+      <img src={SVGGroupCode} alt="code-groupe" />
+      <img src={SVGGroupPNG} alt="groupe" />
     </div>
-  </div></Slide
->
+  </div>
+</Slide>
 
 <Slide>
   <div class="row center">
@@ -247,14 +257,8 @@
       </ul>
     </div>
     <div class="col-50">
-      <img
-        src="assets/01-intro-svg/code_groupe_translate.png"
-        alt="code-transformations"
-      />
-      <img
-        src="assets/01-intro-svg/groupe_translate.png"
-        alt="groupe_translate"
-      />
+      <img src={SVGGroupTranslateCode} alt="code-transformations" />
+      <img src={SVGGroupTranslatePNG} alt="groupe_translate" width="400px" />
     </div>
   </div>
 </Slide>
@@ -277,10 +281,7 @@
       </ul>
     </div>
     <div class="col-60">
-      <img
-        src="assets/01-intro-svg/code_animations.png"
-        alt="code-animations"
-      />
+      <img src={SVGAnimationsCode} alt="code-animations" />
       <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
         <!-- Cercle avec animation de translation horizontale -->
         <circle cx="50" cy="100" r="30" fill="blue">

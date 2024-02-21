@@ -1,9 +1,19 @@
 <script>
-  import Slide from "../lib/Slide.svelte";
-  import Title from "../lib/Title.svelte";
-  import Reference from "../lib/Reference.svelte";
+  import Slide from "$lib/Slide.svelte";
+  import Title from "$lib/Title.svelte";
+  import Reference from "$lib/Reference.svelte";
   import { select } from "d3-selection";
   import { onMount } from "svelte";
+
+  import docAnnotationImage from "$lib/assets/02-intro-d3/doc_annotation.svg";
+  import codeChainingMethodsImage from "$lib/assets/02-intro-d3/code_chaining_methods.png";
+  import codeModifierHtmlImage from "$lib/assets/02-intro-d3/code_modifier_html.png";
+  import codeModifierJsImage from "$lib/assets/02-intro-d3/code_modifier_js.png";
+  import codeCreerJsImage from "$lib/assets/02-intro-d3/code_creer_js.png";
+  import codeEventsImage from "$lib/assets/02-intro-d3/code_events.png";
+  import dataGifImage from "$lib/assets/02-intro-d3/data.gif";
+  import dataEnterUpdateExitImage from "$lib/assets/02-intro-d3/data-enter-update-exit.svg";
+  import dataEnterUpdateExitLettersImage from "$lib/assets/02-intro-d3/data-enter-update-exit-letters.svg";
 
   const width = 500;
   const height = 400;
@@ -30,7 +40,8 @@
   });
 </script>
 
-<Title title="2. Introduction à d3.js"></Title>
+<Title title="03 - Introduction à D3.js"></Title>
+
 <Slide>
   <h3>Semaine passée</h3>
   <p class="fragment">
@@ -73,7 +84,6 @@
     </div>
   </div>
   <br />
-
   <Reference referenceLink="https://d3js.org/" referenceText="d3"></Reference>
 </Slide>
 
@@ -82,11 +92,7 @@
   <br />
 
   <div class="center">
-    <img
-      src="assets/02-intro-d3//doc_annotation.svg"
-      alt="js-doc"
-      width="60%"
-    />
+    <img src={docAnnotationImage} alt="js-doc" width="60%" />
   </div>
   <br />
 
@@ -115,11 +121,7 @@
       </code>
     </div>
     <div class="col-50">
-      <img
-        src="assets/02-intro-d3//code_chaining_methods.png"
-        alt="chaining-methods"
-      />
-
+      <img src={codeChainingMethodsImage} alt="chaining-methods" />
       <p>Tout de bon !</p>
     </div>
   </div>
@@ -217,16 +219,10 @@
     <div class="col-50">
       <div class="row center">
         <div class="col-50">
-          <img
-            src="assets/02-intro-d3//code_modifier_html.png"
-            alt="code-modifier-html"
-          />
+          <img src={codeModifierHtmlImage} alt="code-modifier-html" />
         </div>
         <div class="col-50">
-          <img
-            src="assets/02-intro-d3//code_modifier_js.png"
-            alt="code-modifier-js"
-          />
+          <img src={codeModifierJsImage} alt="code-modifier-js" />
         </div>
       </div>
 
@@ -260,7 +256,7 @@
       </ul>
     </div>
     <div class="col-50">
-      <img src="assets/02-intro-d3/code_creer_js.png" alt="code-creer-js" />
+      <img src={codeCreerJsImage} alt="code-creer-js" />
     </div>
 
     <svg id="mon-svg2"> </svg>
@@ -298,9 +294,7 @@
       </ul>
     </div>
     <div class="col-50">
-      <img src="assets/02-intro-d3//code_events.png" alt="code-events" />
-      <!-- <p>x: {x}, y: {y}</p>
-      <svg id="mon-svg3"> </svg> -->
+      <img src={codeEventsImage} alt="code-events" />
     </div>
   </div>
 
@@ -335,11 +329,7 @@
       </ul>
     </div>
     <div class="col-50">
-      <img
-        src="assets/02-intro-d3/data-enter-update-exit.svg"
-        alt="join-data-drawing"
-        width="700"
-      />
+      <img src={dataEnterUpdateExitImage} alt="join-data-drawing" width="700" />
     </div>
   </div>
 
@@ -379,13 +369,9 @@
       </ul>
     </div>
     <div class="col-50">
+      <img src={dataEnterUpdateExitImage} alt="join-data-drawing" width="600" />
       <img
-        src="assets/02-intro-d3/data-enter-update-exit.svg"
-        alt="join-data-drawing"
-        width="600"
-      />
-      <img
-        src="assets/02-intro-d3/data-enter-update-exit-letters.svg"
+        src={dataEnterUpdateExitLettersImage}
         alt="enter-update-exit-letters"
         width="600"
       />
@@ -425,7 +411,7 @@
     </div>
 
     <div class="col-40">
-      <img src="assets/02-intro-d3/data.gif" alt="data-gif" />
+      <img src={dataGifImage} alt="data-gif" />
       <br />
     </div>
   </div>

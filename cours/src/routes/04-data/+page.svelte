@@ -1,13 +1,17 @@
 <script>
-  import Slide from "../lib/Slide.svelte";
-  import Code from "../lib/Code.svelte";
-  import Title from "src/lib/Title.svelte";
+  import Slide from "$lib/Slide.svelte";
+  import Title from "$lib/Title.svelte";
+  import qualitativeQuantitativeImg from "$lib/assets/03-d3-data/qualitative_quantitative.png";
+  import csvImg from "$lib/assets/03-d3-data/csv.svg";
+  import jsonImg from "$lib/assets/03-d3-data/json.svg";
+  import tsvImg from "$lib/assets/03-d3-data/tsv.svg";
+  import xmlImg from "$lib/assets/03-d3-data/xml.svg";
 </script>
 
-<Title title="03. Données"></Title>
+<Title title="04 - Données"></Title>
 
 <Slide class="fragment">
-  <h2>Cours précédent</h2>
+  <h3>Cours précédent</h3>
   <p class="fragment">
     <span class="red">Syntaxe</span> Chaînage de méthodes (fonctions)
   </p>
@@ -20,10 +24,9 @@
     <code>data(<em>données</em>).join(enter, update, exit) </code>
   </p>
 </Slide>
-s
 
 <Slide>
-  <h2>Types de données</h2>
+  <h3>Types de données</h3>
   <div class="row">
     <div class="col-50">
       <p class="red"><b>Qualitatives</b></p>
@@ -39,24 +42,28 @@ s
         <li>Continues</li>
       </ul>
     </div>
+
+    <img
+      src={qualitativeQuantitativeImg}
+      alt="data-type"
+      style="height: 350px"
+      class="center"
+    />
   </div>
-  <img
-    src="assets/qualitative_quantitative.png"
-    alt="data-type"
-    style="height: 350px !important"
-    class="center"
-  /> <br />
+  <br />
 </Slide>
 
 <Slide>
-  <h2>Formats</h2>
+  <h3>Formats</h3>
 </Slide>
 
 <Slide>
   <h3>
     <span class="red">CSV</span> <br /><small>(Comma-Separated Values)</small>
   </h3>
-  <img src="assets/csv.svg" alt="csv" class="center" />
+  <div class="row">
+    <img src={csvImg} alt="csv" class="center" />
+  </div>
 </Slide>
 
 <Slide>
@@ -66,10 +73,10 @@ s
     >
   </h3>
   <img
-    src="assets/json.svg"
+    src={jsonImg}
     alt="json"
     style="height: 350px !important"
-    class="center"
+    class="img-center"
   />
 </Slide>
 
@@ -77,12 +84,7 @@ s
   <h3>
     <span class="red">TSV</span> <br /><small>(Tab-Separated Values)</small>
   </h3>
-  <img
-    src="assets/tsv.svg"
-    alt="tsv"
-    style="height: 300px !important"
-    class="center"
-  />
+  <img src={tsvImg} alt="tsv" style="height: 300px !important" class="center" />
 </Slide>
 
 <Slide>
@@ -91,21 +93,16 @@ s
       >(eXtensible Markup Language)</small
     >
   </h3>
-  <img
-    src="assets/xml.svg"
-    alt="xml"
-    style="height: 350px !important"
-    class="center"
-  />
+  <img src={xmlImg} alt="xml" style="height: 350px !important" class="center" />
 </Slide>
 
 <Slide>
-  <h2>Charger les données</h2>
+  <h3>Charger les données</h3>
 </Slide>
 
 <Slide>
   <a href="https://github.com/d3/d3-fetch/tree/v3.0.1"
-    ><h2><code class="red"> d3-fetch</code></h2></a
+    ><h3><code class="red"> d3-fetch</code></h3></a
   >
   <p>
     <span class="red">Installation</span> <br />
@@ -119,46 +116,46 @@ s
       <h3><span class="red">CSV</span></h3>
       <code><b class="red">csv</b>(input[, init][, row])</code>
       <br />
-      <pre> <Code trim>
-import {"{"} csv {"}"} from "d3-fetch";
-
-csv("chemin/du/fichier.csv")
-	.then( function(data) {"{"}
-                // Dessiner ici
-                {"}"})
-	.catch(function(error){"{"}
-                // Gérer les erreurs ici
-                {"}"})
-						</Code>
-						</pre>
+      <!-- <pre> <Code trim>
+    import {"{"} csv {"}"} from "d3-fetch";
+    
+    csv("chemin/du/fichier.csv")
+        .then( function(data) {"{"}
+                    // Dessiner ici
+                    {"}"})
+        .catch(function(error){"{"}
+                    // Gérer les erreurs ici
+                    {"}"})
+                            </Code>
+                            </pre> -->
     </div>
     <div class="col-50">
       <h3><span class="red">JSON</span></h3>
       <code><b class="red">json</b>(input[, init][, row])</code>
       <br />
-      <pre> <Code trim>
-import {"{"} json {"}"} from "d3-fetch";
-
-json("url/ou/chemin/du/fichier.json")
-	.then( function(data) {"{"}
-                // Dessiner ici
-                {"}"})
-	.catch(function(error){"{"}
-                // Gérer les erreurs ici
-                {"}"})
-						</Code>
-						</pre>
+      <!-- <pre> <Code trim>
+    import {"{"} json {"}"} from "d3-fetch";
+    
+    json("url/ou/chemin/du/fichier.json")
+        .then( function(data) {"{"}
+                    // Dessiner ici
+                    {"}"})
+        .catch(function(error){"{"}
+                    // Gérer les erreurs ici
+                    {"}"})
+                            </Code>
+                            </pre> -->
     </div>
   </div>
 </Slide>
 
 <Slide>
-  <h2>Statistiques</h2>
+  <h3>Statistiques</h3>
 </Slide>
 
 <Slide>
   <a href="https://github.com/d3/d3-array"
-    ><h2><code class="red">d3-array</code></h2></a
+    ><h3><code class="red">d3-array</code></h3></a
   >
   <p>
     <span class="red">Installation</span> <br />
@@ -167,28 +164,28 @@ json("url/ou/chemin/du/fichier.json")
 </Slide>
 
 <Slide>
-  <h2>Statistiques</h2>
+  <h3>Statistiques</h3>
   <br />
   <code><b class="red">max</b>(iterable[, accessor])</code><br />
   <code><b class="red">min</b>(iterable[, accessor])</code><br />
   <code><b class="red">sum</b>(iterable[, accessor])</code><br />
   <code><b class="red">extent</b>(iterable[, accessor])</code><br />
   <code><b class="red">mean</b>(iterable[, accessor])</code>
-
+  <!-- 
   <pre>
-    <Code trim>
-import {"{"} max, min, sum, extent, mean {"}"} from "d3-array";
-
-const data = [5, 10, 4, 25];
-
-const maxValue = max(data); // Expected output: 25
-const minValue = min(data); // Expected output: 5
-const sumValues = sum(data); // Expected output : 44
-const extentValues = extent(data); // Expected output : [4, 25]
-const meanValues = mean(data); // Expected output : 11
-
-    </Code>
-</pre>
+        <Code trim>
+    import {"{"} max, min, sum, extent, mean {"}"} from "d3-array";
+    
+    const data = [5, 10, 4, 25];
+    
+    const maxValue = max(data); // Expected output: 25
+    const minValue = min(data); // Expected output: 5
+    const sumValues = sum(data); // Expected output : 44
+    const extentValues = extent(data); // Expected output : [4, 25]
+    const meanValues = mean(data); // Expected output : 11
+    
+        </Code>
+    </pre> -->
 
   <small
     ><a href="https://github.com/d3/d3-array"
@@ -198,9 +195,9 @@ const meanValues = mean(data); // Expected output : 11
 </Slide>
 
 <Slide>
-  <h2>
+  <h3>
     Manipuler les données avec <span class="red"> JavaScript </span> (ES7)
-  </h2>
+  </h3>
 </Slide>
 
 <Slide>
@@ -210,13 +207,13 @@ const meanValues = mean(data); // Expected output : 11
     s"applique à l'ensemble des données
   </p>
 
-  <pre><Code trim>
-const data = [1, 4, 9, 16];
-
-// Pass a function to map
-const dataMapped = data.map(x => x * 2); // Expected output: Array [2, 8, 18, 32]
-
-    </Code></pre>
+  <!-- <pre><Code trim>
+    const data = [1, 4, 9, 16];
+    
+    // Pass a function to map
+    const dataMapped = data.map(x => x * 2); // Expected output: Array [2, 8, 18, 32]
+    
+        </Code></pre> -->
 
   <small
     ><a
@@ -232,14 +229,14 @@ const dataMapped = data.map(x => x * 2); // Expected output: Array [2, 8, 18, 32
   ><h3><code>Array.prototype.<span class="red">filter()</span></code></h3>
   <p>filtre les données selon une condition</p>
 
-  <pre><Code trim>
-const words = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
-
-
-const result = words.filter(word => word.length > 6); // Expected output: Array ["exuberant", "destruction", "present"]
-
-
-    </Code></pre>
+  <!-- <pre><Code trim>
+    const words = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
+    
+    
+    const result = words.filter(word => word.length > 6); // Expected output: Array ["exuberant", "destruction", "present"]
+    
+    
+        </Code></pre> -->
 
   <small
     ><a
@@ -255,21 +252,21 @@ const result = words.filter(word => word.length > 6); // Expected output: Array 
   <h3><code>Array.prototype.<span class="red">includes()</span></code></h3>
   <p>vérifie si les données contiennent une valeur spécifiée</p>
 
-  <pre><Code trim>
-const array1 = [1, 2, 3];
-
-console.log(array1.includes(2)); // Expected output: true
-
-
-const pets = ["cat", "dog", "bat"];
-
-console.log(pets.includes("cat")); // Expected output: true
-
-
-console.log(pets.includes("at")); // Expected output: false
-
-
-    </Code></pre>
+  <!-- <pre><Code trim>
+    const array1 = [1, 2, 3];
+    
+    console.log(array1.includes(2)); // Expected output: true
+    
+    
+    const pets = ["cat", "dog", "bat"];
+    
+    console.log(pets.includes("cat")); // Expected output: true
+    
+    
+    console.log(pets.includes("at")); // Expected output: false
+    
+    
+        </Code></pre> -->
 
   <small
     ><a
@@ -285,19 +282,19 @@ console.log(pets.includes("at")); // Expected output: false
   <h3><code>Array.prototype.<span class="red">pop()</span></code></h3>
   <p>supprime le dernier élément d"un tableau</p>
 
-  <pre><Code trim>
-const plants = ["broccoli", "cauliflower", "cabbage", "kale", "tomato"];
-
-console.log(plants.pop()); // Expected output: "tomato"
-
-console.log(plants); // Expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
-
-
-plants.pop();
-
-console.log(plants); // Expected output: Array ["broccoli", "cauliflower", "cabbage"]
-
-    </Code></pre>
+  <!-- <pre><Code trim>
+    const plants = ["broccoli", "cauliflower", "cabbage", "kale", "tomato"];
+    
+    console.log(plants.pop()); // Expected output: "tomato"
+    
+    console.log(plants); // Expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
+    
+    
+    plants.pop();
+    
+    console.log(plants); // Expected output: Array ["broccoli", "cauliflower", "cabbage"]
+    
+        </Code></pre> -->
 
   <small
     ><a
@@ -311,17 +308,17 @@ console.log(plants); // Expected output: Array ["broccoli", "cauliflower", "cabb
   <h3><code>Array.prototype.<span class="red">push()</span></code></h3>
   <p>ajoute un ou plusieurs éléments à la fin d"un tableau</p>
 
-  <pre><Code trim>
-const animals = ["pigs", "goats", "sheep"];
-
-const count = animals.push("cows");
-console.log(animals); // Expected output: Array ["pigs", "goats", "sheep", "cows"]
-
-
-animals.push("chickens", "cats", "dogs");
-console.log(animals);// Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
-
-    </Code></pre>
+  <!-- <pre><Code trim>
+    const animals = ["pigs", "goats", "sheep"];
+    
+    const count = animals.push("cows");
+    console.log(animals); // Expected output: Array ["pigs", "goats", "sheep", "cows"]
+    
+    
+    animals.push("chickens", "cats", "dogs");
+    console.log(animals);// Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+    
+        </Code></pre> -->
 
   <small
     ><a
@@ -341,19 +338,19 @@ console.log(animals);// Expected output: Array ["pigs", "goats", "sheep", "cows"
     seule valeur
   </p>
 
-  <pre><Code trim>
-const array1 = [1, 2, 3, 4];
-
-// 0 + 1 + 2 + 3 + 4
-const initialValue = 0;
-const sumWithInitial = array1.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
-  initialValue
-);
-
-console.log(sumWithInitial); // Expected output: 10
-
-    </Code></pre>
+  <!-- <pre><Code trim>
+    const array1 = [1, 2, 3, 4];
+    
+    // 0 + 1 + 2 + 3 + 4
+    const initialValue = 0;
+    const sumWithInitial = array1.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      initialValue
+    );
+    
+    console.log(sumWithInitial); // Expected output: 10
+    
+        </Code></pre> -->
 
   <small
     ><a
@@ -369,15 +366,15 @@ console.log(sumWithInitial); // Expected output: 10
   <h3><code>Array.prototype.<span class="red">forEach()</span></code></h3>
   <p>exécute une fonction donnée sur chaque élément du tableau</p>
 
-  <pre><Code trim>
-const array1 = ["a", "b", "c"];
-
-array1.forEach(element => console.log(element));
-// Expected output: "a"
-// Expected output: "b"
-// Expected output: "c"
-
-    </Code></pre>
+  <!-- <pre><Code trim>
+    const array1 = ["a", "b", "c"];
+    
+    array1.forEach(element => console.log(element));
+    // Expected output: "a"
+    // Expected output: "b"
+    // Expected output: "c"
+    
+        </Code></pre> -->
 
   <small
     ><a
@@ -390,7 +387,7 @@ array1.forEach(element => console.log(element));
 </Slide>
 
 <Slide>
-  <h2>Exercices</h2>
+  <h3>Exercices</h3>
   <p>
     <span class="red">Télécharger changements</span> <br />
     <small><code>git fetch upstream</code></small>
