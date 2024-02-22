@@ -433,6 +433,12 @@
         >Satellites</a
       >
     </li>
+    <li>
+      <a
+        href="https://www.reuters.com/graphics/GENDER-LANGUAGE/LGBT/mopanqoelva/index.html"
+        >Gender and Language</a
+      >
+    </li>
   </ul>
 </Slide>
 

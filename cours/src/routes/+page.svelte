@@ -6,6 +6,8 @@
   <div class="slides">
     <Slide>
       <h2>Visualisation de données</h2>
+      <h5>HEIG-VD | COMEM+</h5>
+      <p>2024</p>
     </Slide>
   </div>
 </div>
