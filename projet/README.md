@@ -40,7 +40,7 @@ paintbrush: **Note importante** : Ce n'est pas grave si à la fin de l'année vo
 
 ❗ 17 mai ❗
 
-Les présentations auront lieu le 10 mai et le 12 mai. L'ordre des groupes sera choisi de manière aléatoire et sera communiqué 2 semaines avant la présentation.
+Les présentations auront lieu le 17 mai. L'ordre des groupes sera choisi de manière aléatoire et sera communiqué 2 semaines avant la présentation.
 
 #### Structure présentation (_10 minutes de présentation, 5 minutes de discussion_)
 
