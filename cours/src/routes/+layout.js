@@ -18,7 +18,7 @@ export function load({ params }) {
         path: "03-intro-d3",
       },
       {
-        title: "04 - Donnnées",
+        title: "04 - Données",
         path: "04-data",
       },
     ],
