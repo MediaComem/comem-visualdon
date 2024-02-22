@@ -10,14 +10,13 @@
   import codeModifierHtmlImage from "$lib/assets/02-intro-d3/code_modifier_html.png";
   import codeModifierJsImage from "$lib/assets/02-intro-d3/code_modifier_js.png";
   import codeCreerJsImage from "$lib/assets/02-intro-d3/code_creer_js.png";
-  import codeEventsImage from "$lib/assets/02-intro-d3/code_events.png";
+  import codeEventsImage from "$lib/assets/02-intro-d3/code_events_js.png";
   import dataGifImage from "$lib/assets/02-intro-d3/data.gif";
   import dataEnterUpdateExitImage from "$lib/assets/02-intro-d3/data-enter-update-exit.svg";
   import dataEnterUpdateExitLettersImage from "$lib/assets/02-intro-d3/data-enter-update-exit-letters.svg";
 
   const width = 500;
   const height = 400;
-  const margin = { top: 50, right: 40, bottom: 50, left: 40 };
 
   let x = 0;
   let y = 0;
@@ -37,6 +36,12 @@
       .attr("cy", "40%")
       .attr("r", "100")
       .attr("fill", "green");
+
+    select("#mon-svg3")
+      .select("circle")
+      .on("click", function () {
+        select(this).attr("fill", "green");
+      });
   });
 </script>
 
@@ -255,11 +260,10 @@
         </li>
       </ul>
     </div>
-    <div class="col-50">
-      <img src={codeCreerJsImage} alt="code-creer-js" />
+    <div class="col-50 center">
+      <img src={codeCreerJsImage} alt="code-creer-js" width="60%" />
+      <svg id="mon-svg2"> </svg>
     </div>
-
-    <svg id="mon-svg2"> </svg>
   </div>
 
   <br />
@@ -293,8 +297,11 @@
         </li>
       </ul>
     </div>
-    <div class="col-50">
-      <img src={codeEventsImage} alt="code-events" />
+    <div class="col-50 center">
+      <img src={codeEventsImage} alt="code-events" width="60%" />
+      <svg id="mon-svg3">
+        <circle r="40" cx="80" cy="80"></circle>
+      </svg>
     </div>
   </div>
 
