@@ -39,7 +39,7 @@
 
     select("#mon-svg3")
       .select("circle")
-      .on("click", function () {
+      .on("click", function (event) {
         select(this).attr("fill", "green");
       });
   });
@@ -48,7 +48,7 @@
 <Title title="03 - Introduction à D3.js"></Title>
 
 <Slide>
-  <h3>Semaine passée</h3>
+  <h3>Cours précédent</h3>
   <p class="fragment">
     <span class="red">Fonction</span> Explicative ou exploratoire <br />
   </p>
