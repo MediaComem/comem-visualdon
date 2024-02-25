@@ -22,7 +22,11 @@
     await tick();
     const deck = reveal(revealApp);
 
-    deck.initialize({ slideNumber: "c/t", width: "90%", height: "100%" });
+    deck.initialize({
+      slideNumber: "c/t",
+      width: "90%",
+      height: "80%",
+    });
   });
 </script>
 
