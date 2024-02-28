@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="0.69397446"
-     inkscape:cx="239.92237"
-     inkscape:cy="-174.358"
+     inkscape:zoom="1.9628562"
+     inkscape:cx="214.22863"
+     inkscape:cy="11.972349"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g307159"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -43,7 +43,7 @@
        type="xygrid"
        id="grid20331"
        originx="-15.958996"
-       originy="-70.019544" />
+       originy="-70.019546" />
   </sodipodi:namedview>
   <defs
      id="defs6275">
@@ -145,7 +145,7 @@
            id="tspan15852-9"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
            x="106.05953"
-           y="90.872726">[0 , widthSvg]</tspan></text>
+           y="90.872726">[0 , svgWidth]</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8-8)"
          d="M 80.697917,89.958328 H 93.927088"

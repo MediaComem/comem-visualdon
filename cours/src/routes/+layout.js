@@ -21,6 +21,10 @@ export function load({ params }) {
         title: "04 - Données",
         path: "04-data",
       },
+      {
+        title: "05 - Échelles et Axes",
+        path: "05-axis-scales",
+      },
     ],
   };
 }
