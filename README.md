@@ -23,11 +23,13 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 ## Cours
 
-- [COURS 1](https://comem-visualdon.onrender.com/01-intro) - Introduction
-- [COURS 2](https://comem-visualdon.onrender.com/02-svg) - Scalable Vector Graphics (SVG)
-- [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3) - Introduction à D3.js
-- [COURS 4](https://comem-visualdon.onrender.com/04-data) - Données
-- [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales) - Échelles et axes
+- [COURS 1](https://comem-visualdon.onrender.com/01-intro) - Introduction [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/01-intro.pdf)
+- [COURS 2](https://comem-visualdon.onrender.com/02-svg) - Scalable Vector Graphics (SVG) [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/02-svg.pdf)
+- [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3) - Introduction à D3.js [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/03-intro-d3.pdf)
+
+- [COURS 4](https://comem-visualdon.onrender.com/04-data) - Données [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/04-data.pdf)
+
+- [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales) - Échelles et axes [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/05-axis-scales.pdf)
 
 ## Projet
 
