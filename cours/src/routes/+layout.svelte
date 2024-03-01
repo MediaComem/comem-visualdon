@@ -1,6 +1,4 @@
 <script>
-  export let data;
-
   // Svelte
   import { onMount, tick } from "svelte";
 
