@@ -117,7 +117,7 @@
     </div>
   </div>
   <Reference
-    referenceLink="https://d3js.org/d3-scale>"
+    referenceLink="https://d3js.org/d3-scale"
     referenceText="D3 - d3-scale"
   ></Reference>
 </Slide>
@@ -137,7 +137,7 @@
     </div>
   </div>
   <Reference
-    referenceLink="https://d3js.org/d3-scale>"
+    referenceLink="https://d3js.org/d3-scale"
     referenceText="D3 - d3-scale"
   ></Reference>
 </Slide>
@@ -157,7 +157,7 @@
     </div>
   </div>
   <Reference
-    referenceLink="https://d3js.org/d3-scale>"
+    referenceLink="https://d3js.org/d3-scale"
     referenceText="D3 - d3-scale"
   ></Reference>
 </Slide>
@@ -175,7 +175,7 @@
     </div>
   </div>
   <Reference
-    referenceLink="https://d3js.org/d3-scale>"
+    referenceLink="https://d3js.org/d3-scale"
     referenceText="D3 - d3-scale"
   ></Reference>
 </Slide>
@@ -193,7 +193,7 @@
     </div>
   </div>
   <Reference
-    referenceLink="https://d3js.org/d3-scale>"
+    referenceLink="https://d3js.org/d3-scale"
     referenceText="D3 - d3-scale"
   ></Reference>
 </Slide>
@@ -211,7 +211,7 @@
     </div>
   </div>
   <Reference
-    referenceLink="https://d3js.org/d3-scale>"
+    referenceLink="https://d3js.org/d3-scale"
     referenceText="D3 - d3-scale"
   ></Reference>
 </Slide>
@@ -229,7 +229,7 @@
     </div>
   </div>
   <Reference
-    referenceLink="https://d3js.org/d3-scale>"
+    referenceLink="https://d3js.org/d3-scale"
     referenceText="D3 - d3-scale"
   ></Reference>
 </Slide>
