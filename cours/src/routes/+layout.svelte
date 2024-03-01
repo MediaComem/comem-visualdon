@@ -25,12 +25,11 @@
     deck.initialize({
       slideNumber: "c/t",
       width: "90%",
-      height: "70%",
+      height: "80%",
     });
   });
 </script>
 
-<NavBar items={data}></NavBar>
 <div class="reveal">
   <div class="slides">
     <slot />

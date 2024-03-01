@@ -27,6 +27,7 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 - [COURS 2](https://comem-visualdon.onrender.com/02-svg) - Scalable Vector Graphics (SVG)
 - [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3) - Introduction à D3.js
 - [COURS 4](https://comem-visualdon.onrender.com/04-data) - Données
+- [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales) - Échelles et axes
 
 ## Projet
 
