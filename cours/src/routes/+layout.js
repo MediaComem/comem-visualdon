@@ -25,6 +25,10 @@ export function load({ params }) {
         title: "05 - Échelles et Axes",
         path: "05-axis-scales",
       },
+      {
+        title: "06 - Interaction et animation (partie 1)",
+        path: "06-interaction-animation-1",
+      },
     ],
   };
 }

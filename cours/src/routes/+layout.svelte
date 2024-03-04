@@ -1,4 +1,5 @@
 <script>
+  export let data;
   // Svelte
   import { onMount, tick } from "svelte";
 
@@ -28,6 +29,7 @@
   });
 </script>
 
+<NavBar items={data}></NavBar>
 <div class="reveal">
   <div class="slides">
     <slot />

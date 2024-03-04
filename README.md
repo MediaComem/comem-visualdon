@@ -31,6 +31,8 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 - [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales) - Échelles et axes [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/05-axis-scales.pdf)
 
+- [COURS 6](https://comem-visualdon.onrender.com/06-interaction-animation-1) - Interaction et animation (partie 1) [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/06-interaction-animation-1.pdf)
+
 ## Projet
 
 ### But
