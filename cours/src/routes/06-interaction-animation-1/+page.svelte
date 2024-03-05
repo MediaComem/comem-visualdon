@@ -12,6 +12,9 @@
   import ZoomSyntaxCode from "$lib/assets/06-interaction-animation-1/zoom-syntaxe-code.png";
   import ScaleExtent from "$lib/assets/06-interaction-animation-1/scale-extent.svg";
   import TranslateExtent from "$lib/assets/06-interaction-animation-1/translate-extent.svg";
+  import sketch1Img from "$lib/assets/04-axis-scales/sketch1.jpg";
+  import figmaImg from "$lib/assets/04-axis-scales/figma.png";
+  import invisionLogoImg from "$lib/assets/04-axis-scales/invision-logo-square.png";
 
   import { onMount } from "svelte";
 
@@ -338,29 +341,18 @@
 
 <Slide>
   <h3>Projet</h3>
-  <p>Charger les données</p>
-  <p>Agréger et manipuler les différents datasets</p>
-  <p>Commencer la visualisation "statique"</p>
-</Slide>
+  <p><span class="red">Thématique (8 mars)</span></p>
 
-<Slide>
-  <h3>Exercices</h3>
-  <h5>gapminder</h5>
+  <p><span class="red">Wireframe (15 mars)</span></p>
+
   <div class="row">
-    <div class="col-50">
-      <ol>
-        <li class="small">Visualisation statique</li>
-        <li class="small">Cartographie</li>
-        <li class="small">Interaction et animation</li>
-      </ol>
+    <div class="col-60">
+      <img src={sketch1Img} alt="sketch-wireframe" width="80%" />
     </div>
-    <div class="col-50">
-      <iframe
-        src="https://www.gapminder.org/tools/#$chart-type=bubbles&url=v1"
-        width="800"
-        height="550"
-        title="Gapminder"
-      ></iframe>
+
+    <div class="col-40">
+      <img src={figmaImg} alt="figma" />
+      <img src={invisionLogoImg} alt="invision" />
     </div>
   </div>
 </Slide>
