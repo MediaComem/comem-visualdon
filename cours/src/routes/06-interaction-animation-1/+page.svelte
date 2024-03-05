@@ -206,6 +206,14 @@
 </Slide>
 
 <Slide>
+  <h3>Exemple</h3>
+  <Reference
+    referenceLink="https://observablehq.com/d/3b44fccdf8827628#cell-288"
+    referenceText="Observable | d3-transition"
+  ></Reference>
+</Slide>
+
+<Slide>
   <a href="https://github.com/d3/d3-zoom"
     ><h3><code class="red">d3-zoom</code></h3></a
   >
@@ -332,10 +340,10 @@
 </Slide>
 
 <Slide>
-  <h3>Exemples</h3>
+  <h3>Exemple</h3>
   <Reference
-    referenceLink="https://codepen.io/romanoe/pen/OJoZwro"
-    referenceText="Observable | d3-transition, d3-zoom"
+    referenceLink="https://observablehq.com/d/3b44fccdf8827628#cell-290"
+    referenceText="Observable | d3-zoom"
   ></Reference>
 </Slide>
 
@@ -347,12 +355,12 @@
 
   <div class="row">
     <div class="col-60">
-      <img src={sketch1Img} alt="sketch-wireframe" width="80%" />
+      <img src={sketch1Img} alt="sketch-wireframe" width="60%" />
     </div>
 
     <div class="col-40">
-      <img src={figmaImg} alt="figma" />
-      <img src={invisionLogoImg} alt="invision" />
+      <img src={figmaImg} alt="figma" width="60%" />
+      <img src={invisionLogoImg} alt="invision" width="20%" />
     </div>
   </div>
 </Slide>
