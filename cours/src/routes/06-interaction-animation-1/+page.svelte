@@ -226,30 +226,42 @@
 <Slide>
   <div class="row center">
     <div class="col-50">
-      <h3>Zoom & Pan</h3>
-      <code class="small"><span class="red">zoom()</span></code>
+      <h5>Initialisation</h5>
+      <code class="small"
+        >const myZoom = d3.<span class="red">zoom()</span></code
+      >
       <ul>
         <li class="small">
-          Active le zoom et le panoramique sur l'élément sélectionné.
+          Initialise un objet de zoom pour activer le zoom et le panoramique
+        </li>
+      </ul>
+      <br /> <br />
+
+      <h5>Événements</h5>
+      <code class="small"
+        >d3.zoom().<span class="red">on(typenames, listener)</span></code
+      >
+      <ul>
+        <li class="small">
+          <code class="small"><span class="red">typenames</span></code>: Les
+          types d'événements à écouter, par exemple,
+          <code class="red">'zoom'</code>, <code class="red">'start'</code>,
+          <code class="red">'end'</code>
         </li>
         <li class="small">
-          Les événements associés sont <code>'zoom'</code>,
-          <code>'start'</code>, et <code>'end'</code>.
-        </li>
-        <li class="small">
-          La fonction <code class="red">zoom()</code> retourne un objet
-          <code class="red">transform</code>
-          que vous pouvez injecter dans les attributs avec
-          <code class="red">.attr()</code>.
+          <code class="small"><span class="red">listener</span></code>: La
+          fonction de rappel (callback) appelée lorsqu'un événement spécifié se
+          produit.
         </li>
       </ul>
     </div>
 
     <div class="col-50 center">
+      <!-- Ajoutez ici une image ou un code visuel représentatif du zoom avec d3 -->
+      <!-- Remplacez {ZoomSyntaxCode} par le chemin de l'image ou le code visuel -->
       <img src={ZoomSyntaxCode} alt="zoom-syntax" height="300" />
     </div>
   </div>
-
   <Reference
     referenceLink="https://d3js.org/d3-zoom"
     referenceText="d3 | d3-zoom"
@@ -297,7 +309,7 @@
 <Slide>
   <h3>Méthodes</h3>
   <code class="small"
-    ><em>selector</em>.call(zoom<span class="red">.methode, props</span>)</code
+    ><em>selection</em>.call(zoom<span class="red">.methode, props</span>)</code
   >
   <div class="row">
     <div class="col-50">
@@ -312,7 +324,9 @@
         <br />Multiplie l'échelle actuelle par le facteur d'échelle
         <br /><br />
 
-        <code>(zoom.<span class="red">scaleTo, échelle</span>)</code>
+        <code class="small"
+          >(zoom.<span class="red">scaleTo, échelle</span>)</code
+        >
         <br />Change l'échelle à échelle définie</small
       >
     </div>
