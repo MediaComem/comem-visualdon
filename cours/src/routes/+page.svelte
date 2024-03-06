@@ -5,7 +5,7 @@
 <div class="reveal">
   <div class="slides">
     <Slide>
-      <h2>Visualisation de données</h2>
+      <h3>Visualisation de données</h3>
       <h5>HEIG-VD | COMEM+</h5>
       <p>2024</p>
     </Slide>
