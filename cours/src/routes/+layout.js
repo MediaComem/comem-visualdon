@@ -29,6 +29,10 @@ export function load({ params }) {
         title: "06 - Interaction et animation (partie 1)",
         path: "06-interaction-animation-1",
       },
+      {
+        title: "07 - Interaction et animation (partie 2)",
+        path: "07-interaction-animation-2",
+      },
     ],
   };
 }
