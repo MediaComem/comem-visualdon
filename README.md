@@ -65,6 +65,10 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
   - Cartographie
   - Animation
 
+## Observables (exemples)
+
+- [COMEM+ | Visualisation de données](https://observablehq.com/collection/@romanoe/heig-vd-visualisation-de-donnees)
+
 ## Ressources
 
 ### SVG
@@ -74,11 +78,18 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 ### D3
 
+- [d3-selection](https://d3js.org/d3-selection)
+- [d3-fetch](https://d3js.org/d3-fetch)
+- [d3-array](https://d3js.org/d3-array)
+- [d3-scale](https://d3js.org/d3-scale)
+- [d3-axis](https://d3js.org/d3-axis)
+- [d3-zoom](https://d3js.org/d3-zoom)
+- [d3-brush](https://d3js.org/d3-brush)
+
+### Autres
+
 - [Cours 2021](https://observablehq.com/@idris-maps/introduction-a-d3)
-- https://d3js.org/
-- https://www.d3-graph-gallery.com/
-- https://observablehq.com/collection/@d3/learn-d3
-
-### Manipulaton de données avec Javascript
-
-- https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array
+- [D3 - Getting started](https://d3js.org/getting-started)
+- [D3 graph gallery](https://www.d3-graph-gallery.com/)
+- [Learn D3 - Observable](https://observablehq.com/collection/@d3/learn-d3)
+- [MDN - Array](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array)
