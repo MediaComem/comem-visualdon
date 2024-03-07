@@ -33,7 +33,7 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 - [COURS 6](https://comem-visualdon.onrender.com/06-interaction-animation-1) - Interaction et animation (partie 1) [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/06-interaction-animation-1.pdf)
 
-- - [COURS 76](https://comem-visualdon.onrender.com/07-interaction-animation-2) - Interaction et animation (partie 2) [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/07-interaction-animation-2.pdf)
+- [COURS 7](https://comem-visualdon.onrender.com/07-interaction-animation-2) - Interaction et animation (partie 2) [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/07-interaction-animation-2.pdf)
 
 ## Projet
 
