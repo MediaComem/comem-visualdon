@@ -35,6 +35,8 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 - [COURS 7](https://comem-visualdon.onrender.com/07-interaction-animation-2) - Interaction et animation (partie 2) [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/07-interaction-animation-2.pdf)
 
+- [COURS 8](https://comem-visualdon.onrender.com/08-intro-cartographie) - Introduction à la cartographie [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/08-intro-cartographie.pdf)
+
 ## Projet
 
 ### But
