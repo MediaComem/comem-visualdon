@@ -23,7 +23,7 @@
 
     deck.initialize({
       slideNumber: "c/t",
-      width: "90%",
+      width: "80%",
       height: "80%",
     });
   });

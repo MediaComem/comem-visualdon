@@ -33,6 +33,10 @@ export function load({ params }) {
         title: "07 - Interaction et animation (partie 2)",
         path: "07-interaction-animation-2",
       },
+      {
+        title: "08 - Introduction à la cartographie",
+        path: "08-intro-cartographie",
+      },
     ],
   };
 }
