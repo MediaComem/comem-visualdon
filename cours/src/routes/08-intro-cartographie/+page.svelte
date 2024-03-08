@@ -331,10 +331,6 @@
       referenceLink="https://www.youtube.com/watch?v=kIID5FDi2JQ&t=48s"
       referenceText="Pourquoi les cartes du monde sont fausses"
     ></Reference>
-    <!-- <Reference
-      referenceLink="https://github.com/d3/d3-geo-projection#projections"
-      referenceText="d3 | Liste des projections"
-    ></Reference> -->
   </div>
 </Slide>
 
@@ -342,6 +338,6 @@
   <h3>Projet</h3>
   <ul>
     <li>Données (création, chargement)</li>
-    <li>Visualisation statiques</li>
+    <li>Visualisations statiques</li>
   </ul>
 </Slide>
