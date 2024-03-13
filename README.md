@@ -37,7 +37,7 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 - [COURS 8](https://comem-visualdon.onrender.com/08-intro-cartographie) - Introduction à la cartographie [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/08-intro-cartographie.pdf)
 
-- [COURS 9](https://comem-visualdon.onrender.com/09-cartographie-web) - Cartographie [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/09-cartographie-web.pdf)
+- [COURS 9](https://comem-visualdon.onrender.com/09-cartographie-web) - Cartographie web [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/09-cartographie-web.pdf)
 
 ## Projet
 
