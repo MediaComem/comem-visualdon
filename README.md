@@ -37,6 +37,8 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 - [COURS 8](https://comem-visualdon.onrender.com/08-intro-cartographie) - Introduction à la cartographie [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/08-intro-cartographie.pdf)
 
+- [COURS 9](https://comem-visualdon.onrender.com/09-cartographie-web) - Cartographie [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/09-cartographie-web.pdf)
+
 ## Projet
 
 ### But
@@ -87,6 +89,7 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 - [d3-axis](https://d3js.org/d3-axis)
 - [d3-zoom](https://d3js.org/d3-zoom)
 - [d3-brush](https://d3js.org/d3-brush)
+- [d3-geo](https://d3js.org/d3-geo)
 
 ### Autres
 
@@ -95,3 +98,4 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 - [D3 graph gallery](https://www.d3-graph-gallery.com/)
 - [Learn D3 - Observable](https://observablehq.com/collection/@d3/learn-d3)
 - [MDN - Array](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Leaflet](https://leafletjs.com)

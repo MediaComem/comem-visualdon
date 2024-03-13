@@ -37,6 +37,10 @@ export function load({ params }) {
         title: "08 - Introduction à la cartographie",
         path: "08-intro-cartographie",
       },
+      {
+        title: "09 - Cartographie web",
+        path: "09-cartographie-web",
+      },
     ],
   };
 }
