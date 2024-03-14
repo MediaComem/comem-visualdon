@@ -19,12 +19,14 @@
         ><a href="https://observablehq.com/@idris-maps/donnees-cartographiques"
           >geojson</a
         ></code
-      > Comme du .json mais avec des données géographiques
+      >
+      Extension <code>.json</code> avec les données géographiques (<code
+        >features</code
+      >)
     </li>
     <li>
       <code
-        ><a href="https://https://wiki.openstreetmap.org/wiki/OSM_XML"
-          >OSM (xml)</a
+        ><a href="https://wiki.openstreetmap.org/wiki/OSM_XML">OSM (xml)</a
         ></code
       > OpenStreetMap
     </li>
@@ -39,24 +41,35 @@
         ></code
       > Well Known Text
     </li>
+    <li>
+      <code><a href="https://geoparquet.org/">GeoParquet</a></code> Extension Parquet
+      pour les données géographiques (cloud based)
+    </li>
   </ul>
+  <Reference
+    referenceLink="https://observablehq.com/@idris-maps/donnees-cartographiques"
+    referenceText="Observable | Données cartographiques"
+  ></Reference>
 </Slide>
 
 <Slide>
   <h3>Sources de données</h3>
   <ul>
     <li>
-      Mondiales: <a href="https://www.naturalearthdata.com/downloads/"
-        >Natural Earth</a
-      >
+      Mondiales: <a href="https://wiki.openstreetmap.org/wiki/Downloading_data"
+        >OpenStreetMap (OSM)</a
+      >, <a href="https://www.naturalearthdata.com/downloads/">Natural Earth</a>
     </li>
     <li>
       Suisse: <a
         href="https://opendata.swiss/fr/dataset?q=swissboundaries&sort=score+desc%2C+metadata_modified+desc"
         >opendata.swiss</a
-      >
+      >,
+      <a
+        href="https://api3.geo.admin.ch/api/faq/index.html#which-layers-are-available"
+        >swisstopo</a
+      >, <a href="https://viageo.ch/">Viageo</a>
     </li>
-    <li>OpenStreetMap (OSM)</li>
   </ul>
 </Slide>
 
@@ -81,53 +94,59 @@
     referenceLink="https://www.openstreetmap.org/#map=15/46.7841/6.6392"
     referenceText="OpenStreetMap"
   ></Reference>
-  <br />
 </Slide>
 
 <Slide>
   <h3>OSM</h3>
   <p>vs</p>
   <h3>Google Map</h3>
-  <q class="small col-60">
-    Google Map is a closed system, and every information is property of Google.
-    OpenStreetMap is an open data source, and its information is available to
-    every organisation and user.
-  </q>
+  <div class="row">
+    <q class="small col-60">
+      Google Map is a closed system, and every information is property of
+      Google. OpenStreetMap is an open data source, and its information is
+      available to every organisation and user.
+    </q>
+  </div>
+  <Reference
+    referenceLink="https://medium.com/@thegeospatialnews/how-are-google-maps-different-from-openstreetmap-bc65f704cdab"
+    referenceText="How are Google Maps different from OpenStreetMap?, Medium"
+  ></Reference>
 </Slide>
 
 <Slide>
   <h3>Récupérer les données</h3>
-  <ul>
-    <li>
-      Par région : <small
-        ><code
-          >curl
-          "https://api.openstreetmap.org/api/0.6/map?bbox=6.645,46.779,6.65,46.783"
-          heig.osm</code
-        ></small
-      >
-    </li>
-    <li>
-      Par types d'objets : <a href="https://overpass-turbo.osm.ch/"
-        ><span class="red">Overpass API</span></a
-      >
-    </li>
-    <small>
-      Objets: <a href="https://wiki.openstreetmap.org/wiki/Map_features "
-        >https://wiki.openstreetmap.org/wiki/Map_features
-      </a></small
-    >
-    <li>
-      Géocodage: <a href="https://nominatim.org/"
-        ><span class="red">Nominatim</span></a
-      >
-    </li>
-    <small
-      ><code
-        >https://nominatim.openstreetmap.org/search?city=yverdon&format=json</code
-      ></small
-    >
-  </ul>
+  <div class="row">
+    <div class="col-80">
+      <ul>
+        <li class="small">
+          Par région : <code>
+            curl
+            "https://api.openstreetmap.org/api/0.6/map?bbox=6.645,46.779,6.65,46.783"
+            heig.osm</code
+          >
+        </li>
+        <li class="small">
+          Par types d'objets : <a href="https://overpass-turbo.osm.ch/"
+            ><span class="red">Overpass Turbo API</span></a
+          >
+        </li>
+        <li class="small">
+          Types d' Objets: <a
+            href="https://wiki.openstreetmap.org/wiki/Map_features "
+            >https://wiki.openstreetmap.org/wiki/Map_features
+          </a>
+        </li>
+        <li class="small">
+          Géocodage: <a href="https://nominatim.org/"
+            ><span class="red">Nominatim</span></a
+          >
+          <code
+            >https://nominatim.openstreetmap.org/search?city=yverdon&format=json</code
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
   <p></p>
 </Slide>
 
@@ -152,26 +171,29 @@
 </Slide>
 
 <Slide>
-  <h3>Librairies javascript</h3>
+  <h3>Librairies JS</h3>
   <ul>
     <li class="small">
-      <a href="https://d3js.org/">d3.js</a>
+      <a href="https://observablehq.com/collection/@d3/d3-geo">d3-geo</a>
     </li>
     <li class="small">
-      <a href="https://leafletjs.com/">Leaflet.js</a>
+      <a href="https://leafletjs.com/examples.html">Leaflet.js</a>
     </li>
     <li class="small">
       <a href="https://openlayers.org/">OpenLayers.js</a>
     </li>
     <li class="small">
-      <a href="https://deck.gl/">Deck.gl</a>
+      <a href="https://deck.gl/examples">Deck.gl</a>
     </li>
     <li class="small">
-      <a href="https://maplibre.org/">MapLibre GL JS</a>
+      <a href="https://maplibre.org/maplibre-gl-js/docs/examples/"
+        >MapLibre GL JS</a
+      >
     </li>
     <li class="small">
-      <a href="https://kepler.gl/">Kepler.gl</a>
+      <a href="https://kepler.gl/demo">Kepler.gl</a>
     </li>
+    <li class="small"><a href="https://giro3d.org/examples/">Giro3D</a></li>
   </ul>
   <ul></ul>
 </Slide>
@@ -204,7 +226,7 @@
         ></small
       ><br /><br />
       <Reference
-        referenceLink="https://d3js.org/d3-geo/projection"
+        referenceLink="https://observablehq.com/collection/@d3/d3-geo-projection"
         referenceText="d3 | Projections"
       ></Reference>
 
