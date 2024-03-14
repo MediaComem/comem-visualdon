@@ -69,7 +69,7 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
   - Cartographie
   - Animation
 
-## Observables (exemples)
+### Notebooks
 
 - [COMEM+ | Visualisation de données](https://observablehq.com/collection/@romanoe/heig-vd-visualisation-de-donnees)
 
@@ -91,6 +91,31 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 - [d3-brush](https://d3js.org/d3-brush)
 - [d3-geo](https://d3js.org/d3-geo)
 
+### Géographique
+
+**2D**
+
+- [Leaflet](https://leafletjs.com/)
+- [OpenLayers](https://openlayers.org/)
+- [MapLibre GL](https://maplibre.org/)
+
+**3D**
+
+- [deck.gl](https://deck.gl/examples)
+- [kepler.gl](https://kepler.gl/demo)
+- [Giro3D](https://giro3d.org/examples/index.html)
+- [Three.js](https://threejs.org)
+- [Potree](https://potree.github.io/)
+
+**Données**
+
+- [opendata.swiss](https://opendata.swiss/fr/dataset?q=swissboundaries&sort=score+desc%2C+metadata_modified+desc) (Suisse)
+- [swisstopo](https://api3.geo.admin.ch/api/faq/index.html#which-layers-are-available) (Suisse)
+- [Viageo](https://viageo.ch/") (Suisse romande)
+- [Natural Earth](https://www.naturalearthdata.com/downloads/) (Monde)
+- [Overpass Turbo](https://overpass-turbo.osm.ch/) (Monde)
+- [Données cartographiques, Anders | Observable](https://observablehq.com/@idris-maps/donnees-cartographiques) (Format de données)
+
 ### Autres
 
 - [Cours 2021](https://observablehq.com/@idris-maps/introduction-a-d3)
@@ -98,4 +123,3 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 - [D3 graph gallery](https://www.d3-graph-gallery.com/)
 - [Learn D3 - Observable](https://observablehq.com/collection/@d3/learn-d3)
 - [MDN - Array](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array)
-- [Leaflet](https://leafletjs.com)
