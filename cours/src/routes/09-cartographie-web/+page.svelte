@@ -389,9 +389,8 @@
   <h3>Autres ressources</h3>
   <ul>
     <li>
-      Cartes de chaleurs: <a
-        href="https://www.patrick-wied.at/static/heatmapjs/"
-        ><code>heatmap.js</code></a
+      Cartes de chaleurs: <a href="https://github.com/Leaflet/Leaflet.heat"
+        ><code>Leaflet.heat</code></a
       >, <a href="https://deck.gl/examples"><code>Deck.gl</code></a>
     </li>
     <li>
