@@ -23,21 +23,23 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 ## Cours
 
-- [COURS 1](https://comem-visualdon.onrender.com/01-intro) - Introduction [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/01-intro.pdf)
-- [COURS 2](https://comem-visualdon.onrender.com/02-svg) - Scalable Vector Graphics (SVG) [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/02-svg.pdf)
-- [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3) - Introduction à D3.js [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/03-intro-d3.pdf)
+- [COURS 1](https://comem-visualdon.onrender.com/01-intro) - Introduction [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/01-intro.pdf)]
+- [COURS 2](https://comem-visualdon.onrender.com/02-svg) - Scalable Vector Graphics (SVG) [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/02-svg.pdf)]
+- [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3) - Introduction à D3.js [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/03-intro-d3.pdf)]
 
-- [COURS 4](https://comem-visualdon.onrender.com/04-data) - Données [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/04-data.pdf)
+- [COURS 4](https://comem-visualdon.onrender.com/04-data) - Données [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/04-data.pdf)]
 
-- [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales) - Échelles et axes [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/05-axis-scales.pdf)
+- [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales) - Échelles et axes [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/05-axis-scales.pdf)]
 
-- [COURS 6](https://comem-visualdon.onrender.com/06-interaction-animation-1) - Interaction et animation (partie 1) [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/06-interaction-animation-1.pdf)
+- [COURS 6](https://comem-visualdon.onrender.com/06-interaction-animation-1) - Interaction et animation (partie 1) [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/06-interaction-animation-1.pdf)]
 
-- [COURS 7](https://comem-visualdon.onrender.com/07-interaction-animation-2) - Interaction et animation (partie 2) [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/07-interaction-animation-2.pdf)
+- [COURS 7](https://comem-visualdon.onrender.com/07-interaction-animation-2) - Interaction et animation (partie 2) [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/07-interaction-animation-2.pdf)]
 
-- [COURS 8](https://comem-visualdon.onrender.com/08-intro-cartographie) - Introduction à la cartographie [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/08-intro-cartographie.pdf)
+- [COURS 8](https://comem-visualdon.onrender.com/08-intro-cartographie) - Introduction à la cartographie [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/08-intro-cartographie.pdf)]
 
-- [COURS 9](https://comem-visualdon.onrender.com/09-cartographie-web) - Cartographie web [[PDF]](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/09-cartographie-web.pdf)
+- [COURS 9](https://comem-visualdon.onrender.com/09-cartographie-web) - Cartographie web [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/09-cartographie-web.pdf)]
+
+- [COURS 10](https://comem-visualdon.onrender.com/10-dos-and-donts) - Dos and dont's en visualisation de données [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/10-dos-and-donts.pdf)]
 
 ## Projet
 
