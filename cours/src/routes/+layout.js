@@ -41,6 +41,10 @@ export function load({ params }) {
         title: "09 - Cartographie web",
         path: "09-cartographie-web",
       },
+      {
+        title: "10 - Dos and dont'ts",
+        path: "10-dos-and-donts",
+      },
     ],
   };
 }
