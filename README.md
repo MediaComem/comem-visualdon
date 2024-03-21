@@ -41,6 +41,8 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 - [COURS 10](https://comem-visualdon.onrender.com/10-dos-and-donts) - Dos and dont's en visualisation de données [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/10-dos-and-donts.pdf)]
 
+- [COURS 11](https://comem-visualdon.onrender.com/11-scrollytelling) - Scrollytelling [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/11-scrollytelling.pdf)]
+
 ## Projet
 
 ### But
@@ -93,7 +95,7 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 - [d3-brush](https://d3js.org/d3-brush)
 - [d3-geo](https://d3js.org/d3-geo)
 
-### Géographique
+### Cartographie
 
 **2D**
 
@@ -117,6 +119,12 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 - [Natural Earth](https://www.naturalearthdata.com/downloads/) (Monde)
 - [Overpass Turbo](https://overpass-turbo.osm.ch/) (Monde)
 - [Données cartographiques, Anders | Observable](https://observablehq.com/@idris-maps/donnees-cartographiques) (Format de données)
+
+### Scrollytelling
+- [scrollama](https://github.com/russellsamora/scrollama)
+- [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+- [ScrollMagic](https://scrollmagic.io/)
+- [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/)
 
 ### Autres
 
