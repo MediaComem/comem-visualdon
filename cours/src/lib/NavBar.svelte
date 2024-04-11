@@ -63,7 +63,7 @@
     <div class="{visible} w-full" id="navbar-hamburger">
       <ul class="flex flex-col font-medium mt-4 rounded-lg dark:bg-white">
         {#each items.lectures as item}
-          <li>
+          <li class="small">
             <a
               data-sveltekit-reload
               href="/{item.path}"
@@ -83,5 +83,9 @@
     z-index: 2;
     /* Use a negative margin to move the navbar up */
     margin-bottom: -80px; /* Adjust the value based on your needs */
+  }
+
+  li {
+    list-style-type: none;
   }
 </style>

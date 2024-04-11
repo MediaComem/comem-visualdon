@@ -45,10 +45,14 @@ export function load({ params }) {
         title: "10 - Dos and dont'ts",
         path: "10-dos-and-donts",
       },
-      
+
       {
         title: "11 - Scrollytelling",
         path: "11-scrollytelling",
+      },
+      {
+        title: "12 - Alternatives à D3.js",
+        path: "12-alternatives-d3",
       },
     ],
   };
