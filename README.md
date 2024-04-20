@@ -43,7 +43,7 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 - [COURS 11](https://comem-visualdon.onrender.com/11-scrollytelling) - Scrollytelling [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/11-scrollytelling.pdf)]
 
-- [COURS 12](https://comem-visualdon.onrender.com/12-alternatives-d3) - Scrollytelling [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/12-alternatives-d3.pdf)]
+- [COURS 12](https://comem-visualdon.onrender.com/12-alternatives-d3) - Alternatives à d3.js  [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/12-alternatives-d3.pdf)]
 
 ## Projet
 
