@@ -403,7 +403,7 @@
   <div class="row">
     <div class="col-60">
       <h3>Projet</h3>
-      <h4><span class="red">Thématique (8 mars)</span></h4>
+      <h4><span class="red">Thématique (7 mars)</span></h4>
       <ul>
         <li>Former les groupes (2-3 personnes par groupe)</li>
         <li>Trouver un jeu de données</li>
