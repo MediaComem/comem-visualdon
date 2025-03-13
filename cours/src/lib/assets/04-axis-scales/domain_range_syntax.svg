@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="171.31143mm"
-   height="35.231804mm"
-   viewBox="0 0 171.31144 35.231803"
+   width="171.31197mm"
+   height="35.488445mm"
+   viewBox="0 0 171.31197 35.488445"
    version="1.1"
    id="svg8"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
    sodipodi:docname="domain_range_syntax.svg"
    inkscape:export-filename="/home/noe/heig-vd/dataviz-slides/04-axis-scales/public/assets/domain_range.png"
    inkscape:export-xdpi="500"
@@ -510,26 +510,31 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70810576"
-     inkscape:cx="530.28802"
-     inkscape:cy="-24.713822"
+     inkscape:cx="530.99413"
+     inkscape:cy="-25.419932"
      inkscape:document-units="mm"
-     inkscape:current-layer="g183013"
+     inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1850"
-     inkscape:window-height="1016"
+     inkscape:window-width="1920"
+     inkscape:window-height="1131"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid4783"
        originx="139.86769"
-       originy="201.42724" />
+       originy="201.41667"
+       spacingy="1"
+       spacingx="1"
+       units="mm" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -546,7 +551,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(139.86768,-318.01098)">
+     transform="translate(139.86768,-318.02156)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -559,34 +564,30 @@
        x="215.94971"
        y="398.43326"
        id="text4751-5-7-4-1" />
-    <g
-       id="g183013"
-       transform="translate(6.4452992)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="-146.45056"
-         y="324.61496"
-         id="text100713"><tspan
-           sodipodi:role="line"
-           id="tspan100711"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-           x="-146.45056"
-           y="324.61496">typeEchelle</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-           x="-146.45056"
-           y="337.84409"
-           id="tspan100715">.<tspan
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#cc2b0f;fill-opacity:1"
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-140.00526"
+       y="324.61496"
+       id="text100713"><tspan
+         sodipodi:role="line"
+         id="tspan100711"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="-140.00526"
+         y="324.61496">typeEchelle</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="-140.00526"
+         y="338.00415"
+         id="tspan100715">.<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#cc2b0f;fill-opacity:1"
    id="tspan121389">domain</tspan>([minData, maxData]) </tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-           x="-146.45056"
-           y="351.07321"
-           id="tspan100717">.<tspan
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#cc2b0f;fill-opacity:1"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="-140.00526"
+         y="351.39334"
+         id="tspan100717">.<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#cc2b0f;fill-opacity:1"
    id="tspan122921">range</tspan>([0, svgWidth])  </tspan></text>
-    </g>
   </g>
 </svg>
