@@ -14,7 +14,7 @@ Promise.all([
     .then(([posts, users]) =>  {
 
         // 1. Nouvel objet
-        let result1 =  users.forEach(usr => {
+        let result1 =  users.map(usr => {
             let posts_filtered = posts.filter(post => post.userId === usr.id)
 
             console.log("Posts filtrés", posts_filtered);
