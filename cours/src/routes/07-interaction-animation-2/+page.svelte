@@ -5,6 +5,7 @@
     import Animation from "$lib/assets/07-interaction-animation-2/animation-1.svg";
     import BrushSyntaxe from "$lib/assets/07-interaction-animation-2/brush-syntaxe.png";
     import BrushGif from "$lib/assets/07-interaction-animation-2/brush.gif";
+    import TranslateExtent from "$lib/assets/06-interaction-animation-1/translate-extent.svg";
 </script>
 
 <Title title="07 - Interaction et animation 2"></Title>
