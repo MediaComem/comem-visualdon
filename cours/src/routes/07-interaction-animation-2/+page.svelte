@@ -6,6 +6,8 @@
     import BrushSyntaxe from "$lib/assets/07-interaction-animation-2/brush-syntaxe.png";
     import BrushGif from "$lib/assets/07-interaction-animation-2/brush.gif";
     import TranslateExtent from "$lib/assets/06-interaction-animation-1/translate-extent.svg";
+    import ScaleExtent from "$lib/assets/06-interaction-animation-1/scale-extent.svg";
+    import ZoomSyntaxCode from "$lib/assets/06-interaction-animation-1/zoom-syntaxe-code.png";
 </script>
 
 <Title title="07 - Interaction et animation 2"></Title>
