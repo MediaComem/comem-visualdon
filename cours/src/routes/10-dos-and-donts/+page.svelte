@@ -16,6 +16,7 @@
     import ColorBlind from "$lib/assets/10-do-and-donts/Be aware of colour blindness 1.png";
     import RotateBarChart from "$lib/assets/10-do-and-donts/Rotate bar chart.png";
     import EasyComparison from "$lib/assets/10-do-and-donts/sort data for easy comparisons 1.png";
+    import SurvivorBias from "$lib/assets/10-do-and-donts/Survivorship-bias.svg";
 </script>
 
 <Title title="11 - Dos and don’ts"></Title>
@@ -99,6 +100,18 @@
             width="350"
             height="500"
         />
+    </div>
+    <code
+        ><small
+            >Source: Iraq: Deaths on the Decline - Andy Cotgreave, 2014
+        </small></code
+    >
+</Slide>
+
+<Slide>
+    <h5>Biais</h5>
+    <div class="center">
+        <img src={SurvivorBias} alt="survivor-bias" width="350" height="500" />
     </div>
     <code
         ><small
