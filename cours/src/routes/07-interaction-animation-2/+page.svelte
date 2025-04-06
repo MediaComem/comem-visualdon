@@ -12,16 +12,6 @@
 
 <Title title="07 - Interaction et animation 2"></Title>
 
-<Slide class="fragment">
-    <h3>Cours précédent</h3>
-    <p class="fragment">
-        <span class="red">Animation</span>
-        <code>d3-transition</code>
-    </p>
-    <p class="fragment">
-        <span class="red">Interaction</span> <code>d3-zoom</code>
-    </p>
-</Slide>
 
 <Slide>
     <a href="https://github.com/d3/d3-zoom"
