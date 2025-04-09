@@ -109,15 +109,26 @@
 </Slide>
 
 <Slide>
-    <h5>Biais</h5>
     <div class="center">
-        <img src={SurvivorBias} alt="survivor-bias" width="350" height="500" />
+        <img src={SurvivorBias} alt="survivor-bias" width="700" height="500" />
     </div>
-    <code
+    <!-- <code
         ><small
             >Source: Iraq: Deaths on the Decline - Andy Cotgreave, 2014
         </small></code
-    >
+    > -->
+</Slide>
+
+<Slide>
+    <h5>Attention aux biais</h5>
+    <div class="center">
+        <img src={SurvivorBias} alt="survivor-bias" width="700" height="500" />
+    </div>
+    <!-- <code
+        ><small
+            >Source: Iraq: Deaths on the Decline - Andy Cotgreave, 2014
+        </small></code
+    > -->
 </Slide>
 
 <Slide class="fragment">
