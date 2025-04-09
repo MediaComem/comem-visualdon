@@ -9,8 +9,6 @@
     import Transition from "$lib/assets/06-interaction-animation-1/transition.svg";
     import TransitionSyntax from "$lib/assets/06-interaction-animation-1/transition-syntaxe.svg";
     import TransitionCode from "$lib/assets/06-interaction-animation-1/transition-code.png";
-    import ZoomSyntaxCode from "$lib/assets/06-interaction-animation-1/zoom-syntaxe-code.png";
-    import ScaleExtent from "$lib/assets/06-interaction-animation-1/scale-extent.svg";
     import sketch1Img from "$lib/assets/04-axis-scales/sketch1.jpg";
     import figmaImg from "$lib/assets/04-axis-scales/figma.png";
     import invisionLogoImg from "$lib/assets/04-axis-scales/invision-logo-square.png";
