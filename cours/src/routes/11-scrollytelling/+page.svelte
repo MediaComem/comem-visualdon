@@ -3,21 +3,10 @@
     import Title from "$lib/Title.svelte";
 
     import Reference from "$lib/Reference.svelte";
+    import ScrollamaSyntax from "$lib/assets/11-d3-alternatives-scrollytelling/scrollama-syntax.png";
 </script>
 
 <Title title="11 - Scrollytelling"></Title>
-
-<Slide class="fragment">
-    <h3>Cours précédent</h3>
-    <p class="fragment">
-        <span class="red">d3-geo</span>
-        <code>projections</code>, <code>geoPath</code>
-    </p>
-    <p class="fragment">
-        <span class="red">Leaflet</span> <code>L.map</code>,
-        <code>L.geoJson</code>, <code>bindPopup</code>
-    </p>
-</Slide>
 
 <Slide>
     <h3>Scrollytelling</h3>
@@ -31,23 +20,39 @@
 </Slide>
 
 <Slide>
-    <a href="https://github.com/russellsamora/scrollama"
-        ><h3><code class="heig-red">scrollama</code></h3></a
-    >
-    <p>
-        <span class="heig-red">Installation</span> <br />
-        <small><code>npm install scrollama intersection-observer</code></small>
-    </p>
+    <div class="row">
+        <div class="col-50">
+            <a href="https://github.com/russellsamora/scrollama"
+                ><h3><code class="heig-red">scrollama</code></h3></a
+            >
+            <p>
+                <span class="heig-red">Installation</span> <br />
+                <small
+                    ><code>npm install scrollama intersection-observer</code
+                    ></small
+                >
+            </p>
 
-    <Reference
-        referenceLink="https://github.com/russellsamora/scrollama"
-        referenceText="Doc"
-    ></Reference>
-    <br />
-    <Reference
-        referenceLink="https://russellsamora.github.io/scrollama/basic/"
-        referenceText="Exemples"
-    ></Reference>
+            <Reference
+                referenceLink="https://github.com/russellsamora/scrollama"
+                referenceText="Doc"
+            ></Reference>
+            <br />
+            <Reference
+                referenceLink="https://russellsamora.github.io/scrollama/basic/"
+                referenceText="Exemples"
+            ></Reference>
+        </div>
+
+        <div class="col-50">
+            <img
+                src={ScrollamaSyntax}
+                alt="scrollama-syntax"
+                width="800"
+                class="center"
+            />
+        </div>
+    </div>
 </Slide>
 
 <Slide>
@@ -61,6 +66,22 @@
     <Reference
         referenceText="scrollama + d3 | Github"
         referenceLink="https://github.com/edriessen/scrollytelling-scrollama-d3-demo"
+    ></Reference>
+</Slide>
+
+<Slide>
+    <a href="https://gsap.com/"><h3><code class="heig-red">GSAP</code></h3></a>
+    <p>
+        <span class="heig-red">Installation</span> <br />
+        <small><code>npm install gsap</code></small>
+    </p>
+
+    <Reference referenceLink="https://gsap.com/docs/v3/" referenceText="Doc"
+    ></Reference>
+    <br />
+    <Reference
+        referenceLink="https://gsap.com/demos?page=1"
+        referenceText="Exemples"
     ></Reference>
 </Slide>
 
