@@ -48,10 +48,10 @@ Le code source du site et la méthode de préparation des données doivent être
 
 ### Délais
 
--   Samedi 8 mars 2026, 23h59 : **Thématique** (10%)
--   Samedi 22 mars 2026, 23h59 : **Wireframe** (10%)
--   Dimanche 11 mai 2026 : **Présentation** + **Post Insta/TikTok** (20% + 10%)
--   Samedi 17 mai 2026, 23h59 : **Site web** (50%)
+-   Dimanche 8 mars 2026, 23h59 : **Thématique** (10%)
+-   Dimanche 22 mars 2026, 23h59 : **Wireframe** (10%)
+-   Lundi 11 mai 2026 : **Présentation** + **Post Insta/TikTok** (20% + 10%)
+-   Dimanche 17 mai 2026, 23h59 : **Site web** (50%)
 
 ## Exercices
 

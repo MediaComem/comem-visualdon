@@ -4,7 +4,7 @@ Le projet compte comme **50%** de la note finale.
 
 ### Thématique (10%)
 
-❗ Délai 7 mars 23h59 ❗
+❗ Délai 8 mars 23h59 ❗
 
 -   Choisissez un ou plusieurs jeux de données qui vous inspirent et qui feront partie de votre visualisation. Vous devrez raconter une histoire et les coups de cœur sont ceux qui marchent le mieux ! Voici quelques exemples de données ouvertes :
 
@@ -26,7 +26,7 @@ Le projet compte comme **50%** de la note finale.
 
 ### Wireframe (10%)
 
-❗ Délai 14 mars 23h59 ❗
+❗ Délai 22 mars 23h59 ❗
 
 Faites un croquis de votre visualisation sur papier ou en utilisant un outil comme [Figma](https://www.figma.com/) ou [InVision](https://www.invisionapp.com/). Le croquis doit contenir:
 
@@ -38,7 +38,7 @@ paintbrush: **Note importante** : Ce n'est pas grave si à la fin de l'année vo
 
 ### Présentation (20%)
 
-❗ 14 mai ❗
+❗ 11 mai ❗
 
 Les présentations auront lieu le 14 mai. L'ordre des groupes sera choisi de manière aléatoire et sera communiqué 2 semaines avant la présentation.
 
@@ -52,7 +52,7 @@ Les présentations auront lieu le 14 mai. L'ordre des groupes sera choisi de man
 
 ### Site web (60%)
 
-❗ 19 mai ❗
+❗ 17 mai ❗
 
 Le site web c'est l'implémentations technique de votre visualisation.
 
