@@ -1,8 +1,9 @@
 import { execSync } from 'node:child_process'
 import { cpSync } from 'node:fs'
-import { resolve } from 'node:path'
+import { resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const root = resolve(import.meta.dirname, '..')
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
 const decks = [
   { src: 'cours/01-introduction.md',       out: '01-intro' },
