@@ -9,13 +9,10 @@ Ce document sera mis à jour au fur et à mesure du semestre avec les informatio
 ## Objectifs
 
 -   Connaître différentes technologies de visualisation de données dans un navigateur Web
--   Connaître la pyramide de productivité de ces technologies
--   Comprendre le fonctionnement du langage SVG avec JavaScript
--   Utiliser la librairie d3.js pour créer des visualisations de divers types
--   Utiliser Javascript avec cette librairie pour ajouter de l'animation et de l'interaction
--   Utiliser une librairie de cartographie en ligne (ex. Leaflet, OpenLayers)
--   Connaître quelques plateformes de données ouvertes et les formats principaux en vigueur
--   Utiliser des services de données ouvertes pour créer des visualisations
+-   Maîtriser la librairie **d3.js**
+-   Connaître une librairie de **cartographie web**
+-   Maîtriser la **manipulation des données** avec JavaScript
+-   Développer un **esprit critique** sur la visualisation de données : questionner les choix, les biais et les intentions derrière chaque représentation
 
 ## Evaluation
 
@@ -23,47 +20,38 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 ## Cours
 
--   [COURS 1](https://comem-visualdon.onrender.com/01-intro) - Introduction [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/01-intro.pdf)]
--   [COURS 2](https://comem-visualdon.onrender.com/02-svg) - Scalable Vector Graphics (SVG) [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/02-svg.pdf)]
--   [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3) - Introduction à D3.js [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/03-intro-d3.pdf)]
-
--   [COURS 4](https://comem-visualdon.onrender.com/04-data) - Données [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/04-data.pdf)]
-
--   [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales) - Échelles et axes [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/05-axis-scales.pdf)]
-
--   [COURS 6](https://comem-visualdon.onrender.com/06-interaction-animation-1) - Interaction et animation (partie 1) [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/06-interaction-animation-1.pdf)]
-
--   [COURS 7](https://comem-visualdon.onrender.com/07-interaction-animation-2) - Interaction et animation (partie 2) [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/07-interaction-animation-2.pdf)]
-
--   [COURS 8](https://comem-visualdon.onrender.com/08-intro-cartographie) - Introduction à la cartographie [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/08-intro-cartographie.pdf)]
-
--   [COURS 9](https://comem-visualdon.onrender.com/09-cartographie-web) - Cartographie web [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/09-cartographie-web.pdf)]
-
--   [COURS 10](https://comem-visualdon.onrender.com/10-dos-and-donts) - Dos and dont's en visualisation de données [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/10-dos-and-donts.pdf)]
-
--   [COURS 11](https://comem-visualdon.onrender.com/11-scrollytelling) - Scrollytelling [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/11-scrollytelling.pdf)]
-
--   [COURS 12](https://comem-visualdon.onrender.com/12-alternatives-d3) - Alternatives à d3.js [[PDF](https://raw.githubusercontent.com/MediaComem/comem-visualdon/main/cours/pdf/12-alternatives-d3.pdf)]
+-   [COURS 1](https://comem-visualdon.onrender.com/01-intro/) - Introduction
+-   [COURS 2](https://comem-visualdon.onrender.com/02-svg/) - Scalable Vector Graphics (SVG)
+-   [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3/) - Introduction à D3.js
+-   [COURS 4](https://comem-visualdon.onrender.com/04-data/) - Données
+-   [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales/) - Échelles et axes
+-   [COURS 6](https://comem-visualdon.onrender.com/06-interaction-animation-1/) - Interaction et animation (partie 1)
+-   [COURS 7](https://comem-visualdon.onrender.com/07-interaction-animation-2/) - Interaction et animation (partie 2)
+-   [COURS 8](https://comem-visualdon.onrender.com/08-intro-cartographie/) - Introduction à la cartographie
+-   [COURS 9](https://comem-visualdon.onrender.com/09-cartographie-web/) - Cartographie web
+-   [COURS 10](https://comem-visualdon.onrender.com/10-dos-and-donts/) - Éthique et biais
+-   [COURS 11](https://comem-visualdon.onrender.com/11-scrollytelling/) - Scrollytelling
+-   [COURS 12](https://comem-visualdon.onrender.com/12-alternatives-d3/) - Alternatives à D3.js
 
 ## Projet
 
 ### But
 
--   Créer une visualisation interactive à partir d'un ou plusieurs jeux de données
--   Le choix de types, et le nombre de visualisations est libre
--   Le tout doit faire passer un message, raconter une histoire
+Par **groupes de 2**, vous allez créer une visualisation interactive sur une thématique qui vous **motive**, vous **touche**, vous **révolte** ou vous **réjouit**. Votre visualisation doit porter un **message** : dénoncer une injustice, célébrer quelque chose de beau, vulgariser un sujet complexe, rendre visible ce qui ne l'est pas. L'important c'est que ça fasse sens pour vous — les meilleures visualisations naissent d'une vraie conviction.
+
+### Rendus
+
+-   **Site web** : une visualisation interactive publiée en ligne
+-   **Post Instagram/TikTok** : un contenu de vulgarisation pour expliquer votre visualisation et son message
+
+Le code source du site et la méthode de préparation des données doivent être accessibles sur GitHub.
 
 ### Délais
 
--   Vendredi 7 mars 23h59: Thématique (10%)
--   Vendredi 14 mars 23h59: Wireframe (10%)
--   Mercredi 14 mai: Présentation (20%)
--   Lundi 19 mai 23h59: Site web (60%)
-
-### Format
-
--   Le produit final doit être sous forme de site publié
--   Le code source du site et la méthode de préparation des données doit être accessible sur Github
+-   Dimanche 8 mars 2026, 23h59 : **Thématique** (10%)
+-   Dimanche 22 mars 2026, 23h59 : **Wireframe** (10%)
+-   Lundi 11 mai 2026 : **Présentation** + **Post Insta/TikTok** (20% + 10%)
+-   Dimanche 17 mai 2026, 23h59 : **Site web** (50%)
 
 ## Exercices
 
