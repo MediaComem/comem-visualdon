@@ -1,0 +1,32 @@
+{
+  "name": "comem-visualdon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cours VisualDon — HEIG-VD / COMEM+",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export",
+    "dev:01": "slidev cours/01-introduction.md --open",
+    "dev:02": "slidev cours/02-svg.md --open",
+    "dev:03": "slidev cours/03-intro-d3.md --open",
+    "dev:04": "slidev cours/04-donnees.md --open",
+    "dev:05": "slidev cours/05-echelles-axes.md --open",
+    "dev:06": "slidev cours/06-interaction-1.md --open",
+    "dev:07": "slidev cours/07-interaction-2.md --open",
+    "dev:08": "slidev cours/08-intro-cartographie.md --open",
+    "dev:09": "slidev cours/09-cartographie-web.md --open",
+    "dev:10": "slidev cours/10-ethique-biais.md --open",
+    "dev:11": "slidev cours/11-scrollytelling.md --open",
+    "dev:12": "slidev cours/12-alternatives.md --open",
+    "build:all": "node scripts/build-all.mjs"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.50.0",
+    "@slidev/theme-apple-basic": "latest",
+    "@slidev/theme-default": "^0.25.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.40.0"
+  }
+}
