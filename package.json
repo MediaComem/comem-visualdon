@@ -24,7 +24,8 @@
   "dependencies": {
     "@slidev/cli": "^0.50.0",
     "@slidev/theme-apple-basic": "latest",
-    "@slidev/theme-default": "^0.25.0"
+    "@slidev/theme-default": "^0.25.0",
+    "serve": "^14.2.5"
   },
   "devDependencies": {
     "playwright-chromium": "^1.40.0"

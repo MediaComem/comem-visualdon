@@ -1,6 +1,8 @@
 import { execSync } from 'node:child_process'
+import { cpSync } from 'node:fs'
+import { resolve } from 'node:path'
 
-const BASE = process.env.BASE || '/comem-visualdon'
+const root = resolve(import.meta.dirname, '..')
 
 const decks = [
   { src: 'cours/01-introduction.md',       out: '01-intro' },
@@ -20,9 +22,12 @@ const decks = [
 for (const { src, out } of decks) {
   console.log(`\n📦 Building ${src} → dist/${out}`)
   execSync(
-    `npx slidev build ${src} --base "${BASE}/${out}/" --out dist/${out}`,
-    { stdio: 'inherit' }
+    `npx slidev build ${src} --base "/${out}/" --out ${resolve(root, 'dist', out)}`,
+    { stdio: 'inherit', cwd: root }
   )
 }
+
+// Copy index page to dist root
+cpSync(resolve(root, 'public/index.html'), resolve(root, 'dist/index.html'))
 
 console.log('\n✅ All decks built successfully!')

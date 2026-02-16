@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: comem-visualdon
+    runtime: static
+    buildCommand: npm ci && node scripts/build-all.mjs
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: 20
