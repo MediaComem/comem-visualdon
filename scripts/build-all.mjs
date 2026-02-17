@@ -1,5 +1,5 @@
 import { execSync } from 'node:child_process'
-import { cpSync, rmSync, existsSync } from 'node:fs'
+import { cpSync, rmSync, symlinkSync, existsSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -20,21 +20,22 @@ const decks = [
   { src: 'cours/12-alternatives.md',       out: '12-alternatives-d3' },
 ]
 
+// Copy shared images once to dist root
+cpSync(resolve(root, 'public/images'), resolve(root, 'dist/images'), { recursive: true })
+
 for (const { src, out } of decks) {
   console.log(`\n📦 Building ${src} → dist/${out}`)
   execSync(
     `node ${resolve(root, 'node_modules/.bin/slidev')} build ${src} --base "/${out}/" --out ${resolve(root, 'dist', out)}`,
     { stdio: 'inherit', cwd: root }
   )
-  // Remove duplicated public/images from each deck (will be shared at root)
+  // Replace duplicated images with symlink to shared dir
   const deckImages = resolve(root, 'dist', out, 'images')
   if (existsSync(deckImages)) {
     rmSync(deckImages, { recursive: true })
+    symlinkSync('../images', deckImages)
   }
 }
-
-// Copy shared images once to dist root
-cpSync(resolve(root, 'public/images'), resolve(root, 'dist/images'), { recursive: true })
 
 // Copy index page to dist root
 cpSync(resolve(root, 'public/index.html'), resolve(root, 'dist/index.html'))
