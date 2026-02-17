@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: default
 title: "02 - SVG"
 drawings:
   persist: false

@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: default
 title: "03 - Introduction a D3.js"
 drawings:
   persist: false

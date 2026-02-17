@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: default
 title: "06 - Interaction et animation"
 drawings:
   persist: false

@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: default
 title: "05 - Échelles et axes"
 drawings:
   persist: false

@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: default
 title: "04 - Données"
 drawings:
   persist: false

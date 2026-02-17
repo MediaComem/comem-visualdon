@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: default
 title: "11 - Scrollytelling"
 drawings:
   persist: false

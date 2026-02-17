@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: default
 title: "09 - Cartographie web"
 drawings:
   persist: false

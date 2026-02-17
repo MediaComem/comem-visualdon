@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: default
 title: "12 - Alternatives a D3.js"
 drawings:
   persist: false

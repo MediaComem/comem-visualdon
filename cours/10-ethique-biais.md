@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: default
 title: "10 - Éthique et biais"
 drawings:
   persist: false

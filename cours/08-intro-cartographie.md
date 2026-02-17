@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: default
 title: "08 - Introduction a la cartographie"
 drawings:
   persist: false
