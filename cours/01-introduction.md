@@ -21,7 +21,7 @@ layout: none
     <div class="cover-meta">
       <span class="cover-author">Noemi Romano</span>
       <a href="mailto:noemi.romano@heig-vd.ch" class="cover-email">noemi.romano@heig-vd.ch</a>
-      <span class="cover-date">16.02.2026</span>
+      <span class="cover-date">17.02.2026</span>
     </div>
   </div>
 </div>
