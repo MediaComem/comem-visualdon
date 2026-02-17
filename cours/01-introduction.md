@@ -331,7 +331,7 @@ _« data-driven ne veut pas dire incontestablement vrai »_
 
 <div>
 
-**Stefanie Posavec** — _Dear Data_
+**Giorgia Lupi & Stefanie Posavec** — _Dear Data_
 
 52 cartes postales dessinées à la main, collection du **MoMA**
 
