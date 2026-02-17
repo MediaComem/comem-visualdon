@@ -20,17 +20,17 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 
 ## Cours
 
--   [COURS 1](https://comem-visualdon.onrender.com/01-intro/) - Introduction
--   [COURS 2](https://comem-visualdon.onrender.com/02-svg/) - Scalable Vector Graphics (SVG)
--   [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3/) - Introduction à D3.js
--   [COURS 4](https://comem-visualdon.onrender.com/04-data/) - Données
--   [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales/) - Échelles et axes
--   [COURS 6](https://comem-visualdon.onrender.com/06-interaction-animation-1/) - Interaction et animation (partie 1)
--   [COURS 7](https://comem-visualdon.onrender.com/07-interaction-animation-2/) - Interaction et animation (partie 2)
--   [COURS 8](https://comem-visualdon.onrender.com/08-intro-cartographie/) - Introduction à la cartographie
--   [COURS 9](https://comem-visualdon.onrender.com/09-cartographie-web/) - Cartographie web
--   [COURS 10](https://comem-visualdon.onrender.com/10-dos-and-donts/) - Éthique et biais
--   [COURS 11](https://comem-visualdon.onrender.com/11-scrollytelling/) - Scrollytelling
+-   [COURS 1](https://comem-visualdon.onrender.com/01-intro/) - Introduction 
+-   [COURS 2](https://comem-visualdon.onrender.com/02-svg/) - Scalable Vector Graphics (SVG) 
+-   [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3/) - Introduction à D3.js 
+-   [COURS 4](https://comem-visualdon.onrender.com/04-data/) - Données 
+-   [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales/) - Échelles et axes 
+-   [COURS 6](https://comem-visualdon.onrender.com/06-interaction-animation-1/) - Interaction et animation (partie 1) 
+-   [COURS 7](https://comem-visualdon.onrender.com/07-interaction-animation-2/) - Interaction et animation (partie 2) 
+-   [COURS 8](https://comem-visualdon.onrender.com/08-intro-cartographie/) - Introduction à la cartographie 
+-   [COURS 9](https://comem-visualdon.onrender.com/09-cartographie-web/) - Cartographie web 
+-   [COURS 10](https://comem-visualdon.onrender.com/10-dos-and-donts/) - Éthique et biais 
+-   [COURS 11](https://comem-visualdon.onrender.com/11-scrollytelling/) - Scrollytelling 
 -   [COURS 12](https://comem-visualdon.onrender.com/12-alternatives-d3/) - Alternatives à D3.js
 
 ## Projet
