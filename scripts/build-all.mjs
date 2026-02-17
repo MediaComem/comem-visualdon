@@ -23,7 +23,7 @@ const decks = [
 for (const { src, out } of decks) {
   console.log(`\n📦 Building ${src} → dist/${out}`)
   execSync(
-    `npx slidev build ${src} --base "/${out}/" --out ${resolve(root, 'dist', out)}`,
+    `node ${resolve(root, 'node_modules/.bin/slidev')} build ${src} --base "/${out}/" --out ${resolve(root, 'dist', out)}`,
     { stdio: 'inherit', cwd: root }
   )
   // Remove duplicated public/images from each deck (will be shared at root)

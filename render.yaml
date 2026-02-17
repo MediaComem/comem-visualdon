@@ -7,3 +7,5 @@ services:
     envVars:
       - key: NODE_VERSION
         value: 20
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=2048
