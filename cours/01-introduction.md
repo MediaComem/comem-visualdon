@@ -628,8 +628,8 @@ Choisissez un sujet qui vous **motive**, qui vous **touche**, qui vous **révolt
 
 **1** · 8 mars
 
-Formation groupes
-Jeu de données
+Formation groupes · 
+Jeu de données · 
 Problématique
 
 <span style="color: #e92528; font-weight: 700;">Thématique (10%)</span>
