@@ -1,5 +1,6 @@
 ---
 theme: default
+download: true
 title: "01 - Introduction"
 drawings:
     persist: false
