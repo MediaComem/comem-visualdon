@@ -21,14 +21,14 @@ Le projet compte comme **50%** de la note finale.
 -   A la racine du repo, créez un README.md où vous traitez les questions suivantes :
     -   **Contexte** : d'où viennent les données, qui les a créées et dans quel contexte
     -   **Description** Comment sont structurées les données ? Parler du format, des attributs et du type de données
-    -   **But**: qu'est-ce que vous voulez découvrir ? Des tendances ? Vous voulez _explorer_ ou _expliquer_?
+    -   **But**: qu'est-ce que vous voulez découvrir ? Des tendances ? Vous voulez _explorer_ et/ou _expliquer_?
     -   **Références**: Qui d'autre dans le web ou dans la recherche a utilisé ces données ? Dans quel but ?
 
 ### Wireframe (10%)
 
 ❗ Délai 22 mars 23h59 ❗
 
-Faites un croquis de votre visualisation sur papier ou en utilisant un outil comme [Figma](https://www.figma.com/) ou [InVision](https://www.invisionapp.com/). Le croquis doit contenir:
+Faites un croquis de votre visualisation sur papier ou en utilisant un outil comme [Figma](https://www.figma.com/) :
 
 -   Tout élément que vous aimeriez représenter dans votre visualisation. Par _tout élément_ j'entends : les graphiques, les boutons, les textes, les couleurs qui seront dans le site que vous publierez
 -   L'interactivité : si je clique sur _ce_ bouton, qu'est-ce qu'il se passe ? Si je scroll, quels éléments devraient apparaître ?

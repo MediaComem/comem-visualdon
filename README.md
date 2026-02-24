@@ -23,7 +23,7 @@ Le cours fait l’objet d’une note de projet (50%) et d’une note d’examen 
 Liste des cours: https://comem-visualdon.onrender.com/
 
 -   [COURS 1](https://comem-visualdon.onrender.com/01-intro/) - Introduction 
--   [COURS 2](https://comem-visualdon.onrender.com/02-svg/) - Scalable Vector Graphics (SVG) 
+-   [COURS 2](https://comem-visualdon.onrender.com/02-dessiner-avec-du-code/) - Dessiner avec du code
 -   [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3/) - Introduction à D3.js 
 -   [COURS 4](https://comem-visualdon.onrender.com/04-data/) - Données 
 -   [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales/) - Échelles et axes 
@@ -57,7 +57,7 @@ Le code source du site et la méthode de préparation des données doivent être
 
 ## Exercices
 
--   [Exercice 1](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/01-SVG): Dessiner et animer des formes SVG
+-   [Exercice 1](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/01-dessin): Dessiner avec du code — SVG & Canvas
 -   [Exercice 2](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/02-intro-d3) : Introduction à D3
 -   [Exercice 3](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/03-d3-data) : Données
 -   [Exercice 4](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/04-gapminder)

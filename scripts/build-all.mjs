@@ -7,7 +7,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
 const decks = [
   { src: 'cours/01-introduction.md',       out: '01-intro' },
-  { src: 'cours/02-svg.md',                out: '02-svg' },
+  { src: 'cours/02-dessiner-avec-du-code.md', out: '02-dessiner-avec-du-code' },
   { src: 'cours/03-intro-d3.md',           out: '03-intro-d3' },
   { src: 'cours/04-donnees.md',            out: '04-data' },
   { src: 'cours/05-echelles-axes.md',      out: '05-axis-scales' },

@@ -8,7 +8,7 @@
     "build": "slidev build",
     "export": "slidev export",
     "dev:01": "slidev cours/01-introduction.md --open",
-    "dev:02": "slidev cours/02-svg.md --open",
+    "dev:02": "slidev cours/02-dessiner-avec-du-code.md --open",
     "dev:03": "slidev cours/03-intro-d3.md --open",
     "dev:04": "slidev cours/04-donnees.md --open",
     "dev:05": "slidev cours/05-echelles-axes.md --open",

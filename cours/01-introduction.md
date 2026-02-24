@@ -26,6 +26,11 @@ layout: none
   </div>
 </div>
 
+<div class="footer" style="display: flex; align-items: center; gap: 1rem;">
+  <a href="https://github.com/MediaComem/comem-visualdon" style="display: flex; align-items: center; gap: 0.3rem;"><carbon-logo-github /> GitHub</a>
+  <a href="https://creativecommons.org/licenses/by/4.0/" style="line-height: 0;"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="height: 14px;" /></a>
+</div>
+
 
 ---
 layout: section

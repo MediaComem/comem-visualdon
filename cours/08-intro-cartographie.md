@@ -5,12 +5,26 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
-layout: cover
+layout: none
 ---
 
-# 08 -- Introduction a la cartographie
+<div class="cover-custom">
+  <img src="/images/logo.png" class="cover-logo" />
+  <div class="cover-content">
+    <h1 class="cover-title">08 — Introduction à la cartographie</h1>
+    <p class="cover-subtitle">Des premières cartes à la contre-cartographie</p>
+    <div class="cover-meta">
+      <span class="cover-author">Noemi Romano</span>
+      <a href="mailto:noemi.romano@heig-vd.ch" class="cover-email">noemi.romano@heig-vd.ch</a>
+      <span class="cover-date"></span>
+    </div>
+  </div>
+</div>
 
-Des premières cartes a la contre-cartographie
+<div class="footer" style="display: flex; align-items: center; gap: 1rem;">
+  <a href="https://github.com/MediaComem/comem-visualdon" style="display: flex; align-items: center; gap: 0.3rem;"><carbon-logo-github /> GitHub</a>
+  <a href="https://creativecommons.org/licenses/by/4.0/" style="line-height: 0;"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="height: 14px;" /></a>
+</div>
 
 ---
 layout: section

@@ -49,10 +49,8 @@ code, pre {
 }
 
 pre {
-  background: #f5f5f5 !important;
-  border: 1px solid #e0e0e0 !important;
   border-radius: 4px !important;
-  color: #000 !important;
+  overflow: hidden !important;
 }
 
 code {
@@ -66,6 +64,14 @@ code {
 pre code {
   background: none;
   padding: 0;
+}
+
+/* Force dark background on Monaco editors regardless of slide color scheme */
+.monaco-editor,
+.monaco-editor .overflow-guard,
+.monaco-editor-background,
+.monaco-editor .margin {
+  background-color: #1e1e1e !important;
 }
 
 /* Tables */
@@ -243,6 +249,12 @@ strong {
   padding-left: 2rem;
 }
 
+/* Code blocks in two-cols: scrollable to prevent overflow */
+.slidev-layout.two-cols pre {
+  max-height: 340px;
+  overflow-y: auto;
+}
+
 /* ===== IMAGE LAYOUTS ===== */
 /* Full-screen image: fit entire image, no crop */
 
@@ -332,6 +344,43 @@ strong {
 }
 
 /* Utility classes */
+.col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+}
+
+.col-center iframe {
+  flex: 1;
+  min-height: 0;
+  display: block;
+  border-radius: 4px;
+}
+
+.col-center > svg {
+  width: 100%;
+  height: auto;
+  max-width: 280px;
+  max-height: 100%;
+  align-self: center;
+}
+
+/* Monaco editor: smaller font, dark theme applied via setup/monaco.ts */
+.monaco-editor,
+.monaco-editor .view-lines {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+}
+
+.col-center img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  align-self: center;
+}
+
 .mono {
   font-family: 'Roboto Mono', monospace !important;
 }
@@ -348,6 +397,41 @@ strong {
 
 .bg-light {
   background: #f5f5f5;
+}
+
+/* Masonry layout (CSS columns) */
+.masonry {
+  column-gap: 0.5rem;
+}
+
+.masonry-2 { columns: 2; }
+.masonry-3 { columns: 3; }
+.masonry-4 { columns: 4; }
+
+.masonry figure {
+  break-inside: avoid;
+  margin: 0 0 0.5rem 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.masonry img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.masonry-placeholder {
+  background: #f0f0f0;
+  border: 2px dashed #d0d0d0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 0.65rem;
+  color: #aaa;
+  min-height: 120px;
 }
 
 /* Mosaic grid for image galleries */
