@@ -27,7 +27,7 @@ Liste des cours: https://comem-visualdon.onrender.com/
 
 -   [COURS 1](https://comem-visualdon.onrender.com/01-intro/) - Introduction 
 -   [COURS 2](https://comem-visualdon.onrender.com/02-dessiner-avec-du-code/) - Dessiner avec du code
--   [COURS 3](https://comem-visualdon.onrender.com/03-intro-d3/) - Introduction à D3.js 
+-   [COURS 3](https://comem-visualdon.onrender.com/03-js-dom/) - JavaScript et manipulation DOM
 -   [COURS 4](https://comem-visualdon.onrender.com/04-data/) - Données 
 -   [COURS 5](https://comem-visualdon.onrender.com/05-axis-scales/) - Échelles et axes 
 -   [COURS 6](https://comem-visualdon.onrender.com/06-interaction-animation-1/) - Interaction et animation (partie 1) 
