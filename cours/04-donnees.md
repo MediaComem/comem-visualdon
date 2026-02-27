@@ -13,17 +13,16 @@ layout: none
   <div class="cover-content">
     <h1 class="cover-title">04 — Données</h1>
     <p class="cover-subtitle">Chargement, formats, manipulation</p>
+    <div class="cover-links">
+      <a href="https://github.com/MediaComem/comem-visualdon"><carbon-logo-github /> GitHub</a>
+      <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="height: 14px;" /></a>
+    </div>
     <div class="cover-meta">
       <span class="cover-author">Noemi Romano</span>
       <a href="mailto:noemi.romano@heig-vd.ch" class="cover-email">noemi.romano@heig-vd.ch</a>
       <span class="cover-date"></span>
     </div>
   </div>
-</div>
-
-<div class="footer" style="display: flex; align-items: center; gap: 1rem;">
-  <a href="https://github.com/MediaComem/comem-visualdon" style="display: flex; align-items: center; gap: 0.3rem;"><carbon-logo-github /> GitHub</a>
-  <a href="https://creativecommons.org/licenses/by/4.0/" style="line-height: 0;"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="height: 14px;" /></a>
 </div>
 
 ---
@@ -36,20 +35,20 @@ layout: section
 layout: default
 ---
 
-# Cours précédent : D3.js
+# Cours précédent : JavaScript et manipulation DOM
 
 <v-clicks>
 
-- Method chaining : enchainer les appels de méthodes
-- `d3.select()` / `d3.selectAll()` : sélectionner des elements
-- `selection.attr()` : modifier des attributs
-- `selection.append()` : créer des elements
-- `selection.on()` : ecouter des événements
-- `selection.data().join()` : lier des données au DOM (enter, update, exit)
+- **DOM** : arbre d'objets que JavaScript peut lire et modifier
+- `querySelector` / `querySelectorAll` : sélectionner des éléments
+- `setAttribute`, `style` : modifier des attributs
+- `createElementNS` + `appendChild` : créer des éléments SVG
+- **D3-selection** : raccourci — même chose, syntaxe plus concise
+- **Data binding** : `selection.data().join()` — enter, update, exit
 
 </v-clicks>
 
-<div class="footer">Rappel cours 03 · <a href="https://d3js.org/d3-selection">d3-selection</a></div>
+<div class="footer">Rappel cours 03 · <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">MDN DOM</a> · <a href="https://d3js.org/d3-selection">d3-selection</a></div>
 
 ---
 layout: section

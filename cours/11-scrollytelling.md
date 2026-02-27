@@ -13,17 +13,16 @@ layout: none
   <div class="cover-content">
     <h1 class="cover-title">11 — Scrollytelling</h1>
     <p class="cover-subtitle">Raconter des histoires avec les données</p>
+    <div class="cover-links">
+      <a href="https://github.com/MediaComem/comem-visualdon"><carbon-logo-github /> GitHub</a>
+      <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="height: 14px;" /></a>
+    </div>
     <div class="cover-meta">
       <span class="cover-author">Noemi Romano</span>
       <a href="mailto:noemi.romano@heig-vd.ch" class="cover-email">noemi.romano@heig-vd.ch</a>
       <span class="cover-date"></span>
     </div>
   </div>
-</div>
-
-<div class="footer" style="display: flex; align-items: center; gap: 1rem;">
-  <a href="https://github.com/MediaComem/comem-visualdon" style="display: flex; align-items: center; gap: 0.3rem;"><carbon-logo-github /> GitHub</a>
-  <a href="https://creativecommons.org/licenses/by/4.0/" style="line-height: 0;"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="height: 14px;" /></a>
 </div>
 
 ---
