@@ -1,5 +1,8 @@
 # Visualisation de données (_VisualDon_)
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Made with Slidev](https://img.shields.io/badge/Made%20with-Slidev-4a86e8?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMTIgMkM2LjQ3NyAyIDIgNi40NzcgMiAxMnM0LjQ3NyAxMCAxMCAxMHMxMC00LjQ3NyAxMC0xMFMxNy41MjMgMiAxMiAyem0tMSAxNFY4bDYgNHoiLz48L3N2Zz4=)](https://sli.dev/)
+
 Bienvenue dans le dépôt git du cours _Visualisation de données_ [@MEI](https://heig-vd.ch/formation/bachelor/filieres/ingenierie-des-medias). Ce dépôt contient les différentes ressources du cours tels que les exercices et les différentes directives du projet.
 
 Ce document sera mis à jour au fur et à mesure du semestre avec les informations du cours (exercices, projet) ainsi que les corrections des exercices. Bon cours!
@@ -39,7 +42,7 @@ Liste des cours: https://comem-visualdon.onrender.com/
 
 ### But
 
-Par **groupes de 2**, vous allez créer une visualisation interactive sur une thématique qui vous **motive**, vous **touche**, vous **révolte** ou vous **réjouit**. Votre visualisation doit porter un **message** : dénoncer une injustice, célébrer quelque chose de beau, vulgariser un sujet complexe, rendre visible ce qui ne l'est pas. L'important c'est que ça fasse sens pour vous — les meilleures visualisations naissent d'une vraie conviction.
+Par **groupes de 2**, vous allez créer une visualisation interactive sur une thématique qui vous **motive**, vous **touche**, vous **révolte** ou vous **réjouit**. Votre visualisation doit porter un **message** : dénoncer une injustice, célébrer quelque chose de beau, vulgariser un sujet complexe, rendre visible ce qui ne l'est pas. L'important c'est que ça fasse sens pour vous : les meilleures visualisations naissent d'une vraie conviction.
 
 ### Rendus
 
@@ -57,7 +60,7 @@ Le code source du site et la méthode de préparation des données doivent être
 
 ## Exercices
 
--   [Exercice 1](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/01-dessin): Dessiner avec du code — SVG & Canvas
+-   [Exercice 1](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/01-dessin): Dessiner avec du code - SVG & Canvas
 -   [Exercice 2](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/02-intro-d3) : Introduction à D3
 -   [Exercice 3](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/03-d3-data) : Données
 -   [Exercice 4](https://github.com/MediaComem/comem-visualdon/tree/main/exercices/04-gapminder)
@@ -126,3 +129,21 @@ Le code source du site et la méthode de préparation des données doivent être
 -   [D3 graph gallery](https://www.d3-graph-gallery.com/)
 -   [Learn D3 - Observable](https://observablehq.com/collection/@d3/learn-d3)
 -   [MDN - Array](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+## Références
+
+Des travaux qui ont inspiré l'approche pédagogique de ce cours :
+
+-   Giorgia Lupi : [_Data Humanism: My Manifesto for a New Data World_](http://giorgialupi.com/data-humanism-my-manifesto-for-a-new-data-wold) (2017)
+-   Giorgia Lupi & Stefanie Posavec : [_Dear Data_](https://www.dear-data.com/) (2016) : 52 semaines de données personnelles, une carte postale par semaine
+-   Federica Fragapane : [_Humanizing data to fight inequalities_](https://www.internimagazine.com/features/interviews/federica-fragapane-lumanizzazione-dei-dati-per-combattere-le-disuguaglianze/) : narration humaniste par les données
+-   Jacques Bertin : _Sémiologie graphique_ (1967)
+-   Edward Tufte : _The Visual Display of Quantitative Information_ (1983)
+-   [The Pudding](https://pudding.cool/) : essais visuels sur la culture contemporaine
+-   Philippe Rekacewicz : _Pour une cartographie sensible et décentrée_
+
+---
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+© 2026 HEIG-VD · Ce cours est distribué sous licence [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
