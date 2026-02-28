@@ -134,6 +134,7 @@ Le code source du site et la méthode de préparation des données doivent être
 
 Des travaux qui ont inspiré l'approche pédagogique de ce cours :
 
+-   Catherine D'Ignazio & Lauren F. Klein : [_Data Feminism_](https://data-feminism.mitpress.mit.edu/) (2020) — comment le pouvoir et l'identité façonnent la production des données
 -   Giorgia Lupi : [_Data Humanism: My Manifesto for a New Data World_](http://giorgialupi.com/data-humanism-my-manifesto-for-a-new-data-wold) (2017)
 -   Giorgia Lupi & Stefanie Posavec : [_Dear Data_](https://www.dear-data.com/) (2016) : 52 semaines de données personnelles, une carte postale par semaine
 -   Federica Fragapane : [_Humanizing data to fight inequalities_](https://www.internimagazine.com/features/interviews/federica-fragapane-lumanizzazione-dei-dati-per-combattere-le-disuguaglianze/) : narration humaniste par les données
