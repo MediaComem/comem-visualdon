@@ -138,6 +138,8 @@ Des travaux qui ont inspiré l'approche pédagogique de ce cours :
 -   Giorgia Lupi : [_Data Humanism: My Manifesto for a New Data World_](http://giorgialupi.com/data-humanism-my-manifesto-for-a-new-data-wold) (2017)
 -   Giorgia Lupi & Stefanie Posavec : [_Dear Data_](https://www.dear-data.com/) (2016) : 52 semaines de données personnelles, une carte postale par semaine
 -   Federica Fragapane : [_Humanizing data to fight inequalities_](https://www.internimagazine.com/features/interviews/federica-fragapane-lumanizzazione-dei-dati-per-combattere-le-disuguaglianze/) : narration humaniste par les données
+-   Mona Chalabi : [monachalabi.com](https://monachalabi.com/) — dataviz illustrée à la main, volontairement imprécise pour montrer l'incertitude des données
+-   Jonas Löwgren : [_The value of hand drawing in data visualization_](https://medium.com/@jonas.lowgren.64/the-value-of-hand-drawing-in-data-visualization-360536fd96fc) — dessiner force à penser avant de coder
 -   Jacques Bertin : _Sémiologie graphique_ (1967)
 -   Edward Tufte : _The Visual Display of Quantitative Information_ (1983)
 -   [The Pudding](https://pudding.cool/) : essais visuels sur la culture contemporaine

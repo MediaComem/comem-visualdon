@@ -37,18 +37,38 @@ layout: section
 # Rappel
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # Cours précédent : Dessiner avec du code
 
-- **SVG** : un format vectoriel intégré dans le HTML
-- Formes de base : `<rect>`, `<circle>`, `<line>`, `<path>`, `<g>`
-- Attributs : `cx`, `cy`, `r`, `fill`, `stroke`, `transform`
+### SVG
+- Format vectoriel intégré dans le HTML
+- Formes : `<rect>`, `<circle>`, `<line>`, `<path>`, `<g>`
 - Système de coordonnées : origine en haut à gauche, `y` vers le bas
 - Transformations : `translate`, `rotate`, `scale`
 
-<div class="footer">Rappel cours 02 · <a href="https://developer.mozilla.org/en-US/docs/Web/SVG">MDN SVG</a></div>
+### Canvas
+- Mode impératif : on dessine pixel par pixel avec du code
+- API 2D : `fillRect()`, `arc()`, `beginPath()`, `stroke()`
+- Pas de DOM — le résultat est une image bitmap
+
+::right::
+
+### SVG vs Canvas
+
+| | SVG | Canvas |
+|---|---|---|
+| DOM | ✓ | ✗ |
+| Interactivité | ✓ | complexe |
+| Performance | moy. | haute |
+| Scalabilité | ✓ | ✗ |
+
+### Avant de coder
+- Dessiner à la main **force à penser** : quelles variables, quel encodage visuel
+- L'esquisse rapide permet d'**itérer sans coût**
+
+<div class="footer">Rappel cours 02 · <a href="https://developer.mozilla.org/en-US/docs/Web/SVG">MDN SVG</a> · <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">MDN Canvas</a></div>
 
 ---
 layout: section
@@ -399,124 +419,6 @@ select('circle')
 ```
 
 <div class="footer">Source · <a href="https://d3js.org/d3-selection/events">d3-selection - Events</a> · <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">MDN - addEventListener</a></div>
-
----
-layout: section
----
-
-# Data binding
-
----
-layout: two-cols
----
-
-# Le problème : données → DOM
-
-On veut générer **N éléments depuis un tableau de données** et les **mettre à jour** quand elles changent.
-
-```javascript
-// Vanilla JS
-const data = [30, 80, 45, 60, 20]
-
-data.forEach((d, i) => {
-  const rect = document.createElementNS(NS, 'rect')
-  rect.setAttribute('height', d * 2)
-  svg.appendChild(rect)
-})
-
-// Si data change → forEach crée des DOUBLONS
-// Il faudrait vider le SVG et tout recréer…
-// …mais alors on perd le suivi de chaque élément
-```
-
-- Pour **créer** des éléments : ça fonctionne
-- Pour **mettre à jour** ou **supprimer** : problème
-
-::right::
-
-<div class="col-center">
-  <img src="/images/02-intro-d3/data-enter-update-exit.svg" alt="Enter Update Exit" style="width:100%;max-height:380px;object-fit:contain;" />
-</div>
-
-<div class="footer">Source · <a href="https://d3js.org/d3-selection/joining">d3-selection - Joining data</a></div>
-
----
-layout: two-cols
----
-
-# `.join()` - la solution
-
-D3 **lie** les données aux éléments existants et gère les 3 cas automatiquement.
-
-```javascript
-import { select } from 'd3-selection'
-
-function update(data) {
-  select('svg')
-    .selectAll('rect')
-    .data(data)    // lie données ↔ éléments existants
-    .join('rect')  // crée / met à jour / supprime
-    .attr('x',      (d, i) => i * 60)
-    .attr('height', d => d * 2)
-}
-
-update([30, 80, 45])          // → crée 3 rects
-update([30, 80, 45, 60, 20])  // → crée 2 de plus
-update([30, 80])              // → supprime 3
-```
-
-- Appelle `update()` avec n'importe quelle donnée - D3 fait le reste
-- `.join('rect')` est le raccourci : il appelle `append` sur les nouvelles données, met à jour les existantes, supprime les orphelines
-
-::right::
-
-<div class="col-center" style="flex-direction:column; gap:0.75rem;">
-  <img src="/images/02-intro-d3/data-join-example-1.svg" style="width:100%;max-height:190px;object-fit:contain;" />
-  <img src="/images/02-intro-d3/data-join-example-3.svg" style="width:100%;max-height:150px;object-fit:contain;" />
-</div>
-
-<div class="footer">Source · <a href="https://d3js.org/d3-selection/joining">d3-selection - Joining data</a></div>
-
----
-layout: two-cols
----
-
-# Personnaliser le join
-
-Pour contrôler chaque état séparément, `.join()` accepte **3 callbacks** :
-
-```javascript
-select('svg')
-  .selectAll('rect')
-  .data(data)
-  .join(
-    enter  => enter.append('rect')
-                   .attr('fill', 'black'),  // nouveaux
-    update => update.attr('fill', 'gray'),  // existants
-    exit   => exit.remove()                 // supprimés
-  )
-  .attr('x',      (d, i) => i * 60)
-  .attr('height', d => d * 2)
-```
-
-- **Enter** : nouvelles données sans élément → créer
-- **Update** : données + élément existant → mettre à jour
-- **Exit** : éléments sans données → supprimer
-
-::right::
-
-<div class="col-center" style="flex-direction:column; gap:0.75rem;">
-  <img src="/images/02-intro-d3/data-enter-update-exit.svg" style="width:100%;max-height:190px;object-fit:contain;" />
-  <img src="/images/02-intro-d3/data-enter-update-exit-letters.svg" style="width:100%;max-height:150px;object-fit:contain;" />
-</div>
-
-<div class="footer">Source · <a href="https://d3js.org/d3-selection/joining">d3-selection - Joining data</a></div>
-
----
-layout: default
----
-
-<BubbleChart />
 
 ---
 layout: section
