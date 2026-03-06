@@ -21,7 +21,7 @@ const decks = [
 ]
 
 // Copy shared images once to dist root
-cpSync(resolve(root, 'public/images'), resolve(root, 'dist/images'), { recursive: true })
+cpSync(resolve(root, 'cours/public/images'), resolve(root, 'dist/images'), { recursive: true })
 
 for (const { src, out } of decks) {
   console.log(`\n📦 Building ${src} → dist/${out}`)
@@ -38,6 +38,6 @@ for (const { src, out } of decks) {
 }
 
 // Copy index page to dist root
-cpSync(resolve(root, 'public/index.html'), resolve(root, 'dist/index.html'))
+cpSync(resolve(root, 'cours/public/index.html'), resolve(root, 'dist/index.html'))
 
 console.log('\n✅ All decks built successfully!')

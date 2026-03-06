@@ -50,7 +50,7 @@ code, pre {
 
 pre {
   border-radius: 4px !important;
-  overflow: hidden !important;
+  overflow: auto;
 }
 
 code {
@@ -305,7 +305,7 @@ strong {
 
 /* Code blocks in two-cols-header: scrollable */
 .slidev-layout.two-cols-header pre {
-  max-height: 220px;
+  max-height: 300px;
   overflow-y: auto;
 }
 
@@ -405,6 +405,40 @@ strong {
   right: 2rem !important;
   left: auto !important;
   z-index: 100 !important;
+}
+
+/* Copy button on code blocks */
+.copy-btn {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 0.3rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.15s, background 0.15s, color 0.15s;
+  line-height: 1;
+  z-index: 10;
+}
+
+.slidev-code-wrapper:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.copy-btn.copied {
+  color: #7ec8a0;
+  border-color: rgba(126, 200, 160, 0.4);
 }
 
 /* V-clicks */
