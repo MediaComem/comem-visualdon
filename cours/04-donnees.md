@@ -58,7 +58,7 @@ layout: section
 layout: two-cols
 ---
 
-# Classification des données
+# Types de données
 
 
 - **Qualitative** : décrit une qualité, une catégorie
@@ -66,9 +66,9 @@ layout: two-cols
   - *Ordinale* : ordre naturel, intervalles non constants (S, M, L)
   - *Binaire* : deux catégories (oui/non, vrai/faux)
 - **Quantitative** : mesure une quantité, un nombre
-  - *Discrète* : valeurs entières (nombre d'enfants)
+  - *Discrète* : valeurs entières (nombre d'élèves)
   - *Continue* : valeurs réelles (température, poids)
-> Le type de données influence le **choix de la visualisation**
+
 
 
 ::right::
@@ -78,7 +78,7 @@ layout: two-cols
   <img src="/images/03-d3-data/continuous_discrete.png" alt="Continu / Discret" style="width:100%; max-height: 200px; object-fit:contain;" />
 </div>
 
-<div class="footer">Source · Stevens, <em>On the Theory of Scales of Measurement</em> (1946)</div>
+<div class="footer">Source images · Allison Horst <a href="https://allisonhorst.com/data-science-art"> Data Science illustrations </a></div>
 
 ---
 layout: section
@@ -321,7 +321,7 @@ npm install d3-array
 import { max, min, sum, extent, mean } from "d3-array"
 ```
 
-Reference : [d3js.org/d3-array](https://d3js.org/d3-array)
+
 
 ::right::
 
