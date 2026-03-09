@@ -76,8 +76,8 @@ Il faut **transformer** les données pour les adapter à l'espace disponible.
 ::right::
 
 <div class="col-center" style="gap: 1rem;">
-  <img src="/images/04-axis-scales/data2pixel.svg" alt="Données vers pixels" style="width:100%;max-height:180px;object-fit:contain;" />
-  <img src="/images/04-axis-scales/data2not_fitting.svg" alt="Données qui ne correspondent pas" style="width:100%;max-height:200px;object-fit:contain;" />
+  <img src="/images/05-echelles-axes/data2pixel.svg" alt="Données vers pixels" style="width:100%;max-height:180px;object-fit:contain;" />
+  <img src="/images/05-echelles-axes/data2not_fitting.svg" alt="Données qui ne correspondent pas" style="width:100%;max-height:200px;object-fit:contain;" />
 </div>
 
 <div class="footer">Source · <a href="https://d3js.org/d3-scale" target="_blank">d3-scale</a></div>
@@ -94,7 +94,7 @@ Une échelle est une **fonction** qui transforme une valeur du **domaine des don
 - **range** : l'étendue visuelle souhaitée (pixels)
 
 <div class="col-center">
-  <img src="/images/04-axis-scales/domain_range.svg" alt="Domain et Range" style="width:80%;max-height:180px;object-fit:contain; margin-top: -200px" />
+  <img src="/images/05-echelles-axes/domain_range.svg" alt="Domain et Range" style="width:80%;max-height:180px;object-fit:contain; margin-top: -200px" />
 </div>
 
 <div class="footer">Source · <a href="https://d3js.org/d3-scale" target="_blank">d3-scale</a></div>
@@ -141,7 +141,7 @@ scale(maxData) // --> svgWidth
 ::right::
 
 <div class="col-center">
-  <img src="/images/04-axis-scales/domain_range.svg" alt="Domain et Range" style="width:100%;max-height:360px;object-fit:contain;" />
+  <img src="/images/05-echelles-axes/domain_range.svg" alt="Domain et Range" style="width:100%;max-height:360px;object-fit:contain;" />
 </div>
 
 <div class="footer">Source · <a href="https://d3js.org/d3-scale" target="_blank">d3-scale</a></div>
@@ -172,7 +172,7 @@ x(100) // 800
 
 ::bottom::
 
-<img src="/images/04-axis-scales/scaleLinear.svg" alt="Échelle linéaire" style="width:100%;max-height:200px;object-fit:contain;" />
+<img src="/images/05-echelles-axes/scaleLinear.svg" alt="Échelle linéaire" style="width:100%;max-height:200px;object-fit:contain;" />
 
 <div class="footer">Source · <a href="https://d3js.org/d3-scale/linear" target="_blank">d3-scale - scaleLinear</a></div>
 
@@ -200,7 +200,7 @@ x(new Date('2022-06-01')) // ~400
 
 ::bottom::
 
-<img src="/images/04-axis-scales/scaleTime.svg" alt="Échelle temporelle" style="width:100%;max-height:120px;object-fit:contain;" />
+<img src="/images/05-echelles-axes/scaleTime.svg" alt="Échelle temporelle" style="width:100%;max-height:120px;object-fit:contain;" />
 
 <div class="footer">Source · <a href="https://d3js.org/d3-scale/time" target="_blank">d3-scale - scaleTime</a></div>
 
@@ -230,7 +230,7 @@ color(90)  // '#636363'
 
 ::bottom::
 
-<img src="/images/04-axis-scales/scaleQuantize.svg" alt="Échelle quantize" style="width:100%;max-height:160px;object-fit:contain;" />
+<img src="/images/05-echelles-axes/scaleQuantize.svg" alt="Échelle quantize" style="width:100%;max-height:160px;object-fit:contain;" />
 
 <div class="footer">Source · <a href="https://d3js.org/d3-scale/quantize" target="_blank">d3-scale - scaleQuantize</a></div>
 
@@ -260,7 +260,7 @@ color(80)  // '#1a9850'  (>= 70)
 
 ::bottom::
 
-<img src="/images/04-axis-scales/scaleThreshold.svg" alt="Échelle threshold" style="width:100%;max-height:260px;object-fit:contain;" />
+<img src="/images/05-echelles-axes/scaleThreshold.svg" alt="Échelle threshold" style="width:100%;max-height:260px;object-fit:contain;" />
 
 <div class="footer">Source · <a href="https://d3js.org/d3-scale/threshold" target="_blank">d3-scale - scaleThreshold</a></div>
 
@@ -290,7 +290,7 @@ color('cerise') // '#984ea3'
 
 ::bottom::
 
-<img src="/images/04-axis-scales/scaleOrdinal.svg" alt="Échelle ordinale" style="width:100%;max-height:160px;object-fit:contain;" />
+<img src="/images/05-echelles-axes/scaleOrdinal.svg" alt="Échelle ordinale" style="width:100%;max-height:160px;object-fit:contain;" />
 
 <div class="footer">Source · <a href="https://d3js.org/d3-scale/ordinal" target="_blank">d3-scale - scaleOrdinal</a></div>
 
@@ -320,7 +320,7 @@ x.bandwidth()   // largeur de chaque barre
 
 ::bottom::
 
-<img src="/images/04-axis-scales/scaleBand.svg" alt="Échelle band" style="width:100%;max-height:160px;object-fit:contain;" />
+<img src="/images/05-echelles-axes/scaleBand.svg" alt="Échelle band" style="width:100%;max-height:160px;object-fit:contain;" />
 
 <div class="footer">Source · <a href="https://d3js.org/d3-scale/band" target="_blank">d3-scale - scaleBand</a></div>
 
@@ -371,7 +371,7 @@ svg.append('g')
 ::right::
 
 <div class="col-center">
-  <img src="/images/04-axis-scales/axis.svg" alt="Axes D3" style="width:100%;max-height:360px;object-fit:contain;" />
+  <img src="/images/05-echelles-axes/axis.svg" alt="Axes D3" style="width:100%;max-height:360px;object-fit:contain;" />
 </div>
 
 <div class="footer">Source · <a href="https://d3js.org/d3-axis" target="_blank">d3-axis</a></div>
@@ -404,7 +404,7 @@ Cette convention réserve de l'espace pour les axes tout en gardant une zone de 
 ::right::
 
 <div class="col-center">
-  <img src="/images/04-axis-scales/margin_convention.svg" alt="Convention des marges" style="width:100%;max-height:360px;object-fit:contain;" />
+  <img src="/images/05-echelles-axes/margin_convention.svg" alt="Convention des marges" style="width:100%;max-height:360px;object-fit:contain;" />
 </div>
 
 <div class="footer">Source · <a href="https://observablehq.com/@d3/margin-convention" target="_blank">Observable - Margin Convention</a></div>

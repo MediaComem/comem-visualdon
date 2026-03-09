@@ -40,15 +40,15 @@ La dataviz a été inventée à la main — longtemps avant les ordinateurs
 
 <div class="masonry masonry-3" style="margin-top:0.75rem;">
   <figure>
-    <img src="/images/01-intro-svg/1920px-Nightingale-mortality.jpg" alt="Nightingale" />
+    <img src="/images/02-dessiner-avec-du-code/1920px-Nightingale-mortality.jpg" alt="Nightingale" />
     <figcaption><strong>Florence Nightingale · 1858</strong> · Diagramme en rose, mortalité militaire</figcaption>
   </figure>
   <figure>
-    <img src="/images/01-intro-svg/dubois.png" alt="Du Bois" />
+    <img src="/images/02-dessiner-avec-du-code/dubois.png" alt="Du Bois" />
     <figcaption><strong>W.E.B. Du Bois · 1900</strong> · Infographies, Exposition universelle de Paris</figcaption>
   </figure>
   <figure>
-    <img src="/images/01-intro-svg/tufte.png" alt="Tufte" />
+    <img src="/images/02-dessiner-avec-du-code/tufte.png" alt="Tufte" />
     <figcaption><strong>Edward Tufte · 1983</strong> · <em>The Visual Display of Quantitative Information</em> (couverture : Marey, 1885)</figcaption>
   </figure>
 </div>
@@ -63,19 +63,19 @@ layout: default
 
 <div class="masonry masonry-3" style="margin-top:0.75rem;">
   <figure>
-    <img src="/images/01-intro-svg/dear-data.webp" alt="Dear Data" />
+    <img src="/images/02-dessiner-avec-du-code/dear-data.webp" alt="Dear Data" />
     <figcaption><strong><a href="https://www.dear-data.com/" target="_blank">Dear Data</a> · Lupi & Posavec · 2016</strong> · 52 semaines de données personnelles, une carte postale par semaine</figcaption>
   </figure>
   <figure>
-    <img src="/images/01-intro-svg/giorgia_lupi.jpg" alt="Giorgia Lupi" />
+    <img src="/images/02-dessiner-avec-du-code/giorgia_lupi.jpg" alt="Giorgia Lupi" />
     <figcaption><strong>Giorgia Lupi</strong> · Pionnière du "Data Humanism"</figcaption>
   </figure>
   <figure>
-    <img src="/images/01-intro-svg/migrant-fragapane.webp" alt="Fragapane" />
+    <img src="/images/02-dessiner-avec-du-code/migrant-fragapane.webp" alt="Fragapane" />
     <figcaption><strong><a href="https://www.behance.net/federicafragapane" target="_blank">Federica Fragapane</a></strong> · Dataviz dessinée à la main, narration humaniste</figcaption>
   </figure>
   <figure>
-    <img src="/images/01-intro-svg/mona_chalabi.avif" alt="Mona Chalabi" />
+    <img src="/images/02-dessiner-avec-du-code/mona_chalabi.avif" alt="Mona Chalabi" />
     <figcaption><strong><a href="https://monachalabi.com/" target="_blank">Mona Chalabi</a> · The Guardian</strong> · Illustrations à la main, fausse précision évitée</figcaption>
   </figure>
 </div>
@@ -112,7 +112,7 @@ layout: two-cols
 ::right::
 
 <div class="col-center">
-  <img src="/images/01-intro-svg/data-drawing.webp" style="max-height:350px;object-fit:contain;width:100%;" />
+  <img src="/images/02-dessiner-avec-du-code/data-drawing.webp" style="max-height:350px;object-fit:contain;width:100%;" />
   <p style="font-size:0.55rem;color:#888;text-align:center;margin-top:0.4rem;">Source · <a href="https://medium.com/@jonas.lowgren.64/the-value-of-hand-drawing-in-data-visualization-360536fd96fc">Jonas Löwgren · The value of hand drawing in data visualization</a></p>
 </div>
 
@@ -132,15 +132,15 @@ layout: default
 
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; height: calc(100% - 3.5rem);">
   <div style="display:flex; flex-direction:column; gap:0.3rem; min-height:0;">
-    <img src="/images/01-intro-svg/ny_times.gif" style="flex:1; width:100%; object-fit:cover; border-radius:4px; min-height:0;" />
+    <img src="/images/02-dessiner-avec-du-code/ny_times.gif" style="flex:1; width:100%; object-fit:cover; border-radius:4px; min-height:0;" />
     <p style="font-size:0.65rem; color:#666; margin:0; font-family:'Roboto Mono',monospace;"><strong>NYT Graphics</strong> · <a href="https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html" target="_blank">Covid-19 spread (2020)</a></p>
   </div>
   <div style="display:flex; flex-direction:column; gap:0.3rem; min-height:0;">
-    <video src="/images/01-intro-svg/bremer.webm" autoplay loop muted playsinline style="flex:1; width:100%; object-fit:cover; border-radius:4px; min-height:0;"></video>
+    <video src="/images/02-dessiner-avec-du-code/bremer.webm" autoplay loop muted playsinline style="flex:1; width:100%; object-fit:cover; border-radius:4px; min-height:0;"></video>
     <p style="font-size:0.65rem; color:#666; margin:0; font-family:'Roboto Mono',monospace;"><strong>Nadieh Bremer</strong> · <a href="https://nbremer.github.io/ORCA/commit-history/" target="_blank">ORCA commit history</a></p>
   </div>
   <div style="display:flex; flex-direction:column; gap:0.3rem; min-height:0;">
-    <video src="/images/01-intro-svg/climate_zones.webm" autoplay loop muted playsinline style="flex:1; width:100%; object-fit:cover; border-radius:4px; min-height:0;"></video>
+    <video src="/images/02-dessiner-avec-du-code/climate_zones.webm" autoplay loop muted playsinline style="flex:1; width:100%; object-fit:cover; border-radius:4px; min-height:0;"></video>
     <p style="font-size:0.65rem; color:#666; margin:0; font-family:'Roboto Mono',monospace;"><strong>The Pudding</strong> · <a href="https://pudding.cool/2024/06/climate-zones/" target="_blank">Climate zones (2024)</a></p>
   </div>
 </div>
@@ -187,7 +187,7 @@ layout: two-cols
     
   </div>
   
-  <img src="/images/01-intro-svg/svg_intro.png" style="max-height:180px;object-fit:contain;width:100%;" />
+  <img src="/images/02-dessiner-avec-du-code/svg_intro.png" style="max-height:180px;object-fit:contain;width:100%;" />
         <figcaption>Source · <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial">MDN · SVG Tutorial</a></figcaption>
 
 
@@ -211,7 +211,7 @@ layout: two-cols
 ::right::
 
 <div class="col-center">
-  <img src="/images/01-intro-svg/svg-coordinates-system.png" style="width:100%;max-height:340px;object-fit:contain;" />
+  <img src="/images/02-dessiner-avec-du-code/svg-coordinates-system.png" style="width:100%;max-height:340px;object-fit:contain;" />
         <figcaption>Source · <a href="https://vanseodesign.com/web-design/svg-viewport/">vanseodesign.com · SVG Coordinate Systems</a></figcaption>
 
 </div>
@@ -342,7 +342,7 @@ L'élément le plus puissant · utilisé par **D3.js** pour les arcs, courbes et
 ```
 
 <div class="col-center">
-  <img src="/images/01-intro-svg/path.svg" style="width:100%;max-height:195px;object-fit:contain;" />
+  <img src="/images/02-dessiner-avec-du-code/path.svg" style="width:100%;max-height:195px;object-fit:contain;" />
 </div>
 
 ---
@@ -380,7 +380,7 @@ layout: two-cols
 ::right::
 
 <div class="col-center">
-  <img src="/images/01-intro-svg/groupe_translate.svg" style="width:100%;max-height:340px;object-fit:contain;" />
+  <img src="/images/02-dessiner-avec-du-code/groupe_translate.svg" style="width:100%;max-height:340px;object-fit:contain;" />
 </div>
 
 ---

@@ -158,7 +158,7 @@ import { select, selectAll } from 'd3-selection'
 ::right::
 
 <div class="col-center">
-  <img src="/images/02-intro-d3/doc_annotation.svg" alt="Documentation D3" style="width:100%;max-height:360px;object-fit:contain;" />
+  <img src="/images/03-js-dom/doc_annotation.svg" alt="Documentation D3" style="width:100%;max-height:360px;object-fit:contain;" />
 </div>
 
 <div class="footer">Source · <a href="https://d3js.org/d3-selection">d3js.org - d3-selection</a> · <a href="https://d3js.org/api">API reference</a></div>

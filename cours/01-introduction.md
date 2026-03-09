@@ -39,7 +39,7 @@ layout: section
 
 ---
 layout: image
-image: /images/01-intro-svg/wooclap.png
+image: /images/01-introduction/wooclap.png
 ---
 
 
@@ -99,7 +99,7 @@ _Diagram of the causes of mortality in the army in the East_
 
 ---
 layout: image
-image: /images/01-intro-svg/cholera_map.jpg
+image: /images/01-introduction/cholera_map.jpg
 ---
 
 <div class="image-caption">
@@ -109,7 +109,7 @@ image: /images/01-intro-svg/cholera_map.jpg
 
 ---
 layout: image-right
-image: /images/01-intro-svg/cholera_map.jpg
+image: /images/01-introduction/cholera_map.jpg
 ---
 
 # Analyser : tester une hypothèse
@@ -252,15 +252,15 @@ layout: default
 
 <div class="mosaic mosaic-3 mosaic-books mt-4" style="height: 200px;">
 <figure>
-  <img src="/images/01-intro-svg/bertin-semiologie-graphique.jpg" />
+  <img src="/images/01-introduction/bertin-semiologie-graphique.jpg" />
   <figcaption>Bertin · Sémiologie graphique (1967)</figcaption>
 </figure>
 <figure>
-  <img src="/images/01-intro-svg/edward-tufte-visual-display-of-quantitative-information.jpg" />
+  <img src="/images/01-introduction/edward-tufte-visual-display-of-quantitative-information.jpg" />
   <figcaption>Tufte · The Visual Display of Quantitative Information (1983)</figcaption>
 </figure>
 <figure>
-  <img src="/images/01-intro-svg/manuel-de-cartographie.jpg" />
+  <img src="/images/01-introduction/manuel-de-cartographie.jpg" />
   <figcaption>Lambert & Zanin · Manuel de cartographie (2016)</figcaption>
 </figure>
 </div>
@@ -303,15 +303,15 @@ Tableau de bord interactif des votations fédérales suisses
 
 <div class="mosaic mosaic-3 mt-4" style="height: 200px;">
 <figure>
-  <img src="/images/01-intro-svg/cholera_map.jpg" style="object-fit: contain !important;" />
+  <img src="/images/01-introduction/cholera_map.jpg" style="object-fit: contain !important;" />
   <figcaption>Snow · Cholera Map (1854)</figcaption>
 </figure>
 <figure>
-  <img src="/images/01-intro-svg/bertin_F_Population_et_me_decin.jpg" style="object-fit: contain !important;" />
+  <img src="/images/01-introduction/bertin_F_Population_et_me_decin.jpg" style="object-fit: contain !important;" />
   <figcaption>Bertin · Population et médecins</figcaption>
 </figure>
 <figure>
-  <img src="/images/01-intro-svg/interactive-things-dashboard.png" style="object-fit: contain !important;" />
+  <img src="/images/01-introduction/interactive-things-dashboard.png" style="object-fit: contain !important;" />
   <figcaption>Interactive Things · Federal Popular Vote Dashboard</figcaption>
 </figure>
 </div>
@@ -362,19 +362,19 @@ _« Pour une cartographie sensible et décentrée »_ — esquisses, croquis, é
 
 <div class="mosaic mosaic-4 mt-4" style="height: 200px;">
 <figure>
-  <img src="/images/01-intro-svg/datahumanism.webp" />
+  <img src="/images/01-introduction/datahumanism.webp" />
   <figcaption>Lupi · Data Humanism (2017)</figcaption>
 </figure>
 <figure>
-  <img src="/images/01-intro-svg/dear-data.webp" />
+  <img src="/images/01-introduction/dear-data.webp" />
   <figcaption>Lupi & Posavec · Dear Data (2016)</figcaption>
 </figure>
 <figure>
-  <img src="/images/01-intro-svg/migrant-fragapane.webp" />
+  <img src="/images/01-introduction/migrant-fragapane.webp" />
   <figcaption>Fragapane · Humanizing data to fight inequalities</figcaption>
 </figure>
 <figure>
-  <img src="/images/01-intro-svg/philippe-reka-fuzzy-borders.jpg" />
+  <img src="/images/01-introduction/philippe-reka-fuzzy-borders.jpg" />
   <figcaption>Rekacewicz · Europe Fuzzy Borders</figcaption>
 </figure>
 </div>
@@ -391,15 +391,15 @@ _Données traduites en objets physiques_
 
 <div class="mosaic mosaic-3 mt-4" style="height: 250px;">
 <figure>
-  <img src="/images/01-intro-svg/data-streamers-surveillance.webp" />
+  <img src="/images/01-introduction/data-streamers-surveillance.webp" />
   <figcaption>An installation to explore how algorithms look right back at us</figcaption>
 </figure>
 <figure>
-  <img src="/images/01-intro-svg/data-streamers.webp" />
+  <img src="/images/01-introduction/data-streamers.webp" />
   <figcaption>A visualisation of life and death</figcaption>
 </figure>
 <figure>
-  <img src="/images/01-intro-svg/data-streamers-strings.webp" />
+  <img src="/images/01-introduction/data-streamers-strings.webp" />
   <figcaption>A physical visualisation of opinions to use wherever and whenever</figcaption>
 </figure>
 </div>
@@ -422,15 +422,15 @@ layout: default
 
 <div class="mosaic mosaic-3 mt-4" style="height: 250px;">
 <figure class="mosaic-books">
-  <img src="/images/01-intro-svg/cartographie_radicale.jpg" />
+  <img src="/images/01-introduction/cartographie_radicale.jpg" />
   <figcaption>Nepthys Zwer · Cartographie radicale</figcaption>
 </figure>
 <figure class="mosaic-books">
-  <img src="/images/01-intro-svg/ceci-nest-pas-un-atlas.jpeg" />
+  <img src="/images/01-introduction/ceci-nest-pas-un-atlas.jpeg" />
   <figcaption>Ceci n'est pas un atlas</figcaption>
 </figure>
 <figure>
-  <img src="/images/01-intro-svg/carte_sensible.jpg" />
+  <img src="/images/01-introduction/carte_sensible.jpg" />
   <figcaption>Élise Olmedo · Carte sensible</figcaption>
 </figure>
 </div>
@@ -456,7 +456,7 @@ layout: section
 
 ---
 layout: image-right
-image: /images/01-intro-svg/good-dataviz.png
+image: /images/01-introduction/good-dataviz.png
 backgroundSize: contain
 ---
 
@@ -479,7 +479,7 @@ backgroundSize: contain
 
 ---
 layout: image-right
-image: /images/01-intro-svg/form_and_function_1.svg
+image: /images/01-introduction/form_and_function_1.svg
 backgroundSize: contain
 ---
 
@@ -499,14 +499,14 @@ backgroundSize: contain
 
 ---
 layout: image-right
-image: /images/01-intro-svg/everest-summit-hillary.jpg
+image: /images/01-introduction/everest-summit-hillary.jpg
 backgroundSize: contain
 ---
 
 # Statique
 
 <figure>
-  <img src="/images/01-intro-svg/form_and_function_2.svg" class="w-80" />
+  <img src="/images/01-introduction/form_and_function_2.svg" class="w-80" />
   <figcaption>Mount Everest · South China Morning Post</figcaption>
 </figure>
 
@@ -514,27 +514,27 @@ backgroundSize: contain
 
 ---
 layout: image-right
-image: /images/01-intro-svg/giorgia_lupi.jpg
+image: /images/01-introduction/giorgia_lupi.jpg
 backgroundSize: contain
 ---
 
 # Infographie
 
 <figure>
-  <img src="/images/01-intro-svg/form_and_function_3.svg" class="w-80" />
+  <img src="/images/01-introduction/form_and_function_3.svg" class="w-80" />
   <figcaption>Giorgia Lupi · Information design</figcaption>
 </figure>
 
 ---
 layout: image-right
-image: /images/01-intro-svg/ny_times.gif
+image: /images/01-introduction/ny_times.gif
 backgroundSize: contain
 ---
 
 # Interactive
 
 <figure>
-  <img src="/images/01-intro-svg/form_and_function_4.svg" class="w-80" />
+  <img src="/images/01-introduction/form_and_function_4.svg" class="w-80" />
   <figcaption>How the Virus Got Out · The New York Times</figcaption>
 </figure>
 
@@ -542,14 +542,14 @@ backgroundSize: contain
 
 ---
 layout: image-right
-image: /images/01-intro-svg/rts_cartes.gif
+image: /images/01-introduction/rts_cartes.gif
 backgroundSize: contain
 ---
 
 # Interactive
 
 <figure>
-  <img src="/images/01-intro-svg/form_and_function_5.svg" class="w-80" />
+  <img src="/images/01-introduction/form_and_function_5.svg" class="w-80" />
   <figcaption>Votations fédérales · RTS</figcaption>
 </figure>
 
@@ -567,11 +567,11 @@ layout: default
 
 # Outils de visualisation de données interactive
 
-<img src="/images/01-intro-svg/data-viz-libraries.svg" style="width: 100%; max-height: 380px; object-fit: contain;" />
+<img src="/images/01-introduction/data-viz-libraries.svg" style="width: 100%; max-height: 380px; object-fit: contain;" />
 
 ---
 layout: image-right
-image: /images/01-intro-svg/form_and_function_objectif.svg
+image: /images/01-introduction/form_and_function_objectif.svg
 backgroundSize: contain
 ---
 
@@ -593,7 +593,7 @@ layout: default
 
 # Évaluation
 
-<img src="/images/01-intro-svg/evaluation.svg" class="w-full mt-4" />
+<img src="/images/01-introduction/evaluation.svg" class="w-full mt-4" />
 
 <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
 

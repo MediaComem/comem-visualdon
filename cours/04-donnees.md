@@ -74,8 +74,8 @@ layout: two-cols
 ::right::
 
 <div class="col-center" style="gap:0.75rem; ">
-  <img src="/images/03-d3-data/nominal_ordinal_binary.png" alt="Nominal / Ordinal / Binaire" style="width:100%; max-height: 200px;object-fit:contain;" />
-  <img src="/images/03-d3-data/continuous_discrete.png" alt="Continu / Discret" style="width:100%; max-height: 200px; object-fit:contain;" />
+  <img src="/images/04-donnees/nominal_ordinal_binary.png" alt="Nominal / Ordinal / Binaire" style="width:100%; max-height: 200px;object-fit:contain;" />
+  <img src="/images/04-donnees/continuous_discrete.png" alt="Continu / Discret" style="width:100%; max-height: 200px; object-fit:contain;" />
 </div>
 
 <div class="footer">Source images · Allison Horst <a href="https://allisonhorst.com/data-science-art"> Data Science illustrations </a></div>
@@ -103,7 +103,7 @@ layout: two-cols
 ::right::
 
 <div class="col-center">
-  <img src="/images/03-d3-data/csv.svg" alt="CSV" style="width:100%;max-height:380px;object-fit:contain;" />
+  <img src="/images/04-donnees/csv.svg" alt="CSV" style="width:100%;max-height:380px;object-fit:contain;" />
 </div>
 
 <div class="footer">Source · <a href="https://datatracker.ietf.org/doc/html/rfc4180">RFC 4180 : CSV</a> · <a href="https://d3js.org/d3-dsv">d3-dsv</a></div>
@@ -125,7 +125,7 @@ layout: two-cols
 ::right::
 
 <div class="col-center">
-  <img src="/images/03-d3-data/json.svg" alt="JSON" style="width:100%;max-height:380px;object-fit:contain;" />
+  <img src="/images/04-donnees/json.svg" alt="JSON" style="width:100%;max-height:380px;object-fit:contain;" />
 </div>
 
 <div class="footer">Source · <a href="https://www.json.org">json.org</a> · <a href="https://d3js.org/d3-fetch">d3-fetch</a></div>
@@ -146,7 +146,7 @@ layout: two-cols
 ::right::
 
 <div class="col-center">
-  <img src="/images/03-d3-data/tsv.svg" alt="TSV" style="width:100%;max-height:380px;object-fit:contain;" />
+  <img src="/images/04-donnees/tsv.svg" alt="TSV" style="width:100%;max-height:380px;object-fit:contain;" />
 </div>
 
 <div class="footer">Source · <a href="https://d3js.org/d3-dsv">d3-dsv</a></div>
@@ -168,7 +168,7 @@ layout: two-cols
 ::right::
 
 <div class="col-center">
-  <img src="/images/03-d3-data/xml.svg" alt="XML" style="width:100%;max-height:380px;object-fit:contain;" />
+  <img src="/images/04-donnees/xml.svg" alt="XML" style="width:100%;max-height:380px;object-fit:contain;" />
 </div>
 
 <div class="footer">Source · <a href="https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction">MDN : XML</a></div>
@@ -647,7 +647,7 @@ sel.join(
 ::right::
 
 <div class="col-center">
-  <img src="/images/03-d3-data/data-enter-update-exit-letters.svg" alt="Enter / Update / Exit" style="width:100%;max-height:360px;object-fit:contain;" />
+  <img src="/images/04-donnees/data-enter-update-exit-letters.svg" alt="Enter / Update / Exit" style="width:100%;max-height:360px;object-fit:contain;" />
 </div>
 
 <div class="footer">Source · <a href="https://d3js.org/d3-selection/joining">d3-selection - Joining data</a></div>
@@ -732,8 +732,8 @@ Faites un croquis de votre visualisation : sur papier ou avec un outil comme **F
 ::right::
 
 <div class="col-center" style="gap:0.75rem;">
-  <img src="/images/03-d3-data/sketch1.jpg" alt="Exemple croquis papier" style="width:100%;border-radius:4px;object-fit:cover;max-height:200px;" />
-  <img src="/images/03-d3-data/figma.png" alt="Exemple wireframe Figma" style="width:100%;border-radius:4px;object-fit:contain;max-height:100px;" />
+  <img src="/images/04-donnees/sketch1.jpg" alt="Exemple croquis papier" style="width:100%;border-radius:4px;object-fit:cover;max-height:200px;" />
+  <img src="/images/04-donnees/figma.png" alt="Exemple wireframe Figma" style="width:100%;border-radius:4px;object-fit:contain;max-height:100px;" />
 </div>
 
 <div class="footer">Source · <a href="https://github.com/MediaComem/comem-visualdon/blob/main/projet/README.md">Directives projet</a> · <a href="https://www.figma.com/">figma.com</a></div>
