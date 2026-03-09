@@ -410,6 +410,50 @@ Cette convention réserve de l'espace pour les axes tout en gardant une zone de 
 <div class="footer">Source · <a href="https://observablehq.com/@d3/margin-convention" target="_blank">Observable - Margin Convention</a></div>
 
 ---
+layout: section
+---
+
+# Exercice en classe
+
+---
+layout: default
+---
+
+# Observable — d3-scale & d3-axis
+
+Ouvre le notebook et complète les exercices dans l'ordre.
+
+**[observablehq.com/d/9759665d742894dd](https://observablehq.com/d/9759665d742894dd)**
+
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-top:1.5rem;">
+
+<div class="border-box">
+
+**1. Problème de taille des cercles**
+
+Que se passe-t-il avec les cercles ? Utilise `d3-scale` pour que tous les cercles restent visibles.
+
+</div>
+
+<div class="border-box">
+
+**2. Ajouter l'axe Y**
+
+Rajoute l'axe Y à gauche. Explique le range de l'échelle Y : pourquoi `[height, 0]` ?
+
+</div>
+
+<div class="border-box">
+
+**3. Bar chart horizontal**
+
+Génère le même graphique en format horizontal : axe Y pour les partenaires, axe X pour le nombre de véhicules.
+
+</div>
+
+</div>
+
+---
 layout: statement
 ---
 
