@@ -7,7 +7,7 @@
    viewBox="0 0 124.47509 33.978131"
    version="1.1"
    id="svg6278"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
    sodipodi:docname="scaleTime.svg"
    inkscape:export-filename="/home/noe/heig-vd/dataviz-slides/04-axis-scales/public/assets/scaleTime.png"
    inkscape:export-xdpi="500.17795"
@@ -27,23 +27,28 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="1.9628562"
-     inkscape:cx="214.22863"
-     inkscape:cy="11.972349"
-     inkscape:window-width="1850"
-     inkscape:window-height="1016"
+     inkscape:cx="213.9739"
+     inkscape:cy="11.717618"
+     inkscape:window-width="1920"
+     inkscape:window-height="1131"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g307159"
+     inkscape:current-layer="layer1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0">
+     fit-margin-bottom="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid20331"
        originx="-15.958996"
-       originy="-70.019546" />
+       originy="-70.019546"
+       spacingy="1"
+       spacingx="1"
+       units="mm" />
   </sodipodi:namedview>
   <defs
      id="defs6275">
@@ -112,12 +117,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="52.900932"
-       y="75.957848"
+       x="56.540401"
+       y="78.653748"
        id="text14002-9-4"><tspan
          sodipodi:role="line"
-         x="52.900932"
-         y="75.957848"
+         x="56.540401"
+         y="78.653748"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.264583"
          id="tspan2516"><tspan
    style="fill:#cc2b0f;fill-opacity:1"
@@ -127,13 +132,13 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="15.958996"
+         x="21.081209"
          y="90.959511"
          id="text15854"><tspan
            sodipodi:role="line"
            id="tspan15852"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-           x="15.958996"
+           x="21.081209"
            y="90.959511"> [dateDebut, dateFin]</tspan></text>
       <text
          xml:space="preserve"

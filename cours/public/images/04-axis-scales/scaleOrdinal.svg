@@ -7,7 +7,7 @@
    viewBox="0 0 178.70259 52.200958"
    version="1.1"
    id="svg307380"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
    sodipodi:docname="scaleOrdinal.svg"
    inkscape:export-filename="/home/noe/heig-vd/dataviz-slides/04-axis-scales/public/assets/scaleOrdinal.png"
    inkscape:export-xdpi="500"
@@ -26,11 +26,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="5.5517957"
-     inkscape:cx="605.47977"
-     inkscape:cy="111.8557"
-     inkscape:window-width="1850"
-     inkscape:window-height="1016"
+     inkscape:zoom="1.3244948"
+     inkscape:cx="313.32701"
+     inkscape:cy="231.03148"
+     inkscape:window-width="1920"
+     inkscape:window-height="1131"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -38,7 +38,9 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs307377">
     <marker
@@ -65,18 +67,18 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="78.316872"
-       y="68.730644"
+       y="72.713394"
        id="text14002-9-4"><tspan
          sodipodi:role="line"
          x="78.316872"
-         y="68.730644"
+         y="72.713394"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.264583"
          id="tspan2516"><tspan
    style="fill:#cc2b0f;fill-opacity:1"
    id="tspan17547-7">scaleOrdinal</tspan>()</tspan><tspan
          sodipodi:role="line"
          x="78.316872"
-         y="81.95977"
+         y="85.94252"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.264583"
          id="tspan79937" /></text>
     <text
@@ -104,14 +106,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="14.077909"
-       y="86.733101"
+       x="24.758919"
+       y="86.914131"
        id="text15854"><tspan
          sodipodi:role="line"
          id="tspan15852"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         x="14.077909"
-         y="86.733101">[&quot;Lundi&quot; , &quot;Mardi&quot; , &quot;Mercredi&quot;]</tspan></text>
+         x="24.758919"
+         y="86.914131">[&quot;Lundi&quot; , &quot;Mardi&quot; , &quot;Mercredi&quot;]</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8-8)"
        d="m 102.75656,85.246174 h 13.22918"
@@ -119,17 +121,17 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="126.57139"
-       y="86.190758"
+       x="135.62309"
+       y="85.647659"
        id="text15854-0"><tspan
          sodipodi:role="line"
          id="tspan15852-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         x="126.57139"
-         y="86.190758">['red' , 'blue' , 'green']</tspan></text>
+         x="135.62309"
+         y="85.647659">['red' , 'blue' , 'green']</tspan></text>
     <g
        id="g315290"
-       transform="translate(0.90455432,-6.0507729)">
+       transform="translate(0.90455432,-10.046007)">
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.31757px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#cc2b0f;fill-opacity:1;stroke:none;stroke-width:0.182939"
@@ -169,7 +171,7 @@
     </g>
     <g
        id="g315220"
-       transform="translate(-9.201413,-5.8208336)">
+       transform="translate(-9.201413,-9.8160676)">
       <g
          id="g315282">
         <text

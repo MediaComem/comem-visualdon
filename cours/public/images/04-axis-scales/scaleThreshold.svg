@@ -7,7 +7,7 @@
    viewBox="0 0 166.38562 93.352959"
    version="1.1"
    id="svg125499"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
    sodipodi:docname="scaleThreshold.svg"
    inkscape:export-filename="/home/noe/heig-vd/dataviz-slides/04-axis-scales/public/assets/scaleThreshold.png"
    inkscape:export-xdpi="500"
@@ -30,20 +30,25 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="3.9257124"
-     inkscape:cx="542.19458"
-     inkscape:cy="81.259137"
-     inkscape:window-width="1850"
-     inkscape:window-height="1016"
+     inkscape:zoom="1.3673668"
+     inkscape:cx="273.51841"
+     inkscape:cy="148.46053"
+     inkscape:window-width="1920"
+     inkscape:window-height="1131"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g275166">
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid239687"
        originx="-43.72055"
-       originy="-84.258807" />
+       originy="-84.258807"
+       spacingy="1"
+       spacingx="1"
+       units="mm" />
   </sodipodi:namedview>
   <defs
      id="defs125496">
@@ -70,24 +75,24 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="89.936295"
-       y="90.197113"
+       x="89.549294"
+       y="96.195564"
        id="text14002-9-4"><tspan
          sodipodi:role="line"
-         x="89.936295"
-         y="90.197113"
+         x="89.549294"
+         y="96.195564"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.264583"
          id="tspan2516"><tspan
    style="fill:#cc2b0f;fill-opacity:1"
    id="tspan17547-7">scaleThreshold</tspan>()</tspan><tspan
          sodipodi:role="line"
-         x="89.936295"
-         y="103.42624"
+         x="89.549294"
+         y="109.42469"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.264583"
          id="tspan79937" /></text>
     <g
        id="g275166"
-       transform="translate(-2.3074835)">
+       transform="translate(6.0129491,5.0309592)">
       <g
          id="g12382-0"
          transform="rotate(90,59.494676,90.142918)">
@@ -127,28 +132,28 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="45.510666"
+         x="54.992088"
          y="109.51698"
          id="text15854"><tspan
            sodipodi:role="line"
            id="tspan15852"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-           x="45.510666"
+           x="54.992088"
            y="109.51698">[0 , 50 , 100]</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8-8)"
-         d="M 98.344473,108.57239 H 111.57365"
+         d="m 107.8259,108.57239 h 13.22917"
          id="path27887" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="122.15929"
+         x="131.64072"
          y="109.51698"
          id="text15854-0"><tspan
            sodipodi:role="line"
            id="tspan15852-4"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Tlwg Typewriter';-inkscape-font-specification:'Tlwg Typewriter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-           x="122.15929"
+           x="131.64072"
            y="109.51698">['red' , 'green' , 'yellow', 'red']</tspan></text>
     </g>
     <g
