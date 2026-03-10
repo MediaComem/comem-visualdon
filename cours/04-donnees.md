@@ -1,6 +1,7 @@
 ---
 theme: default
 title: "04 - Données"
+download: true
 drawings:
   persist: false
 transition: slide-left
