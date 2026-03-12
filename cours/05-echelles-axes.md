@@ -1,6 +1,7 @@
 ---
 theme: default
 title: "05 - Échelles et axes"
+download: true
 drawings:
   persist: false
 transition: slide-left
