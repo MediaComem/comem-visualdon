@@ -11,8 +11,8 @@ layout: none
 <div class="cover-custom">
   <img src="/images/logo.png" class="cover-logo" />
   <div class="cover-content">
-    <h1 class="cover-title">06 — Interaction et animation</h1>
-    <p class="cover-subtitle">Première partie</p>
+    <h1 class="cover-title">06 - Interaction et animation</h1>
+    <p class="cover-subtitle">Visualisation de Données</p>
     <div class="cover-links">
       <a href="https://github.com/MediaComem/comem-visualdon"><carbon-logo-github /> GitHub</a>
       <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="height: 14px;" /></a>
@@ -37,14 +37,12 @@ layout: default
 
 # Cours précédent
 
-<v-clicks>
 
 - **Échelles** : `scaleLinear().domain([min, max]).range([0, width])`
 - **Axes** : `axisBottom(scale)`, `axisLeft(scale)`
 - **Marges** : `{ top: 20, right: 30, bottom: 40, left: 50 }`
 - **Dessiner un axe** : `svg.append('g').call(axis)`
 
-</v-clicks>
 
 <div class="footer">Rappel cours 05 · <a href="https://d3js.org/d3-scale">d3-scale</a> · <a href="https://d3js.org/d3-axis">d3-axis</a></div>
 
@@ -54,82 +52,79 @@ layout: section
 
 # d3-transition
 
----
-layout: default
----
 
-# Installation
-
-```bash
-npm install d3-transition
-```
-
-Documentation : [https://d3js.org/d3-transition](https://d3js.org/d3-transition)
-
-<div class="footer">Source · <a href="https://d3js.org/d3-transition">d3-transition</a></div>
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # Qu'est-ce qu'une transition ?
 
-Une transition est une **interpolation animee** d'un etat a un autre.
+Une transition est une **interpolation animée** d'un état à un autre.
 
-```javascript
-import 'd3-transition'
-
-// Sans transition : changement instantane
-circle.attr('r', 50)
-
-// Avec transition : changement anime
-circle
-  .transition()
-  .attr('r', 50)
+D3 interpole automatiquement les valeurs (nombres, couleurs, positions…).
+```bash
+npm install d3-transition
 ```
 
-<v-clicks>
+```javascript
+import { transition } from 'd3-transition'
 
-D3 interpole automatiquement les valeurs entre l'etat actuel et l'etat cible (nombres, couleurs, positions).
+// Sans transition — changement instantané
+circle.attr('r', 40)
 
-</v-clicks>
+// Avec transition — changement animé
+circle
+  .transition()
+  .attr('r', 40)
+```
+
+::right::
+
+<img src="/images/06-interaction-animation-1/transition.svg" alt="transition" style="width:100%;margin-bottom:0.5rem;" />
+<TransitionBasic />
 
 <div class="footer">Source · <a href="https://d3js.org/d3-transition">d3-transition</a></div>
 
 ---
-layout: default
+layout: two-cols-bottom
 ---
 
-# Duree
+# Durée
 
-Par defaut, une transition dure 250ms. On peut la modifier avec `.duration()`.
+Par défaut, une transition dure **250ms**. On peut la modifier avec `.duration()`.
 
 ```javascript
 circle
   .transition()
   .duration(1000)  // 1 seconde
   .attr('r', 50)
-  .attr('fill', '#333')
+  .attr('fill', '#E92528')
 ```
 
-<v-clicks>
+La durée est exprimée en **millisecondes**.
 
-La duree est exprimee en millisecondes. Toutes les propriétés de la transition s'animent sur cette duree.
+::right::
 
-</v-clicks>
+Chaque balle tombe avec une durée différente — la vitesse dépend de `.duration()`.
+
+::bottom::
+
+<DurationDemo />
 
 <div class="footer">Source · <a href="https://d3js.org/d3-transition/timing">d3-transition — Timing</a></div>
 
 ---
-layout: default
+layout: two-cols-bottom
 ---
 
 # Easing
-
-La fonction d'easing contrôle l'acceleration de la transition.
-
+```bash
+npm install d3-ease
+```
 ```javascript
-import { easeBounce, easeElastic, easeCubic } from 'd3-ease'
+import { easeBounce, easeElastic,
+         easeCubic, easeLinear } from 'd3-ease'
 
 circle
   .transition()
@@ -138,42 +133,49 @@ circle
   .attr('cy', 400)
 ```
 
-<v-clicks>
+::right::
 
-Fonctions d'easing courantes :
+La fonction d'easing contrôle l'**accélération** de la transition.
 
-- `easeLinear` -- vitesse constante
-- `easeCubic` -- acceleration/deceleration douce (par defaut)
-- `easeBounce` -- effet de rebond
-- `easeElastic` -- effet elastique
+<ul style="font-size:0.85em;margin-top:0.75em;">
+  <li><code>easeLinear</code> — vitesse constante</li>
+  <li><code>easeCubic</code> — accélération/décélération (défaut)</li>
+  <li><code>easeBounce</code> — effet de rebond</li>
+  <li><code>easeElastic</code> — effet élastique</li>
+</ul>
 
-Documentation : [https://d3js.org/d3-ease](https://d3js.org/d3-ease)
+::bottom::
 
-</v-clicks>
+<EasingDemo />
 
 <div class="footer">Source · <a href="https://d3js.org/d3-ease">d3-ease</a></div>
 
 ---
-layout: default
+layout: two-cols-bottom
 ---
 
-# Delai
+# Délai
 
-Le delai permet de decaler le debut de la transition, utile pour des animations en cascade.
+Le délai décale le début de la transition — utile pour des animations en **cascade**.
 
 ```javascript
 bars
   .transition()
-  .duration(800)
-  .delay((d, i) => i * 100)  // Chaque barre demarre 100ms après la précédente
-  .attr('height', d => yScale(d.value))
+  .duration(650)
+  .delay((d, i) => i * 100)
+  .attr('y', d => yScale(d.value))
+  .attr('height', d => height - yScale(d.value))
 ```
 
-<v-clicks>
 
-La fonction de callback recoit la donnee `d` et l'index `i`, ce qui permet de créer des effets de decalage progressif.
+::right::
+* Le callback reçoit `d` (la donnée) et `i` (l'index).
 
-</v-clicks>
+* Chaque barre démarre `i × 100ms` après la précédente.
+
+::bottom::
+
+<DelayDemo />
 
 <div class="footer">Source · <a href="https://d3js.org/d3-transition/timing">d3-transition — Timing</a></div>
 
@@ -181,103 +183,73 @@ La fonction de callback recoit la donnee `d` et l'index `i`, ce qui permet de cr
 layout: section
 ---
 
-# Événements
+# Retour sur l'exercice précédent
 
 ---
-layout: default
+layout: two-cols
 ---
 
-# Événements de souris
+# Exercice cours précédent
 
-Les selections D3 permettent d'ecouter les événements du navigateur.
 
-```javascript
-selection
-  .on('mouseover', function(event, d) {
-    d3.select(this).attr('fill', '#666')
-    tooltip
-      .style('opacity', 1)
-      .html(`Valeur : ${d.value}`)
-  })
-  .on('mouseout', function(event, d) {
-    d3.select(this).attr('fill', '#333')
-    tooltip.style('opacity', 0)
-  })
-  .on('mousemove', function(event) {
-    tooltip
-      .style('left', (event.pageX + 10) + 'px')
-      .style('top', (event.pageY - 20) + 'px')
-  })
-  .on('click', function(event, d) {
-    console.log('Clicked:', d)
-  })
-```
+**[observablehq.com/d/9759665d742894dd](https://observablehq.com/d/9759665d742894dd)**
 
-<div class="footer">Source · <a href="https://d3js.org/d3-selection/events">d3-selection — Events</a></div>
+- Comment as-tu choisi les échelles ?
+- Comment as-tu construit les axes ?
+- Qu'est-ce qui était difficile ?
 
----
-layout: default
----
 
-# Transitions et événements
+::right::
 
-Combiner les transitions avec les événements pour créer des effets interactifs.
+<a href="https://observablehq.com/d/9759665d742894dd" target="_blank">
+  <img src="/images/06-interaction-animation-1/observable.png" style="width:100%;border-radius:4px;" />
+</a>
 
-```javascript
-bars
-  .on('mouseover', function() {
-    d3.select(this)
-      .transition()
-      .duration(200)
-      .attr('fill', '#666')
-      .attr('transform', 'scale(1.05)')
-  })
-  .on('mouseout', function() {
-    d3.select(this)
-      .transition()
-      .duration(200)
-      .attr('fill', '#333')
-      .attr('transform', 'scale(1)')
-  })
-```
-
-<div class="footer">Source · <a href="https://d3js.org/d3-transition">d3-transition</a> · <a href="https://d3js.org/d3-selection/events">d3-selection — Events</a></div>
+<div class="footer">Rappel exercice 05 · <a href="https://observablehq.com/d/9759665d742894dd">d3-scale & d3-axis</a></div>
 
 ---
 layout: section
 ---
 
-# Exemple complet
+# Exercice en classe
 
 ---
 layout: default
 ---
 
-# Bar chart avec transitions
+# Observable | d3-transition
 
-```javascript
-// Animation d'entree
-bars.enter()
-  .append('rect')
-  .attr('x', d => xScale(d.name))
-  .attr('width', xScale.bandwidth())
-  .attr('y', height)          // Depart : en bas
-  .attr('height', 0)          // Depart : hauteur 0
-  .attr('fill', '#333')
-  .transition()
-  .duration(800)
-  .delay((d, i) => i * 100)
-  .attr('y', d => yScale(d.value))            // Arrivee
-  .attr('height', d => height - yScale(d.value))
+Ouvre le notebook et complète les exercices dans l'ordre.
 
-// Transition de mise a jour
-bars.transition()
-  .duration(500)
-  .attr('y', d => yScale(d.value))
-  .attr('height', d => height - yScale(d.value))
-```
+**[observablehq.com/d/3b44fccdf8827628](https://observablehq.com/d/3b44fccdf8827628)**
 
-<div class="footer">Source · <a href="https://d3js.org/d3-transition">d3-transition</a></div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-top:1.5rem;">
+
+<div class="border-box">
+
+**1. Échelle adaptée**
+
+Trouve une échelle plus adaptée pour minimiser les différences entre les valeurs et explorer des méthodes de représentation alternatives.
+
+</div>
+
+<div class="border-box">
+
+**2. Légende**
+
+Ajoute une légende pour clarifier la correspondance entre les couleurs et les langages.
+
+</div>
+
+<div class="border-box">
+
+**3. Transition d'entrée**
+
+Crée une transition pour l'entrée des cercles de haut en bas, avec la fonction d'easing de ton choix.
+
+</div>
+
+</div>
 
 ---
 layout: statement
@@ -293,4 +265,4 @@ layout: end
 
 # Merci !
 
-VisualDon 2026 -- HEIG-VD / COMEM+
+VisualDon 2026 - HEIG-VD / COMEM+

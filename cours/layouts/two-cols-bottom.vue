@@ -58,6 +58,7 @@ const props = defineProps({
   min-height: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .col-right :slotted(div) {
