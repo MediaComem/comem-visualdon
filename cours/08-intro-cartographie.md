@@ -1,6 +1,7 @@
 ---
 theme: default
 title: "08 - Introduction a la cartographie"
+download: true
 drawings:
   persist: false
 transition: slide-left

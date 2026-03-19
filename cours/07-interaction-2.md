@@ -1,6 +1,7 @@
 ---
 theme: default
 title: "07 - Interaction et animation"
+download: true
 drawings:
   persist: false
 transition: slide-left

@@ -1,6 +1,7 @@
 ---
 theme: default
 title: "12 - Alternatives a D3.js"
+download: true
 drawings:
   persist: false
 transition: slide-left

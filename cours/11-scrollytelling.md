@@ -1,6 +1,7 @@
 ---
 theme: default
 title: "11 - Scrollytelling"
+download: true
 drawings:
   persist: false
 transition: slide-left

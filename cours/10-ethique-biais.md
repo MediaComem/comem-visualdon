@@ -1,6 +1,7 @@
 ---
 theme: default
 title: "10 - Éthique et biais"
+download: true
 drawings:
   persist: false
 transition: slide-left

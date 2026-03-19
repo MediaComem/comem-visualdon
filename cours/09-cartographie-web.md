@@ -1,6 +1,7 @@
 ---
 theme: default
 title: "09 - Cartographie web"
+download: true
 drawings:
   persist: false
 transition: slide-left
