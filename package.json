@@ -22,9 +22,14 @@
     "build:all": "node scripts/build-all.mjs"
   },
   "dependencies": {
+    "@deck.gl/aggregation-layers": "^9.3.0",
+    "@deck.gl/core": "^9.3.0",
+    "@deck.gl/layers": "^9.3.0",
+    "@deck.gl/mapbox": "^9.3.0",
     "@slidev/cli": "^0.50.0",
     "@slidev/theme-apple-basic": "latest",
     "@slidev/theme-default": "^0.25.0",
+    "maplibre-gl": "^5.23.0",
     "serve": "^14.2.5"
   },
   "devDependencies": {

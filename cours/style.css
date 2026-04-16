@@ -285,6 +285,22 @@ strong {
   object-fit: contain;
 }
 
+/* Full-height map: right column covers the full right half edge-to-edge */
+.col-right > .map-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: hidden;
+  border-left: 6px solid #fff;
+}
+
+.col-right > .map-cover > * {
+  width: 100%;
+  height: 100%;
+}
+
 /* TWO-COLS-HEADER layout */
 .slidev-layout.two-cols-header {
   grid-template-rows: auto 1fr !important;
