@@ -42,7 +42,7 @@ Faites un croquis de votre visualisation sur papier ou en utilisant un outil com
 
 ❗ 11 mai ❗
 
-Les présentations auront lieu le 14 mai. L'ordre des groupes sera choisi de manière aléatoire et sera communiqué 2 semaines avant la présentation.
+Les présentations auront lieu le 11 mai. L'ordre des groupes sera choisi de manière aléatoire et sera communiqué 2 semaines avant la présentation.
 
 #### Structure présentation (_10 minutes de présentation, 5 minutes de discussion_)
 

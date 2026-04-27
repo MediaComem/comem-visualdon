@@ -120,16 +120,16 @@ a:hover {
 
 /* Lists */
 ul, ol {
-  padding-left: 1.5rem;
+  padding-left: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 li {
   margin-bottom: 0.3rem;
   line-height: 1.6;
-}
-
-li::marker {
-  color: #000;
 }
 
 /* Strong / Bold */
@@ -252,7 +252,7 @@ strong {
 .slidev-layout.two-columns .col-right {
   padding-left: 2rem;
   align-self: stretch;
-  padding-top: 3.5rem;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
