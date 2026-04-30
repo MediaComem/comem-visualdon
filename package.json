@@ -29,7 +29,9 @@
     "@slidev/cli": "^0.50.0",
     "@slidev/theme-apple-basic": "latest",
     "@slidev/theme-default": "^0.25.0",
+    "gsap": "^3.15.0",
     "maplibre-gl": "^5.23.0",
+    "scrollama": "^3.2.0",
     "serve": "^14.2.5"
   },
   "devDependencies": {

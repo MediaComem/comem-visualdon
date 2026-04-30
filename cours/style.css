@@ -255,7 +255,7 @@ strong {
   padding-top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* Code blocks in two-cols: scrollable to prevent overflow */
