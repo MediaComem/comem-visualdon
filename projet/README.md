@@ -38,7 +38,7 @@ Faites un croquis de votre visualisation sur papier ou en utilisant un outil com
 
 🎨 **Note importante** : Ce n'est pas grave si à la fin de l'année vous n'avez pas mis tout ce que vous aviez dessiné/modélisé dans ce wireframe. Dans cette étape du projet, c'est important de donner espace à votre imagination et stimuler votre côté créatif.
 
-### Présentation (20%)
+### Présentation (~~20%~~ → 30%)
 
 ❗ 11 mai ❗
 

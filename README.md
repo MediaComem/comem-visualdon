@@ -47,7 +47,7 @@ Par **groupes de 2**, vous allez créer une visualisation interactive sur une th
 ### Rendus
 
 -   **Site web** : une visualisation interactive publiée en ligne
--   **Post Instagram/TikTok** : un contenu de vulgarisation pour expliquer votre visualisation et son message
+-   ~~**Post Instagram/TikTok** : un contenu de vulgarisation pour expliquer votre visualisation et son message~~ _(supprimé)_
 
 Le code source du site et la méthode de préparation des données doivent être accessibles sur GitHub.
 
@@ -55,7 +55,7 @@ Le code source du site et la méthode de préparation des données doivent être
 
 -   Dimanche 8 mars 2026, 23h59 : **Thématique** (10%)
 -   Dimanche 22 mars 2026, 23h59 : **Wireframe** (10%)
--   Lundi 11 mai 2026 : **Présentation** + **Post Insta/TikTok** (20% + 10%)
+-   Lundi 11 mai 2026 : **Présentation** (~~20%~~ → **30%**)
 -   Dimanche 17 mai 2026, 23h59 : **Site web** (50%)
 
 ## Exercices
