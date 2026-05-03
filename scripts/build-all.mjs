@@ -36,7 +36,7 @@ for (const { src, out, exportWaitUntil } of decks) {
   if (exportWaitUntil) {
     console.log(`📄 Exporting PDF for ${src} (--wait-until ${exportWaitUntil})`)
     execSync(
-      `node ${slidev} export ${src} --base "/${out}/" --output ${resolve(root, 'dist', out, 'slidev-exported.pdf')} --wait-until ${exportWaitUntil} --timeout 90000`,
+      `node ${slidev} export ${src} --output ${resolve(root, 'dist', out, 'slidev-exported.pdf')} --wait-until ${exportWaitUntil} --timeout 90000`,
       { stdio: 'inherit', cwd: root }
     )
   }
