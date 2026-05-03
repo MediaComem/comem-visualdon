@@ -26,7 +26,7 @@ cpSync(resolve(root, 'cours/public/images'), resolve(root, 'dist/images'), { rec
 for (const { src, out } of decks) {
   console.log(`\n📦 Building ${src} → dist/${out}`)
   execSync(
-    `node ${resolve(root, 'node_modules/.bin/slidev')} build ${src} --base "/${out}/" --out ${resolve(root, 'dist', out)}`,
+    `node ${resolve(root, 'node_modules/.bin/slidev')} build ${src} --base "/${out}/" --out ${resolve(root, 'dist', out)} --timeout 90000`,
     { stdio: 'inherit', cwd: root }
   )
   // Replace duplicated images with symlink to shared dir
