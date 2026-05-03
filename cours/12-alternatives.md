@@ -1,6 +1,6 @@
 ---
 theme: default
-title: "12 - Alternatives a D3.js"
+title: "12 - Alternatives à D3.js"
 download: true
 drawings:
   persist: false
@@ -12,15 +12,15 @@ layout: none
 <div class="cover-custom">
   <img src="/images/logo.png" class="cover-logo" />
   <div class="cover-content">
-    <h1 class="cover-title">12 — Alternatives à D3.js</h1>
-    <p class="cover-subtitle">Autres outils de visualisation</p>
+    <h1 class="cover-title">12 - Alternatives à D3.js</h1>
+    <p class="cover-subtitle">Visualisation de Données</p>
     <div class="cover-links">
-      <a href="https://github.com/MediaComem/comem-visualdon"><carbon-logo-github /> GitHub</a>
-      <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="height: 14px;" /></a>
+      <a href="https://github.com/MediaComem/comem-visualdon" target="_blank"><carbon-logo-github /> GitHub</a>
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="height: 14px;" /></a>
     </div>
     <div class="cover-meta">
       <span class="cover-author">Noemi Romano</span>
-      <a href="mailto:noemi.romano@heig-vd.ch" class="cover-email">noemi.romano@heig-vd.ch</a>
+      <a href="mailto:noemi.romano@heig-vd.ch" target="_blank" class="cover-email">noemi.romano@heig-vd.ch</a>
       <span class="cover-date"></span>
     </div>
   </div>
@@ -33,28 +33,30 @@ layout: section
 # Écosystème
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # Paysage de la visualisation de données
 
-<v-clicks>
+Le choix d'un outil dépend de plusieurs facteurs :
 
-Le choix d'un outil depend de plusieurs facteurs :
-
-| Critere | Question |
+| Critère | Question |
 |---------|----------|
-| **Complexite** | Graphique standard ou sur mesure ? |
+| **Complexité** | Graphique standard ou sur mesure ? |
 | **Volume** | Dizaines ou millions de points ? |
-| **Interactivite** | Statique, survol, ou exploration complete ? |
+| **Interactivité** | Statique, survol, ou exploration complète ? |
 | **Rendu** | SVG, Canvas, ou WebGL ? |
-| **Courbe d'apprentissage** | Combien de temps pour etre productif ? |
+| **Courbe d'apprentissage** | Combien de temps pour être productif ? |
 
-D3 est la reference, mais ce n'est pas toujours le bon choix.
+D3 est la référence, mais ce n'est pas toujours le bon choix.
 
-</v-clicks>
+::right::
 
-<div class="footer">Source · <a href="https://d3js.org/">D3.js</a> · <a href="https://observablehq.com/plot/">Observable Plot</a></div>
+<div class="col-center">
+  <img src="/images/12-alternatives-d3/data-viz-libraries.svg" style="width:100%;object-fit:contain;" />
+</div>
+
+<div class="footer">Source · <a href="https://d3js.org/" target="_blank">D3.js</a> · <a href="https://observablehq.com/plot/" target="_blank">Observable Plot</a></div>
 
 ---
 layout: section
@@ -63,12 +65,12 @@ layout: section
 # Les alternatives
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # Observable Plot
 
-Haut niveau, concis, construit sur D3. Ideal pour l'exploration rapide.
+Haut niveau, concis, construit sur D3. Idéal pour l'exploration rapide.
 
 ```js
 import * as Plot from '@observablehq/plot'
@@ -81,24 +83,26 @@ Plot.plot({
 })
 ```
 
-<v-clicks>
-
-- API declarative : decrire **quoi**, pas **comment**
-- Gestion automatique des axes, échelles, legendes
-- Ideal pour le prototypage et les notebooks
+- API déclarative : décrire **quoi**, pas **comment**
+- Gestion automatique des axes, échelles, légendes
+- Idéal pour le prototypage et les notebooks
 - Lien : [observablehq.com/plot](https://observablehq.com/plot/)
 
-</v-clicks>
+::right::
 
-<div class="footer">Source · <a href="https://observablehq.com/plot/">Observable Plot</a></div>
+<div class="col-center">
+  <img src="/images/12-alternatives-d3/plot.png" style="width:100%;object-fit:contain;border-radius:6px;" />
+</div>
+
+<div class="footer">Source · <a href="https://observablehq.com/plot/" target="_blank">Observable Plot</a></div>
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # Chart.js
 
-Simple, base sur Canvas, 8 types de graphiques intégres.
+Simple, basé sur Canvas, 8 types de graphiques intégrés.
 
 ```js
 import { Chart } from 'chart.js/auto'
@@ -106,31 +110,33 @@ import { Chart } from 'chart.js/auto'
 new Chart(document.getElementById('myChart'), {
   type: 'bar',
   data: {
-    labels: ['Jan', 'Fev', 'Mar'],
+    labels: ['Jan', 'Fév', 'Mar'],
     datasets: [{ label: 'Ventes', data: [12, 19, 3] }]
   }
 })
 ```
 
-<v-clicks>
-
 - Prise en main rapide, documentation claire
 - Rendu Canvas (performant pour beaucoup de points)
-- Animations intégrees
-- Flexibilite limitee pour les visualisations non standard
+- Animations intégrées
+- Flexibilité limitée pour les visualisations non standard
 - Lien : [chartjs.org](https://www.chartjs.org/)
 
-</v-clicks>
+::right::
 
-<div class="footer">Source · <a href="https://www.chartjs.org/">Chart.js</a></div>
+<div class="col-center">
+  <img src="/images/12-alternatives-d3/chartjs.svg" style="width:50%;object-fit:contain;" />
+</div>
+
+<div class="footer">Source · <a href="https://www.chartjs.org/" target="_blank">Chart.js</a></div>
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # Vega / Vega-Lite
 
-Specification declarative en JSON. Grammaire de la visualisation.
+Spécification déclarative en JSON. Grammaire de la visualisation.
 
 ```json
 {
@@ -142,31 +148,33 @@ Specification declarative en JSON. Grammaire de la visualisation.
 }
 ```
 
-<v-clicks>
-
-- Separation complete entre données, encodage et rendu
+- Séparation complète entre données, encodage et rendu
 - Excellente documentation et exemples
-- Editeur interactif en ligne (Vega Editor)
-- Moins adapté aux visualisations tres personnalisees
+- Éditeur interactif en ligne (Vega Editor)
+- Moins adapté aux visualisations très personnalisées
 - Lien : [vega.github.io/vega-lite](https://vega.github.io/vega-lite/)
 
-</v-clicks>
+::right::
 
-<div class="footer">Source · <a href="https://vega.github.io/vega-lite/">Vega-Lite</a></div>
+<div class="col-center">
+  <img src="/images/12-alternatives-d3/vega.png" style="width:50%;object-fit:contain;" />
+</div>
+
+<div class="footer">Source · <a href="https://vega.github.io/vega-lite/" target="_blank">Vega-Lite</a></div>
 
 ---
 layout: section
 ---
 
-# Au-dela des graphiques 2D
+# Au-delà des graphiques 2D
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # p5.js
 
-Creative coding, HTML Canvas, art generatif.
+Creative coding, HTML Canvas, art génératif.
 
 ```js
 function setup() {
@@ -179,30 +187,31 @@ function draw() {
 }
 ```
 
-<v-clicks>
-
-- Heritier de Processing (Java)
-- Ideal pour les visualisations artistiques et experimentales
-- Mode immediat : redessine tout a chaque frame
-- Grande communaute, beaucoup de tutoriels
+- Héritier de Processing (Java)
+- Idéal pour les visualisations artistiques et expérimentales
+- Mode immédiat : redessine tout à chaque frame
+- Grande communauté, beaucoup de tutoriels
 - Lien : [p5js.org](https://p5js.org/)
 
-</v-clicks>
+::right::
 
-<div class="footer">Source · <a href="https://p5js.org/">p5.js</a></div>
+<div class="col-center" style="flex-direction:column;gap:0.75rem;">
+  <img src="/images/12-alternatives-d3/p5js.svg" style="width:50%;object-fit:contain;" />
+  <video src="/images/12-alternatives-d3/p5js.webm" autoplay loop muted playsinline style="width:90%;border-radius:6px;object-fit:cover;" />
+</div>
+
+<div class="footer">Source · <a href="https://p5js.org/" target="_blank">p5.js</a></div>
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # three.js
 
 Graphiques 3D, WebGL, haute performance.
 
-<v-clicks>
-
 - Rendu 3D dans le navigateur via WebGL
-- Scenes, cameras, lumieres, materiaux
+- Scènes, caméras, lumières, matériaux
 - Visualisations immersives et data art
 - Courbe d'apprentissage significative
 - Lien : [threejs.org](https://threejs.org/)
@@ -212,37 +221,44 @@ Graphiques 3D, WebGL, haute performance.
 - Globes interactifs
 - Nuages de points 3D
 - Visualisations architecturales
-- Terrain et données geospatiales en relief
+- Terrain et données géospatiales en relief
 
-</v-clicks>
+::right::
 
-<div class="footer">Source · <a href="https://threejs.org/">three.js</a></div>
+<div class="col-center" style="flex-direction:column;gap:0.75rem;">
+  <img src="/images/12-alternatives-d3/three-js-logo.png" style="width:20%;object-fit:contain;" />
+  <img src="/images/12-alternatives-d3/threejs.png" style="width:90%;object-fit:contain;border-radius:6px;" />
+</div>
+
+<div class="footer">Source · <a href="https://threejs.org/" target="_blank">three.js</a></div>
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # Deck.gl
 
-Données massives, WebGL2, focus geospatial.
+Données massives, WebGL2, focus géospatial.
 
-<v-clicks>
-
-- Developpe par Uber / OpenJS Foundation
-- Rendu de millions de points en temps reel
+- Développé par Uber / OpenJS Foundation
+- Rendu de millions de points en temps réel
 - Couches (layers) : ScatterplotLayer, ArcLayer, HexagonLayer, ...
-- Integration avec MapLibre GL et Google Maps
+- Intégration avec MapLibre GL et Google Maps
 - Lien : [deck.gl](https://deck.gl/)
 
 **Quand l'utiliser :**
 
 - Datasets de plus de 100 000 points
-- Visualisations geospatiales complexes
+- Visualisations géospatiales complexes
 - Besoin de performance sur gros volumes
 
-</v-clicks>
+::right::
 
-<div class="footer">Source · <a href="https://deck.gl/">deck.gl</a></div>
+<div class="col-center">
+  <img src="/images/09-web-cartography/examples-deckgl.png" style="width:100%;object-fit:contain;border-radius:6px;" />
+</div>
+
+<div class="footer">Source · <a href="https://deck.gl/" target="_blank">deck.gl</a></div>
 
 ---
 layout: section
@@ -251,14 +267,12 @@ layout: section
 # Autres approches
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # roughViz.js
 
-Style dessin a la main, construit sur rough.js + D3.
-
-<v-clicks>
+Style dessin à la main, construit sur rough.js + D3.
 
 ```js
 new roughViz.Bar({
@@ -269,46 +283,46 @@ new roughViz.Bar({
 })
 ```
 
-- Aesthetic "fait main" (sketch, croquis)
-- Ideal pour des presentations informelles ou pedagogiques
-- Pas adapté aux données serieuses ou officielles
+- Esthétique "fait main" (sketch, croquis)
+- Idéal pour des présentations informelles ou pédagogiques
+- Pas adapté aux données sérieuses ou officielles
 - Lien : [github.com/jwilber/roughViz](https://github.com/jwilber/roughViz)
 
-</v-clicks>
+::right::
 
-<div class="footer">Source · <a href="https://github.com/jwilber/roughViz">roughViz</a></div>
+<div class="col-center" style="flex-direction:column;gap:0.75rem;">
+  <img src="/images/12-alternatives-d3/rough.png" style="width:40%;object-fit:contain;" />
+  <img src="/images/12-alternatives-d3/rough-3.png" style="width:100%;object-fit:contain;border-radius:6px;" />
+  <img src="/images/12-alternatives-d3/roughViz.gif" style="width:100%;object-fit:contain;border-radius:6px;" />
+</div>
+
+<div class="footer">Source · <a href="https://github.com/jwilber/roughViz" target="_blank">roughViz</a></div>
 
 ---
-layout: default
+layout: two-cols
 ---
 
-# Svelte + D3
+# Frameworks frontend + D3
 
-Framework reactif + manipulation de données.
+Combiner D3 avec un framework réactif : le meilleur des deux mondes !
 
-```svelte
-<script>
-  import { scaleLinear } from 'd3-scale'
-
-  let data = [10, 25, 40, 60]
-  const y = scaleLinear().domain([0, 60]).range([200, 0])
-</script>
-
-{#each data as d, i}
-  <rect x={i * 50} y={y(d)} width="40" height={200 - y(d)} />
-{/each}
-```
-
-<v-clicks>
-
-- Svelte gere le DOM (reactivite, transitions)
-- D3 gere les données (échelles, generateurs, formats)
-- Pas besoin de `d3.select()` ni `.join()`
+- Le **framework** gère le DOM, la réactivité et les transitions
+- **D3** gère les données : échelles, générateurs, formats, projections
+- Plus besoin de `d3.select()` ni `.join()` : le template s'en charge
 - Approche utilisée par The Pudding, Reuters Graphics, NYT
 
-</v-clicks>
+**Principe :** D3 calcule, le framework affiche
 
-<div class="footer">Source · <a href="https://svelte.dev/">Svelte</a> · <a href="https://d3js.org/">D3.js</a></div>
+::right::
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:center;align-content:center;justify-items:center;padding:1rem;height:100%;">
+  <img src="/images/12-alternatives-d3/react.svg" style="width:80px;height:80px;object-fit:contain;" />
+  <img src="/images/12-alternatives-d3/vue.svg" style="width:80px;height:80px;object-fit:contain;" />
+  <img src="/images/12-alternatives-d3/svelte.svg" style="width:80px;height:80px;object-fit:contain;" />
+  <img src="/images/12-alternatives-d3/angular.svg" style="width:80px;height:80px;object-fit:contain;" />
+</div>
+
+<div class="footer">Source · <a href="https://svelte.dev/" target="_blank">Svelte</a> · <a href="https://react.dev/" target="_blank">React</a> · <a href="https://vuejs.org/" target="_blank">Vue</a> · <a href="https://angular.dev/" target="_blank">Angular</a> · <a href="https://d3js.org/" target="_blank">D3.js</a></div>
 
 ---
 layout: section
@@ -324,15 +338,11 @@ layout: two-cols
 
 ### Pourquoi D3 ?
 
-<v-clicks>
-
-- Flexibilite totale sur le rendu
+- Flexibilité totale sur le rendu
 - Manipulation fine du DOM et du SVG
 - Fondation sur laquelle d'autres outils sont construits
-- Communaute massive, milliers d'exemples
+- Communauté massive, milliers d'exemples
 - Comprendre D3 = comprendre la visualisation web
-
-</v-clicks>
 
 ::right::
 
@@ -340,38 +350,107 @@ layout: two-cols
 
 ### Pourquoi PAS D3 ?
 
-<v-clicks>
-
 - Verbeux pour des graphiques standards
-- Documentation parfois difficile d'acces
+- Documentation parfois difficile d'accès
 - Courbe d'apprentissage abrupte
 - Overkill pour un bar chart simple
-- Gros datasets : Canvas ou WebGL preferable
-
-</v-clicks>
+- Gros datasets : Canvas ou WebGL préférable
 
 </div>
 
-<div class="footer">Source · <a href="https://d3js.org/">D3.js</a></div>
+---
+layout: section
+---
+
+# Pas de bon ou mauvais outil
 
 ---
 layout: default
 ---
 
-# Matrice de decision
+# L'outil au service de l'intention
 
-| Outil | Ideal pour | Complexite | Interactivite |
-|-------|------------|------------|---------------|
-| **D3.js** | Visualisations sur mesure | Elevee | Totale |
-| **Observable Plot** | Exploration rapide | Faible | Moyenne |
-| **Chart.js** | Dashboards classiques | Faible | Moyenne |
-| **Vega-Lite** | Specification declarative | Moyenne | Bonne |
-| **p5.js** | Art generatif, creative coding | Moyenne | Totale |
-| **three.js** | 3D, WebGL | Elevee | Totale |
-| **Deck.gl** | Big data geospatial | Moyenne | Bonne |
-| **Leaflet** | Cartes interactives | Faible | Bonne |
+La question n'est pas **"quel est le meilleur outil ?"**
 
-<div class="footer">Source · <a href="https://d3js.org/">D3.js</a> · <a href="https://observablehq.com/plot/">Observable Plot</a> · <a href="https://www.chartjs.org/">Chart.js</a></div>
+La vraie question est : **"quelle expérience est-ce que je veux créer ?"**
+
+Un graphique est toujours une médiation entre des données et un lecteur. L'outil choisi influence profondément la nature de cette médiation.
+
+| Expérience visée | Ce qu'elle implique |
+|-----------------|---------------------|
+| **Exploration** | Le lecteur navigue librement, découvre à son rythme |
+| **Narration** | Le lecteur est guidé à travers une histoire |
+| **Immersion** | Le lecteur est plongé dans les données, les ressent |
+
+Chaque expérience appelle des outils différents : aucun n'est universellement supérieur !
+
+---
+layout: default
+---
+
+# Les vraies questions à se poser
+
+<div class="q-grid">
+  <div class="q-card">
+    <span class="q-label">Audience</span>
+    <p class="q-text">À qui s'adresse cette visualisation ? Grand public, journalistes, experts, décideurs ?</p>
+  </div>
+  <div class="q-card">
+    <span class="q-label">Compétences</span>
+    <p class="q-text">Quelles compétences sont disponibles dans l'équipe : JavaScript, design, data engineering ?</p>
+  </div>
+  <div class="q-card">
+    <span class="q-label">Intention</span>
+    <p class="q-text">Que doit ressentir ou comprendre le lecteur : une tendance, une anomalie, une histoire ?</p>
+  </div>
+  <div class="q-card">
+    <span class="q-label">Maintenance</span>
+    <p class="q-text">Mise à jour quotidienne ou pièce unique ? Qui maintient le code après livraison ?</p>
+  </div>
+  <div class="q-card">
+    <span class="q-label">Canal</span>
+    <p class="q-text">Article web, application, dashboard, présentation projetée, impression ?</p>
+  </div>
+  <div class="q-card">
+    <span class="q-label">Performance</span>
+    <p class="q-text">Quelques centaines de points ou plusieurs millions ? SVG, Canvas ou WebGL ?</p>
+  </div>
+  <div class="q-card">
+    <span class="q-label">Délai</span>
+    <p class="q-text">Prototype en une heure ou pièce de fond sur six semaines ?</p>
+  </div>
+  <div class="q-card">
+    <span class="q-label">Design</span>
+    <p class="q-text">Charte graphique stricte à respecter, ou liberté totale d'expression visuelle ?</p>
+  </div>
+</div>
+
+<style>
+.q-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.85rem; margin-top: 0.8rem; }
+.q-card { border: 1px solid #e0e0e0; border-radius: 6px; padding: 1.2rem 1.3rem; }
+.q-label { font-family: 'Roboto Mono', monospace; font-size: 0.65rem; color: #aaa; text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: 0.5rem; }
+.q-text { font-size: 0.85rem; margin: 0; line-height: 1.55; }
+</style>
+
+---
+layout: default
+---
+
+# Ce que maîtriser D3 vous donne
+
+Apprendre D3 n'était pas une fin en soi, c'était apprendre à **penser la visualisation**.
+
+- Comprendre les **échelles** et les encodages visuels
+- Saisir la relation entre **données, transformations et rendu**
+- Maîtriser le SVG et le DOM au niveau fondamental
+- Savoir quand un outil de plus haut niveau **suffit**, et quand il ne suffit pas
+
+**Avec ces bases, vous pouvez maintenant :**
+
+- Lire la documentation de n'importe quel outil de visualisation
+- Débugger des comportements inattendus dans Chart.js ou Vega
+- Comprendre pourquoi Observable Plot fait ce qu'il fait
+- Et choisir **en connaissance de cause**, pas par habitude ou par défaut
 
 ---
 layout: section
@@ -383,36 +462,44 @@ layout: section
 layout: default
 ---
 
-# Ce que nous avons couvert
+# Ce que vous emportez
 
-| Semaine | Thème |
-|---------|-------|
-| 01-02 | Introduction, SVG |
-| 03-04 | D3.js, données et chargement |
-| 05-06 | Échelles, axes, interaction |
-| 07-08 | Interaction avancee, introduction cartographie |
-| 09-10 | Cartographie web, éthique et biais |
-| 11-12 | Scrollytelling, alternatives a D3 |
+<div class="obj-grid">
+  <div class="obj-card">
+    <div class="obj-title">01 · La forme</div>
+    <p class="obj-body">SVG, DOM, D3. Comprendre comment une donnée devient un pixel à l'écran.</p>
+  </div>
+  <div class="obj-card">
+    <div class="obj-title">02 · La grammaire</div>
+    <p class="obj-body">Échelles, axes, encodages visuels. Le vocabulaire de Bertin mis en code.</p>
+  </div>
+  <div class="obj-card">
+    <div class="obj-title">03 · L'interaction</div>
+    <p class="obj-body">Zoom, brush, transitions. Inviter le lecteur à explorer plutôt que subir.</p>
+  </div>
+  <div class="obj-card">
+    <div class="obj-title">04 · L'espace</div>
+    <p class="obj-body">Projections, GeoJSON, cartes web. Situer les données dans le monde réel.</p>
+  </div>
+  <div class="obj-card">
+    <div class="obj-title">05 · Le regard critique</div>
+    <p class="obj-body">Biais, données manquantes, algorithmes. Les données ne sont jamais neutres.</p>
+  </div>
+  <div class="obj-card">
+    <div class="obj-title">06 · La narration</div>
+    <p class="obj-body">Scrollytelling, rythme, intention. Raconter une histoire, pas juste afficher un résultat.</p>
+  </div>
+</div>
 
-<v-clicks>
+<p class="conclusion-note">Le projet est l'occasion de réunir les deux dimensions du cours : une <strong>approche rationnelle</strong> (choisir les bons encodages, structurer les données, soigner la lisibilité) et une <strong>approche sensible</strong> (choisir une histoire à raconter, une expérience à créer, une émotion à transmettre).</p>
 
-**Competences acquises :**
-
-- Manipuler le SVG et le DOM avec D3
-- Charger, transformer et visualiser des données
-- Créer des cartes interactives
-- Raconter des histoires avec les données
-- Porter un regard critique sur les données et les visualisations
-
-</v-clicks>
-
-<div class="footer">Source · <a href="https://d3js.org/">D3.js</a> · <a href="https://observablehq.com/plot/">Observable Plot</a> · <a href="https://www.chartjs.org/">Chart.js</a></div>
-
----
-layout: statement
----
-
-# Bonne chance pour vos projets
+<style>
+.obj-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.85rem; margin-top: 0.8rem; }
+.obj-card { border: 1px solid #e0e0e0; border-radius: 6px; padding: 1.2rem 1.3rem; }
+.obj-title { font-family: 'Roboto Mono', monospace; font-size: 0.65rem; color: #aaa; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
+.obj-body { font-size: 0.85rem; margin: 0; line-height: 1.55; }
+.conclusion-note { margin-top: 0.85rem; font-size: 0.78rem; color: #555; line-height: 1.6; border-left: 3px solid #e0e0e0; padding-left: 0.75rem; }
+</style>
 
 ---
 layout: end
@@ -420,4 +507,4 @@ layout: end
 
 # Merci !
 
-VisualDon -- HEIG-VD / COMEM+
+VisualDon · HEIG-VD / COMEM+
