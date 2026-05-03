@@ -1,7 +1,7 @@
 ---
 theme: default
 title: "09 - Cartographie web"
-download: true
+download: 'slidev-exported.pdf'
 drawings:
   persist: false
 transition: slide-left
