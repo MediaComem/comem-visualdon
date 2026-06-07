@@ -1,6 +1,9 @@
-# Examen type | Visualisation de données (VisualDon)
-**Durée : 2h | Documents autorisés : formulaire A4 recto verso manuscrit**
-**Note : Partie 1 | QCM, aucune justification. Partie 2 | Vrai/Faux, justification requise si faux. Parties 3 et 4 | réponses ouvertes à justifier.**
+# Examen type / Visualisation de données (VisualDon)
+
+* **Durée** : 2h, sur papier
+* **Documents autorisés** : formulaire A4 recto verso manuscrit ou sur ordinateur
+
+
 
 ---
 
