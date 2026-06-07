@@ -1,12 +1,25 @@
-// ===================== FORMES DE BASE =====================
-
-// --- Rectangle ---
-const ctxRect = document.getElementById('canvas-rect').getContext('2d')
+// --- Rectangle (click : changer de couleur) ---
+const canvasRect = document.getElementById('canvas-rect')
+const ctxRect = canvasRect.getContext('2d')
 ctxRect.fillStyle = 'red'
-ctxRect.fillRect(0, 0, 800, 300)
+ctxRect.fillRect(0, 0, canvasRect.width, canvasRect.height)
+
+const rectSVG = document.getElementById('rectangle-svg')
+let isSVGRed = true
+rectSVG.addEventListener('click', () => {
+  isSVGRed = !isSVGRed
+  rectSVG.setAttribute('fill', isSVGRed ? 'red' : 'black')
+})
+
+let isCanvasRed = true
+canvasRect.addEventListener('click', () => {
+  isCanvasRed = !isCanvasRed
+  ctxRect.fillStyle = isCanvasRed ? 'red' : 'black'
+  ctxRect.fillRect(0, 0, canvasRect.width, canvasRect.height)
+})
 
 
-// --- Donut ---
+// --- Donut (hover : agrandir le cercle extérieur) ---
 const CX = 110, CY = 110, INNER_R = 30, OUTER_R = 60
 const canvasDonut = document.getElementById('canvas-donut')
 const ctxDonut = canvasDonut.getContext('2d')
@@ -24,6 +37,10 @@ function drawDonut(ctx, canvas, outerR) {
 }
 drawDonut(ctxDonut, canvasDonut, OUTER_R)
 
+const donutOuter = document.getElementById('donut-outer')
+donutOuter.addEventListener('mouseover', () => donutOuter.setAttribute('r', '80'))
+donutOuter.addEventListener('mouseout',  () => donutOuter.setAttribute('r', '60'))
+
 canvasDonut.addEventListener('mousemove', (e) => {
   const dist = Math.sqrt((e.offsetX - CX) ** 2 + (e.offsetY - CY) ** 2)
   drawDonut(ctxDonut, canvasDonut, dist >= INNER_R && dist <= OUTER_R ? 80 : OUTER_R)
@@ -31,9 +48,8 @@ canvasDonut.addEventListener('mousemove', (e) => {
 canvasDonut.addEventListener('mouseleave', () => drawDonut(ctxDonut, canvasDonut, OUTER_R))
 
 
-// --- Ligne (longueur 100px, pente 5, point A = 70,90) ---
-// pente = Δy/Δx = 5 → Δy = 5Δx
-// longueur = √(Δx² + Δy²) = √(26Δx²) = 100 → Δx = 100/√26
+// --- Ligne ---
+// pente = Δy/Δx = 5 → Δy = 5Δx, longueur = √(26Δx²) = 100 → Δx = 100/√26
 const dx = 100 / Math.sqrt(26)
 const dy = 5 * dx
 const ctxLine = document.getElementById('canvas-line').getContext('2d')
@@ -49,8 +65,7 @@ ctxLine.lineWidth = 2
 ctxLine.stroke()
 
 
-// --- Chemin libre : lettre N ---
-// Les segments de la lettre N
+// --- Chemin libre : lettre N (animation le long du chemin) ---
 const lettrePoints = [
   { x: 20, y: 100 },
   { x: 20, y: 10 },
@@ -73,65 +88,21 @@ function drawLettre(ctx) {
 const ctxPath = document.getElementById('canvas-path').getContext('2d')
 drawLettre(ctxPath)
 
-
-// ===================== ANIMER DES FORMES =====================
-
-// --- On click : changer de couleur ---
-const rectSVG = document.getElementById('rectangle-click')
-let isSVGRed = true
-rectSVG.addEventListener('click', () => {
-  isSVGRed = !isSVGRed
-  rectSVG.style.fill = isSVGRed ? 'red' : 'black'
-})
-
-// Canvas : on click
-const canvasClick = document.getElementById('canvas-click')
-const ctxClick = canvasClick.getContext('2d')
-let isCanvasRed = true
-
-function drawRectClick(color) {
-  ctxClick.clearRect(0, 0, canvasClick.width, canvasClick.height)
-  ctxClick.fillStyle = color
-  ctxClick.fillRect(0, 0, canvasClick.width, canvasClick.height)
-}
-drawRectClick('red')
-
-canvasClick.addEventListener('click', (e) => {
-  const { offsetX, offsetY } = e
-  // Vérifier que le clic est dans le rectangle
-  if (offsetX >= 0 && offsetX <= canvasClick.width &&
-      offsetY >= 0 && offsetY <= canvasClick.height) {
-    isCanvasRed = !isCanvasRed
-    drawRectClick(isCanvasRed ? 'red' : 'black')
-  }
-})
-
-
-// --- On hover : agrandir le donut ---
-const donutHoverSVG = document.getElementById('donut-hover-outer')
-donutHoverSVG.addEventListener('mouseover', () => donutHoverSVG.setAttribute('r', '80'))
-donutHoverSVG.addEventListener('mouseout',  () => donutHoverSVG.setAttribute('r', '60'))
-// Canvas : voir canvas-donut ci-dessus (drawDonut + événements déjà appliqués)
-
-
-// --- Animation le long d'un chemin ---
-
-// Calcul de la longueur totale du chemin et position à t ∈ [0, 1]
 function buildPath(points) {
   const segments = []
   for (let i = 0; i < points.length - 1; i++) {
-    const dx = points[i + 1].x - points[i].x
-    const dy = points[i + 1].y - points[i].y
-    segments.push({ start: points[i], end: points[i + 1], len: Math.sqrt(dx * dx + dy * dy) })
+    const ddx = points[i + 1].x - points[i].x
+    const ddy = points[i + 1].y - points[i].y
+    segments.push({ start: points[i], end: points[i + 1], len: Math.sqrt(ddx * ddx + ddy * ddy) })
   }
   return segments
 }
 
-function getPointAtT(segments, t) {
-  const total = segments.reduce((acc, s) => acc + s.len, 0)
+function getPointAtT(segs, t) {
+  const total = segs.reduce((acc, s) => acc + s.len, 0)
   const target = t * total
   let acc = 0
-  for (const seg of segments) {
+  for (const seg of segs) {
     if (acc + seg.len >= target) {
       const u = (target - acc) / seg.len
       return {
@@ -141,7 +112,7 @@ function getPointAtT(segments, t) {
     }
     acc += seg.len
   }
-  return segments[segments.length - 1].end
+  return segs[segs.length - 1].end
 }
 
 const segments = buildPath(lettrePoints)
@@ -151,13 +122,11 @@ let t = 0
 
 function animateCanvas() {
   ctxAnim.clearRect(0, 0, canvasAnim.width, canvasAnim.height)
-
   const pos = getPointAtT(segments, t)
   ctxAnim.beginPath()
   ctxAnim.arc(pos.x, pos.y, 5, 0, Math.PI * 2)
   ctxAnim.fillStyle = 'red'
   ctxAnim.fill()
-
   t = (t + 0.005) % 1
   requestAnimationFrame(animateCanvas)
 }

@@ -12,62 +12,59 @@
 
 <h1>Dessiner avec du code</h1>
 
-<!-- ===================== 1. FORMES DE BASE ===================== -->
-<h2>1. Formes de base</h2>
-
-<!-- Rectangle -->
-<h3>Rectangle</h3>
+<!-- Rectangle (click : changer de couleur) -->
+<h2>Rectangle</h2>
 <div class="row">
   <div>
-    <h4>SVG</h4>
-    <svg width="800" height="300">
+    <h3>SVG</h3>
+    <svg width="800" height="300" style="cursor:pointer">
       <rect id="rectangle-svg" width="800" height="300" fill="red"></rect>
     </svg>
   </div>
   <div>
-    <h4>Canvas</h4>
-    <canvas id="canvas-rect" width="800" height="300"></canvas>
+    <h3>Canvas</h3>
+    <canvas id="canvas-rect" width="800" height="300" style="cursor:pointer"></canvas>
   </div>
 </div>
 
-<!-- Donut -->
-<h3>Donut 🍩</h3>
+<!-- Donut (hover : agrandir le cercle extérieur) -->
+<h2>Donut 🍩</h2>
 <div class="row">
   <div>
-    <h4>SVG</h4>
+    <h3>SVG</h3>
     <svg width="220" height="220">
-      <circle cx="110" cy="110" r="60" fill="none" stroke="black" stroke-width="2" id="donut-outer"></circle>
+      <circle id="donut-outer" cx="110" cy="110" r="60" fill="none" stroke="black" stroke-width="2"></circle>
       <circle cx="110" cy="110" r="30" fill="none" stroke="black" stroke-width="2"></circle>
     </svg>
   </div>
   <div>
-    <h4>Canvas</h4>
+    <h3>Canvas</h3>
     <canvas id="canvas-donut" width="220" height="220"></canvas>
   </div>
 </div>
 
 <!-- Ligne -->
-<h3>Ligne</h3>
+<h2>Ligne</h2>
 <p>Ligne passant par A (70, 90), longueur 100px, pente 5. &Delta;x = 100/&radic;26 &asymp; 19.6, &Delta;y = 500/&radic;26 &asymp; 98.1</p>
 <div class="row">
   <div>
-    <h4>SVG</h4>
+    <h3>SVG</h3>
     <svg width="200" height="250">
       <circle cx="70" cy="90" r="3" fill="red"></circle>
       <line x1="70" y1="90" x2="90" y2="188" stroke="black" stroke-width="2"></line>
     </svg>
   </div>
   <div>
-    <h4>Canvas</h4>
+    <h3>Canvas</h3>
     <canvas id="canvas-line" width="200" height="250"></canvas>
   </div>
 </div>
 
-<!-- Chemin libre -->
-<h3>Chemin libre · lettre N</h3>
+<!-- Chemin libre : lettre N (animation le long du chemin) -->
+<h2>Chemin libre · lettre N</h2>
 <div class="row">
   <div>
-    <h4>SVG</h4>
+    <h3>SVG</h3>
     <svg width="200" height="120">
       <path id="lettre" d="M 20 100 L 20 10 L 80 100 L 80 10 L 80 100"
             fill="none" stroke="steelblue" stroke-width="5"></path>
@@ -79,67 +76,11 @@
     </svg>
   </div>
   <div>
-    <h4>Canvas</h4>
+    <h3>Canvas</h3>
     <div class="canvas-container">
       <canvas id="canvas-path" width="200" height="120"></canvas>
       <canvas id="canvas-anim" width="200" height="120" class="canvas-overlay"></canvas>
     </div>
-  </div>
-</div>
-
-<!-- ===================== 2. ANIMER DES FORMES ===================== -->
-<h2>2. Animer des formes</h2>
-
-<!-- On click -->
-<h3>On click : changer de couleur</h3>
-<div class="row">
-  <div>
-    <h4>SVG</h4>
-    <svg width="400" height="150">
-      <rect id="rectangle-click" width="400" height="150" fill="red"></rect>
-    </svg>
-  </div>
-  <div>
-    <h4>Canvas</h4>
-    <canvas id="canvas-click" width="400" height="150" style="cursor:pointer"></canvas>
-  </div>
-</div>
-
-<!-- On hover -->
-<h3>On hover : agrandir le donut</h3>
-<div class="row">
-  <div>
-    <h4>SVG</h4>
-    <svg width="220" height="220">
-      <circle id="donut-hover-outer" cx="110" cy="110" r="60"
-              fill="none" stroke="black" stroke-width="2"></circle>
-      <circle cx="110" cy="110" r="30" fill="none" stroke="black" stroke-width="2"></circle>
-    </svg>
-  </div>
-  <div>
-    <h4>Canvas</h4>
-    <p style="font-size:0.85em;color:#555">Le hover est appliqué directement sur le canvas-donut dessiné ci-dessus.</p>
-  </div>
-</div>
-
-<!-- Animation le long d'un chemin -->
-<h3>Animation le long d'un chemin</h3>
-<div class="row">
-  <div>
-    <h4>SVG</h4>
-    <svg width="200" height="120">
-      <path id="lettre2" d="M 20 100 L 20 10 L 80 100 L 80 10 L 80 100"
-            fill="none" stroke="steelblue" stroke-width="5"></path>
-      <circle r="5" fill="red">
-        <animateMotion dur="1.5s" repeatCount="indefinite">
-          <mpath href="#lettre2"></mpath>
-        </animateMotion>
-      </circle>
-    </svg>
-  </div>
-  <div>
-    <h4>Canvas</h4>
-    <p style="font-size:0.85em;color:#555">Voir ci-dessus : canvas-anim est superposé sur canvas-path.</p>
   </div>
 </div>
 
