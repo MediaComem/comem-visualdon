@@ -7,15 +7,28 @@ ctxRect.fillRect(0, 0, 800, 300)
 
 
 // --- Donut ---
-const ctxDonut = document.getElementById('canvas-donut').getContext('2d')
-ctxDonut.strokeStyle = 'black'
-ctxDonut.lineWidth = 2
-ctxDonut.beginPath()
-ctxDonut.arc(110, 110, 60, 0, Math.PI * 2)
-ctxDonut.stroke()
-ctxDonut.beginPath()
-ctxDonut.arc(110, 110, 30, 0, Math.PI * 2)
-ctxDonut.stroke()
+const CX = 110, CY = 110, INNER_R = 30, OUTER_R = 60
+const canvasDonut = document.getElementById('canvas-donut')
+const ctxDonut = canvasDonut.getContext('2d')
+
+function drawDonut(ctx, canvas, outerR) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
+  ctx.strokeStyle = 'black'
+  ctx.lineWidth = 2
+  ctx.beginPath()
+  ctx.arc(CX, CY, outerR, 0, Math.PI * 2)
+  ctx.stroke()
+  ctx.beginPath()
+  ctx.arc(CX, CY, INNER_R, 0, Math.PI * 2)
+  ctx.stroke()
+}
+drawDonut(ctxDonut, canvasDonut, OUTER_R)
+
+canvasDonut.addEventListener('mousemove', (e) => {
+  const dist = Math.sqrt((e.offsetX - CX) ** 2 + (e.offsetY - CY) ** 2)
+  drawDonut(ctxDonut, canvasDonut, dist >= INNER_R && dist <= OUTER_R ? 80 : OUTER_R)
+})
+canvasDonut.addEventListener('mouseleave', () => drawDonut(ctxDonut, canvasDonut, OUTER_R))
 
 
 // --- Ligne (longueur 100px, pente 5, point A = 70,90) ---
@@ -98,32 +111,7 @@ canvasClick.addEventListener('click', (e) => {
 const donutHoverSVG = document.getElementById('donut-hover-outer')
 donutHoverSVG.addEventListener('mouseover', () => donutHoverSVG.setAttribute('r', '80'))
 donutHoverSVG.addEventListener('mouseout',  () => donutHoverSVG.setAttribute('r', '60'))
-
-// Canvas : on hover
-const canvasHover = document.getElementById('canvas-hover')
-const ctxHover = canvasHover.getContext('2d')
-const CX = 110, CY = 110, INNER_R = 30, OUTER_R = 60
-
-function drawDonut(outerR) {
-  ctxHover.clearRect(0, 0, canvasHover.width, canvasHover.height)
-  ctxHover.strokeStyle = 'black'
-  ctxHover.lineWidth = 2
-  ctxHover.beginPath()
-  ctxHover.arc(CX, CY, outerR, 0, Math.PI * 2)
-  ctxHover.stroke()
-  ctxHover.beginPath()
-  ctxHover.arc(CX, CY, INNER_R, 0, Math.PI * 2)
-  ctxHover.stroke()
-}
-drawDonut(OUTER_R)
-
-canvasHover.addEventListener('mousemove', (e) => {
-  const { offsetX, offsetY } = e
-  const dist = Math.sqrt((offsetX - CX) ** 2 + (offsetY - CY) ** 2)
-  const isHovered = dist >= INNER_R && dist <= OUTER_R
-  drawDonut(isHovered ? 80 : OUTER_R)
-})
-canvasHover.addEventListener('mouseleave', () => drawDonut(OUTER_R))
+// Canvas : voir canvas-donut ci-dessus (drawDonut + événements déjà appliqués)
 
 
 // --- Animation le long d'un chemin ---
