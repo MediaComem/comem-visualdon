@@ -5,7 +5,8 @@
 > - [04 · Données](../../../cours/04-donnees.md) : chargement CSV, manipulation de données
 > - [05 · Échelles et axes](../../../cours/05-echelles-axes.md) : d3-scale, d3-axis, convention des marges
 > - [06 · Interaction et animation](../../../cours/06-interaction-1.md) : d3-transition (partie animation)
-> - [08 · Introduction à la cartographie](../../../cours/08-intro-cartographie.md) : carte choroplète (partie cartographie)
+> - [08 · Introduction à la cartographie](../../../cours/08-intro-cartographie.md) : types de cartes
+> - [09 · Cartographie web](../../../cours/09-cartographie-web.md) : MapLibre GL JS, sources, couches, expressions
 
 ## Installation
 

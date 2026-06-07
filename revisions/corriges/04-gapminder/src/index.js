@@ -2,221 +2,112 @@ import { select } from "d3-selection";
 import { scaleSqrt, scaleLinear, scalePow } from "d3-scale";
 import { max, min } from "d3-array";
 import { axisLeft, axisBottom } from "d3-axis";
-import { geoMercator, geoPath } from "d3-geo";
 import { json } from "d3-fetch";
 import { transition } from "d3-transition";
 import { easeLinear } from "d3-ease";
+import maplibregl from "maplibre-gl";
+import "maplibre-gl/dist/maplibre-gl.css";
+import { geoMercator, geoPath } from "d3-geo";
 
 // Pour importer les données (@rollup/plugin-dsv)
 import populationData from "../data/population_total.csv";
 import lifeData from "../data/life_expectancy_years.csv";
 import incomeData from "../data/income_per_person_gdppercapita_ppp_inflation_adjusted.csv";
 
-let converterSI = (array, variable, variableName) => {
-  let convertedVariable = array.map((d) => {
-    // Trouver le format SI (M, B, k)
-    let SI =
-      typeof d[variable.toString()] === "string" ||
-      d[variable.toString()] instanceof String
-        ? d[variable.toString()].slice(-1)
-        : d[variable.toString()];
+const STYLE = "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json";
+const WORLD_GEOJSON =
+  "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson";
 
-    // Extraire la partie numérique
-    let number =
-      typeof d[variable.toString()] === "string" ||
-      d[variable.toString()] instanceof String
-        ? parseFloat(d[variable.toString()].slice(0, -1))
-        : d[variable.toString()];
-
-    // Selon la valeur SI, multiplier par la puissance
-    switch (SI) {
-      case "M": {
-        return { country: d.country, [variableName]: Math.pow(10, 6) * number };
-      }
-      case "B": {
-        return { country: d.country, [variableName]: Math.pow(10, 9) * number };
-      }
-      case "k": {
-        return { country: d.country, [variableName]: Math.pow(10, 3) * number };
-      }
-      default: {
-        return { country: d.country, [variableName]: number };
-      }
-    }
-  });
-  return convertedVariable;
-};
-
-// Récupère toutes les années
-const annees = Object.keys(populationData[0]);
-
-let pop = [],
-  income = [],
-  life = [],
-  dataCombined = [];
-
-// Merge data
-const mergeByCountry = (a1, a2, a3) => {
-  let data = [];
-  a1.map((itm) => {
-    let newObject = {
-      ...a2.find((item) => item.country === itm.country && item),
-      ...a3.find((item) => item.country === itm.country && item),
-      ...itm,
+// Convertit les valeurs SI (M, B, k) en nombres
+const converterSI = (array, variable, variableName) =>
+  array.map((d) => {
+    const raw = d[variable.toString()];
+    const isString = typeof raw === "string";
+    const SI = isString ? raw.slice(-1) : raw;
+    const number = isString ? parseFloat(raw.slice(0, -1)) : raw;
+    const multipliers = { M: 1e6, B: 1e9, k: 1e3 };
+    return {
+      country: d.country,
+      [variableName]: multipliers[SI] ? multipliers[SI] * number : number,
     };
-    data.push(newObject);
   });
-  return data;
-};
 
-annees.forEach((annee) => {
-  pop.push({ annee: annee, data: converterSI(populationData, annee, "pop") });
-  income.push({ annee: annee, data: converterSI(incomeData, annee, "income") });
-  life.push({ annee: annee, data: converterSI(lifeData, annee, "life") });
+// Fusionne trois tableaux par pays
+const mergeByCountry = (a1, a2, a3) =>
+  a1.map((itm) => ({
+    ...a2.find((item) => item.country === itm.country),
+    ...a3.find((item) => item.country === itm.country),
+    ...itm,
+  }));
 
-  const popAnnee = pop.filter((d) => d.annee == annee).map((d) => d.data)[0];
-  const incomeAnnee = income
-    .filter((d) => d.annee == annee)
-    .map((d) => d.data)[0];
-  const lifeAnnee = life.filter((d) => d.annee == annee).map((d) => d.data)[0];
+const annees = Object.keys(populationData[0]).filter((k) => k !== "country");
 
-  dataCombined.push({
-    annee: annee,
-    data: mergeByCountry(popAnnee, incomeAnnee, lifeAnnee),
-  });
-});
+const dataCombined = annees.map((annee) => ({
+  annee,
+  data: mergeByCountry(
+    converterSI(populationData, annee, "pop"),
+    converterSI(incomeData, annee, "income"),
+    converterSI(lifeData, annee, "life")
+  ),
+}));
 
-// Visualisation statique //
-// Data 2021
-const data2021 = dataCombined
-  .filter((d) => d.annee == 2021)
-  .map((d) => d.data)[0];
+const data2021 = dataCombined.find((d) => d.annee === "2021").data;
 
-const margin = { top: 10, right: 40, bottom: 20, left: 40 },
-  width = 0.8 * window.innerWidth - margin.left - margin.right,
-  height = 0.7 * window.innerHeight + margin.top + margin.bottom;
+// Scatter / Bubble chart
+const margin = { top: 10, right: 40, bottom: 40, left: 50 };
+const width = 0.8 * window.innerWidth - margin.left - margin.right;
+const height = 0.6 * window.innerHeight - margin.top - margin.bottom;
 
 const figure = select("#vizArea")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
   .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("transform", `translate(${margin.left},${margin.top})`);
 
 const popScale = scaleSqrt()
-  .domain([0, max(data2021.map((d) => d.pop))])
+  .domain([0, max(data2021, (d) => d.pop)])
   .range([2, 30]);
 
 const incomeScale = scaleLinear()
-  .domain([0, max(data2021.map((d) => d.income))])
+  .domain([0, max(data2021, (d) => d.income)])
   .range([0, width]);
 
 const lifeScale = scalePow()
-  .domain([0, max(data2021.map((d) => d.life))])
+  .domain([0, max(data2021, (d) => d.life)])
   .range([height, 0])
   .exponent(3);
 
 figure
   .append("g")
-  .attr("transform", "translate(0," + height + ")")
+  .attr("transform", `translate(0,${height})`)
   .call(axisBottom(incomeScale));
 
 figure.append("g").call(axisLeft(lifeScale));
 
 figure
   .append("text")
-  .attr("class", "x label")
   .attr("text-anchor", "end")
   .attr("x", width)
-  .attr("y", height - 6)
-  .text("income per capita, inflation-adjusted (dollars)");
+  .attr("y", height + 35)
+  .text("PIB par habitant (dollars)");
 
 figure
   .append("text")
-  .attr("class", "y label")
   .attr("text-anchor", "end")
-  .attr("y", 6)
-  .attr("dy", ".75em")
   .attr("transform", "rotate(-90)")
-  .text("life expectancy (years)");
-
-// Carte choroplète
-const map = select("#mapArea")
-  .append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-const projection = geoMercator()
-  .scale(70)
-  .center([0, 20])
-  .translate([width / 2, height / 2]);
-
-const path = geoPath().projection(projection);
-
-const colorScale = scaleLinear()
-  .domain([
-    min(data2021.map((d) => d.income)),
-    max(data2021.map((d) => d.income)),
-  ])
-  .range(["white", "steelblue"]);
-
-json(
-  "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"
-).then((data) => {
-  // Changer le nom USA (Pour les autres pays, il faudrait faire le même exercice)
-  const index = data2021.map((d) => d.country).indexOf("United States");
-  if (index !== -1) {
-    data2021[index].country = "USA";
-  }
-
-  // Draw the map
-  map
-    .append("g")
-    .selectAll("path")
-    .data(data.features)
-    .join("path")
-    .attr("d", path)
-    .attr("fill", (d) => {
-      let dataFiltered = data2021.find((dc) => dc.country == d.properties.name);
-      return dataFiltered ? colorScale(dataFiltered.income) : "grey";
-    });
-});
+  .attr("y", -40)
+  .attr("x", 0)
+  .text("Espérance de vie (années)");
 
 // Animation
-// variable to store our intervalID
 let nIntervId;
-
-function animate() {
-  // check if already an interval has been set up
-  if (!nIntervId) {
-    nIntervId = setInterval(play, 100);
-  }
-}
-
 let i = 0;
-function play() {
-  if (dataCombined[i].annee == 2021) {
-    i = 0;
-  } else {
-    i++;
-  }
-
-  select("#paragraphe").text(dataCombined[i].annee);
-  updateChart(dataCombined[i].data);
-}
-
-function stop() {
-  clearInterval(nIntervId);
-  // release our intervalID from the variable
-  nIntervId = null;
-}
 
 function updateChart(data_iteration) {
   figure
     .selectAll("circle")
-    .data(data_iteration)
+    .data(data_iteration, (d) => d.country)
     .join(
       (enter) =>
         enter
@@ -237,5 +128,99 @@ function updateChart(data_iteration) {
     );
 }
 
-document.getElementById("play").addEventListener("click", animate);
-document.getElementById("stop").addEventListener("click", stop);
+function play() {
+  i = dataCombined[i].annee === "2021" ? 0 : i + 1;
+  select("#paragraphe").text(dataCombined[i].annee);
+  updateChart(dataCombined[i].data);
+}
+
+document.getElementById("play").addEventListener("click", () => {
+  if (!nIntervId) nIntervId = setInterval(play, 100);
+});
+document.getElementById("stop").addEventListener("click", () => {
+  clearInterval(nIntervId);
+  nIntervId = null;
+});
+
+// Carte choroplète avec d3-geo (SVG)
+json(WORLD_GEOJSON).then((geojson) => {
+  const svgMap = select("#mapSVG")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", 400);
+
+  const projection = geoMercator().scale(100).center([0, 20]).translate([(width + margin.left + margin.right) / 2, 200]);
+  const path = geoPath().projection(projection);
+
+  const lifeMin = min(data2021, (d) => d.life);
+  const lifeMax = max(data2021, (d) => d.life);
+  const colorScale = scaleLinear().domain([lifeMin, lifeMax]).range(["#fef0d9", "#b30000"]);
+
+  // Correction du nom USA
+  const usIndex = data2021.findIndex((d) => d.country === "United States");
+  if (usIndex !== -1) data2021[usIndex].country = "USA";
+
+  svgMap
+    .selectAll("path")
+    .data(geojson.features)
+    .join("path")
+    .attr("d", path)
+    .attr("fill", (d) => {
+      const match = data2021.find((dc) => dc.country === d.properties.name);
+      return match ? colorScale(match.life) : "#ccc";
+    })
+    .attr("stroke", "#fff")
+    .attr("stroke-width", 0.5);
+});
+
+// Carte choroplète avec MapLibre
+const map = new maplibregl.Map({
+  container: "mapArea",
+  style: STYLE,
+  center: [0, 20],
+  zoom: 1.5,
+});
+
+map.on("load", async () => {
+  const geojson = await json(WORLD_GEOJSON);
+
+  // Fusionner les données d'espérance de vie dans les propriétés GeoJSON
+  geojson.features.forEach((feature) => {
+    const name = feature.properties.name;
+    const match = data2021.find((d) => d.country === name);
+    feature.properties.life = match ? match.life : null;
+  });
+
+  map.addSource("world", { type: "geojson", data: geojson });
+
+  map.addLayer({
+    id: "world-choropleth",
+    type: "fill",
+    source: "world",
+    paint: {
+      "fill-color": [
+        "case",
+        ["==", ["get", "life"], null],
+        "#cccccc",
+        [
+          "interpolate",
+          ["linear"],
+          ["get", "life"],
+          40, "#fef0d9",
+          55, "#fdcc8a",
+          65, "#fc8d59",
+          75, "#e34a33",
+          85, "#b30000",
+        ],
+      ],
+      "fill-opacity": 0.85,
+    },
+  });
+
+  map.addLayer({
+    id: "world-outline",
+    type: "line",
+    source: "world",
+    paint: { "line-color": "#fff", "line-width": 0.5 },
+  });
+});

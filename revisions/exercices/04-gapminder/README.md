@@ -5,7 +5,8 @@
 > - [04 · Données](../../../cours/04-donnees.md) : chargement CSV, manipulation de données
 > - [05 · Échelles et axes](../../../cours/05-echelles-axes.md) : d3-scale, d3-axis, convention des marges
 > - [06 · Interaction et animation](../../../cours/06-interaction-1.md) : d3-transition (partie animation)
-> - [08 · Introduction à la cartographie](../../../cours/08-intro-cartographie.md) : carte choroplète (partie cartographie)
+> - [08 · Introduction à la cartographie](../../../cours/08-intro-cartographie.md) : types de cartes
+> - [09 · Cartographie web](../../../cours/09-cartographie-web.md) : MapLibre GL JS, sources, couches, expressions
 
 ## Installation
 
@@ -37,8 +38,16 @@ Le premier rendu implique la visualisation statique des données `data/gapminder
 
 ## Cartographie
 
-Représentez les valeurs d'espérance de vie sur une carte.
-Trouver des données géographiques en format _.geojson_, et visualiser l'espérance de vie sous forme de [carte choroplète](https://d3-graph-gallery.com/graph/choropleth_hover_effect.html).
+Représentez les valeurs d'espérance de vie sur une carte choroplète. Deux approches sont possibles :
+
+**Approche 1 · d3-geo** : rendu SVG statique avec `geoMercator`, `geoPath` et une échelle de couleur `scaleLinear`.
+
+**Approche 2 · MapLibre GL JS** : carte interactive avec `addSource`, `addLayer` et une expression `interpolate` pour la couleur.
+
+Dans les deux cas :
+- Chargez un fichier GeoJSON des pays du monde
+- Fusionnez les données d'espérance de vie (2021) par nom de pays
+- Encodez la valeur `life` dans la couleur de remplissage de chaque pays
 
 ## Animation
 
