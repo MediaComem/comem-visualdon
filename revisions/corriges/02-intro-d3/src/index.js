@@ -1,89 +1,63 @@
 import { select } from "d3-selection";
 
-// Append svg
-select("body").append("div").attr("class", "monSVG");
-
-// Set width and height
 const width = 500;
 const height = 500;
 
-// Création SVG
-const monSVG = select(".monSVG")
+const svg = select("body")
   .append("svg")
   .attr("width", width)
   .attr("height", height);
 
-// Définition des groupes
-const groupe1 = monSVG.append("g");
-const groupe2 = monSVG.append("g");
-const groupe3 = monSVG.append("g");
+// 3 cercles à (50,50), (150,150), (250,250)
+const g1 = svg.append("g");
+const g2 = svg.append("g");
+const g3 = svg.append("g");
 
-// Premier cercle
-groupe1
-  .append("circle")
-  .attr("cx", "50")
-  .attr("cy", "50")
-  .attr("r", "40")
-  .attr("id", "firstCircle");
+const circle1 = g1.append("circle")
+  .attr("cx", 50).attr("cy", 50).attr("r", 40).attr("id", "circle1");
+g1.append("text").text("1").attr("x", 45).attr("y", 110);
 
-groupe1.append("text").text("1").attr("x", "40").attr("y", "120");
+const circle2 = g2.append("circle")
+  .attr("cx", 150).attr("cy", 150).attr("r", 40).attr("id", "circle2");
+g2.append("text").text("2").attr("x", 145).attr("y", 210);
 
-groupe1.append("text").text("1").attr("x", "40").attr("y", "120");
-
-// Deuxième cercle
-groupe2
-  .append("circle")
-  .attr("cx", "150")
-  .attr("cy", "150")
-  .attr("r", "40")
-  .attr("id", "secondCircle");
-
-groupe2.append("text").text("2").attr("x", "150").attr("y", "210");
-
-// Troisième cercle
-groupe3
-  .append("circle")
-  .attr("cx", "250")
-  .attr("cy", "250")
-  .attr("r", "40")
-  .attr("id", "thirdCircle");
-
-groupe3.append("text").text("3").attr("x", "250").attr("y", "310");
+const circle3 = g3.append("circle")
+  .attr("cx", 250).attr("cy", 250).attr("r", 40).attr("id", "circle3");
+g3.append("text").text("3").attr("x", 245).attr("y", 310);
 
 // Changer la couleur du deuxième cercle
-const circle2 = select("#secondCircle").attr("fill", "#E92528");
-circle2.attr("cx", "100");
-circle2.attr("cx", "200");
+circle2.attr("fill", "#E92528");
 
-// Déplacer les cercles on click
-const circle1 = select("#firstCircle");
-const circle3 = select("#thirdCircle");
+// Déplacer de 50px vers la droite le premier et le deuxième cercle
+circle1.attr("cx", 100);
+circle2.attr("cx", 200);
 
+// Aligner verticalement les cercles au clic sur le troisième
 circle3.on("click", () => {
-  circle1.attr("cx", "450");
-  circle2.attr("cx", "450");
-  circle3.attr("cx", "450");
+  circle1.attr("cx", 250);
+  circle2.attr("cx", 250);
+  circle3.attr("cx", 250);
 });
 
-// Barchart
-const data = [200, 50, 250, 80, 150];
+// Barchart avec les données [20, 5, 25, 8, 15]
+// Ces valeurs représentent directement la hauteur des barres
+// (sans échelle : ceci illustre pourquoi d3-scale sera utile)
+const data = [20, 5, 25, 8, 15];
 
-const container = select("body").append("div").attr("id", "barChart");
-const barchart = container
+const barChart = select("body")
   .append("svg")
-  .attr("width", width)
-  .attr("height", height);
+  .attr("width", 300)
+  .attr("height", 200);
 
-barchart
-  .selectAll("rect")
+const barWidth = 30;
+const gap = 10;
+
+barChart.selectAll("rect")
   .data(data)
-  .join((enter) =>
-    enter
-      .append("rect")
-      .attr("x", (d, i) => i * 30)
-      .attr("y", (d) => 500 - d)
-      .attr("width", 20)
-      .attr("height", (d) => d)
-      .attr("stroke", "black")
-      .attr("fill", "black")
-  );
+  .join("rect")
+  .attr("x", (d, i) => i * (barWidth + gap))
+  .attr("y", d => 200 - d)
+  .attr("width", barWidth)
+  .attr("height", d => d)
+  .attr("fill", "black")
+  .attr("stroke", "black");
