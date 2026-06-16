@@ -1,4 +1,4 @@
-# Corrigé | Examen type 3
+# Corrigé | Examen type
 
 ---
 
