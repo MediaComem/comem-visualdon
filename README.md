@@ -55,8 +55,8 @@ Le code source du site et la méthode de préparation des données doivent être
 
 -   Dimanche 8 mars 2026, 23h59 : **Thématique** (10%)
 -   Dimanche 22 mars 2026, 23h59 : **Wireframe** (10%)
--   Lundi 11 mai 2026 : **Présentation** (~~20%~~ → **30%**)
--   Dimanche 17 mai 2026, 23h59 : **Site web** (50%)
+-   Lundi 11 mai 2026 : **Présentation** (20%)
+-   Dimanche 17 mai 2026, 23h59 : **Site web** (60%)
 
 ## Exercices
 
